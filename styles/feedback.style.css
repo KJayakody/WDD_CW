@@ -1,0 +1,99 @@
+nav {
+  background-color: white;
+}
+
+/*Background*/
+.main-cont {
+  background-image: url("../assests/feedback.bg.png");
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  background-attachment: fixed;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*Forum */
+.forum-section {
+  width: 75%;
+  height: 528px;
+  border-radius: 30px;
+  opacity: 0.8;
+  background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.5) 0%,
+      rgba(0, 0, 0, 0.5) 100%
+    ),
+    #2a25be;
+  display: flex;
+  flex-direction: row;
+}
+
+.forum-title {
+  color: #fff;
+  text-align: center;
+  font-family: Righteous;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 63px;
+  letter-spacing: 0.15px;
+  /*check this*/
+  font-feature-settings: "liga" off, "clig" off;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #1d3c4e;
+
+  width: 30%;
+  height: 100%;
+}
+
+.forum-body {
+  margin-top: 49px;
+}
+
+.forum-body label {
+  color: #e0e0e0;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.15px;
+}
+
+.forum-body input {
+  border-radius: 30px;
+  background: transparent;
+  border: 2px solid white;
+  padding: 10px 15px;
+  color: white;
+  outline: none;
+  width: 200px;
+}
+.forum-body input::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+  font-style: italic;
+}
+.forum-body input:hover {
+  border-color: lightgray;
+}
+
+.forum-body input:focus {
+  border-color: cyan;
+  box-shadow: 0 0 5px rgba(0, 255, 255, 0.6);
+}
+
+.forum-body .name {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.forum-body .name .name-group {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
