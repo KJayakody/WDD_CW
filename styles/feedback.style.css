@@ -162,6 +162,8 @@ nav {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  position: relative;
+  bottom: 0;
 }
 
 .arrow {
@@ -177,9 +179,23 @@ nav {
   background-color: unset;
 }
 
+.right:hover:enabled {
+  transform: scale(1.1);
+
+  /* Study this */
+  transition: transform 0.2s ease-in-out;
+}
+
 .left {
   border: none;
   background-color: unset;
+}
+
+.left:hover:enabled {
+  transform: scale(1.1);
+
+  /* Study this */
+  transition: transform 0.2s ease-in-out;
 }
 
 /* Radio buttons */
@@ -198,8 +214,8 @@ nav {
 }
 
 /* sugestion box */
-.sugestion {
-  display: inline-flex;
+#sugestionId {
+  display: none;
   flex-direction: column;
   margin: 0 0 2% 0;
 }
@@ -207,4 +223,34 @@ nav {
 #sugestion-box {
   border-radius: unset;
   margin: 2% 0 0 0;
+  background-color: unset;
+  color: #e0e0e0;
+  font-style: italic;
+}
+
+/* submit button */
+#submit-btn {
+  background-color: unset;
+  border-radius: 20px;
+  border: 2px solid #e0e0e0;
+  color: #e0e0e0;
+  font-size: medium;
+  display: inline-block;
+  width: 10%;
+}
+
+#submit-btn:hover:enabled {
+  transform: scale(1.1);
+
+  /* Study this */
+  transition: transform 0.2s ease-in-out;
+  border-color: cyan;
+  box-shadow: 0 0 5px rgba(0, 255, 255, 0.6);
+  background-color: #e0e0e0;
+  color: #1d3c4e;
+}
+
+#submit-btn:disabled {
+  border: 2px solid gray;
+  color: gray;
 }

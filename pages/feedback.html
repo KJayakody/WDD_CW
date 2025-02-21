@@ -48,26 +48,16 @@
                                 <label for="address-line3">Address line 3</label>
                                 <input type="text" id="address-line3" name="address-line3" placeholder="Colombo">
                             </div>
-                            <div class="forum-nav">
-                                <div class="arrow">
-                                    <button class="arrow left" type="button" onclick="prevStep()">
-                                        <img src="../assests/arrow.left.png" alt="arrow left">
-                                    </button>
-                                    <button class="arow right" type="button" onclick="nextStep()">
-                                        <img src="../assests/arrow.right.png" alt="arrow right">
-                                    </button>
-                                </div>
-                            </div>
                         </section>
-                        <section class="forum inactive">
+                        <section class="forum">
                             <div class="radio-btn">
                                <label>Is this your first time visiting ?</label>
                                 <div>
-                                    <input type="radio" name="yesno" value="yes" id="yes-radio">
+                                    <input type="radio" name="yesno" value="yes" >
                                     <label for="yes-radio">Yes</label>
                                 </div>
                                 <div>
-                                    <input type="radio" name="yesno" value="no" id="no-radio">
+                                    <input type="radio" name="yesno" value="no">
                                     <label for="no-radio">No</label>
                                 </div>
                             </div>
@@ -82,22 +72,22 @@
                                      <label for="no-radio">No</label>
                                  </div>
                              </div>
-                            <div class="sugestion">
+                            <div class="sugestion inactive" id="sugestionId">
                                 <label>If "No" Suggest any improvement for future.</label>
                                 <textarea type="text" id="sugestion-box" name="sugestion-box" rows="10" cols="50" placeholder="Type your text here."></textarea>
                             </div>
-                            <div class="forum-nav">
-                                <div class="arrow">
-                                    <button class="arrow left" type="button" onclick="prevStep()">
-                                        <img src="../assests/arrow.left.png" alt="arrow left">
-                                    </button>
-                                    <button class="arow right" type="button" onclick="nextStep()">
-                                        <img src="../assests/arrow.right.png" alt="arrow right">
-                                    </button>
-                                    <button type="submit">Send</button>
-                                </div>
-                            </div>
                         </section>
+                        <div class="forum-nav">
+                            <div class="arrow">
+                                <button class="arrow left" type="button" onclick="prevStep()">
+                                    <img src="../assests/arrow.left.png" alt="arrow left" id="arrow-left-img">
+                                </button>
+                                <button class="arrow right" type="button" onclick="nextStep()" >
+                                    <img src="../assests/arrow.right.png" alt="arrow right" id="arrow-right-img">
+                                </button>
+                            </div>
+                            <button type="submit" id="submit-btn" >Send</button>
+                        </div>
                     </form>
             </section>
         </div>
