@@ -21,60 +21,128 @@
                             <div class="name">
                                 <div class="name-group">
                                     <label for="fname">First Name</label>
-                                    <input type="text" id="fname" name="fname" placeholder="John">
+                                    <input type="text" id="fname" name="fname" placeholder="John" required>
                                 </div>
                                 <div class="name-group">
                                     <label for="lname">Last Name</label>
-                                    <input type="text" id="lname" name="lname" placeholder="Doe">
+                                    <input type="text" id="lname" name="lname" placeholder="Doe" required>
                                 </div>
                             </div>
                             <div class="email">
                                 <label for="email">Email</label>
-                                <input type="email" id="email" name="email" placeholder="abcd@example.com">
+                                <input type="email" id="email" name="email" placeholder="abcd@example.com" required>
                             </div>
                             <div class="contact">
                                 <label for="contact">Contact no.</label>
-                                <input type="contact" id="contact" name="contact" placeholder="0123456789 ">
+                                <input type="contact" id="contact" name="contact" placeholder="0123456789 " >
                             </div>
                             <div class="address-line1">
                                 <label for="address-line1">Address line 1</label>
-                                <input type="text" id="address-line1" name="address-line1 " placeholder="123 ">
+                                <input type="text" id="address-line1" name="address-line1 " placeholder="123 " required>
                             </div>
                             <div class="address-line2">
                                 <label for="address-line2">Address line 2</label>
-                                <input type="text" id="address-line2" name="address-line2 " placeholder="Temple Street ">
+                                <input type="text" id="address-line2" name="address-line2 " placeholder="Temple Street " required>
                             </div>
                             <div class="address-line3">
                                 <label for="address-line3">Address line 3</label>
-                                <input type="text" id="address-line3" name="address-line3" placeholder="Colombo">
+                                <input type="text" id="address-line3" name="address-line3" placeholder="Colombo" required>
                             </div>
                         </section>
                         <section class="forum">
                             <div class="radio-btn">
                                <label>Is this your first time visiting ?</label>
                                 <div>
-                                    <input type="radio" name="yesno" value="yes" >
+                                    <input type="radio" name="yesno-1" value="yes"  required>
                                     <label for="yes-radio">Yes</label>
                                 </div>
                                 <div>
-                                    <input type="radio" name="yesno" value="no">
+                                    <input type="radio" name="yesno-1" value="no">
                                     <label for="no-radio">No</label>
                                 </div>
                             </div>
                             <div class="radio-btn">
                                 <label>Was this web site informative and easy to navigate ?</label>
                                  <div>
-                                     <input type="radio" name="yesno" value="yes" id="yes-radio">
+                                     <input type="radio" name="yesno-2" value="yes" id="yes-radio" required>
                                      <label for="yes-radio">Yes</label>
                                  </div>
                                  <div>
-                                     <input type="radio" name="yesno" value="no" id="no-radio">
+                                     <input type="radio" name="yesno-2" value="no" id="no-radio">
                                      <label for="no-radio">No</label>
                                  </div>
                              </div>
                             <div class="sugestion inactive" id="sugestionId">
-                                <label>If "No" Suggest any improvement for future.</label>
+                                <label for="sugestion-box">If "No" Suggest any improvement for future.</label>
                                 <textarea type="text" id="sugestion-box" name="sugestion-box" rows="10" cols="50" placeholder="Type your text here."></textarea>
+                            </div>
+                        </section>
+                        <section class="forum">
+                            <div class="rating">
+                                <label for="rating-label">
+                                    How satisfied you with our services ? </br>
+                                    (Choose from 1 to 10, with 1 being "Not satisfied at All!" and 10 being "Extremly Satisfied.")
+                                </label>
+                                <div class="rating-radio">
+                                    <div class="rating-vert">
+                                        <input type="radio" name="rate" value="1" required>
+                                        <label>1</label>
+                                    </div>
+                                    <div class="rating-vert">
+                                        <input type="radio" name="rate" value="2">
+                                        <label>2</label>
+                                    </div>
+                                    <div class="rating-vert">
+                                        <input type="radio" name="rate" value="3">
+                                        <label>3</label>
+                                    </div>
+                                    <div class="rating-vert">
+                                        <input type="radio" name="rate" value="4">
+                                        <label>4</label>
+                                    </div>
+                                    <div class="rating-vert">
+                                        <input type="radio" name="rate" value="5">
+                                        <label>5</label>
+                                    </div>
+                                    <div class="rating-vert">
+                                        <input type="radio" name="rate" value="6">
+                                        <label>6</label>
+                                    </div>
+                                    <div class="rating-vert">
+                                        <input type="radio" name="rate" value="7">
+                                        <label>7</label>
+                                    </div>
+                                    <div class="rating-vert">
+                                        <input type="radio" name="rate" value="8">
+                                        <label>9</label>
+                                    </div>
+                                    <div class="rating-vert">
+                                        <input type="radio" name="rate" value="10">
+                                        <label>10</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="radio-btn">
+                                <label>Would you recommend our services ?</label>
+                                <div>
+                                    <input type="radio" name="yesno-3" value="yes" required>
+                                    <label>Yes</label>
+                                </div>
+                                <div>
+                                    <input type="radio" name="yesno-3" value="yes">
+                                    <label>No</label>
+                                </div>
+                            </div>
+                            <div class="updates">
+                                <label for="dropdown">Would you like to recieve updates about the website and any offers ?</label>
+                                <div id="dropdown">
+                                    <button type="button" onclick="dropDownFunc()" id="dropbtn">Select</button>
+                                    <div class="drop-content" id="dropContent">
+                                        <span onclick="changeBtnText('yes - via email')">Yes - via email</span>
+                                        <span onclick="changeBtnText('Yes - Follow on X')">Yes - Follow on X</span>
+                                        <span onclick="changeBtnText('No')">No</span>
+                                    </div>
+                                </div>
                             </div>
                         </section>
                         <div class="forum-nav">
