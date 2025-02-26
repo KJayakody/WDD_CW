@@ -56,14 +56,14 @@ function prevStep() {
   rightArrowImg.src = "../assests/arrow.right.png";
 }
 
-form.addEventListener("input", () => {
-  console.log("jnbjnl");
-  if (form.checkValidity()) {
-    submitBtn.disabled = false;
-  } else {
-    submitBtn.disabled = true;
-  }
-});
+// form.addEventListener("input", () => {
+//   console.log("jnbjnl");
+//   if (form.checkValidity()) {
+//     submitBtn.disabled = false;
+//   } else {
+//     submitBtn.disabled = true;
+//   }
+// });
 
 // check this
 function downloadJson(data, filename) {
