@@ -1,0 +1,162 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    background-color: #2A25BE;
+    color: white;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+
+    .nav-bar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        margin: 0 auto;
+        padding: 0 20px;
+
+        .nav-links {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 600px;
+
+            ul {
+                display: flex;
+                justify-content: space-between;
+                list-style: none;
+                width: 100%;
+
+                li {
+                    padding: 0 10px;
+                }
+
+                a {
+                    color: white;
+                    text-decoration: none;
+                }
+
+                a:hover {
+                    color: #FFD700;
+                    transition: ease-in 0.2s;
+                }
+            }
+        }
+    }
+}
+
+/* Hero Section */
+#hero {
+    position: relative;
+    background-image: url('../assests/hero.png');
+    background-size: cover;
+    background-position: center;
+    height: 550px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    z-index: 1;
+
+    .hero-container {
+        .title{
+            margin-bottom: 50px;
+            h1{
+                font-size: 64px;
+                margin: 0;
+            }
+
+            h5 {
+                font-size: 20px;
+                margin-top: 10px;
+            }
+
+        }
+        
+        .action-btn {
+            font-size: 14px;
+
+            .btn1{
+                background-color: #ffffff;
+                padding: 15px 40px;
+                margin: 0 5px;
+                border-radius: 50px;
+                text-decoration: none;
+                color: #2E91F3;
+            }
+
+            .btn1:hover{
+                background-color: #2E91F3;
+                color: #ffffff;
+                transition: ease-in 0.2s;
+            }
+
+            .btn2{
+                border: 2px solid white;
+                padding: 15px 40px;
+                margin: 0 5px;
+                border-radius: 50px;
+                text-decoration: none;
+                color: #ffffff;
+            }
+
+            .btn2:hover{
+                border: 2px solid #2E91F3;
+                background-color: #2E91F3;
+                color: #ffffff;
+                transition: ease-in 0.2s;
+            }
+
+        }
+    }
+}
+
+#hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, #1F4FA0 0%, #3C47E1 100%);
+    opacity: 0.7;
+    z-index: -1;
+}
+
+
+/* Mission Section */
+#mission {
+    background-color: #EFF6FF;
+    height: 255px;
+
+    .mission-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+
+        .mission-box {
+            width: 730px;
+
+            p {
+                font-size: 16px;
+                margin-top: 23px;
+                text-align: center;
+                color: #4B5563;
+                line-height: 147%;
+            }
+        }
+        
+        h2 {
+            font-size: 27px;
+            margin: 0;
+            color: #2A25BE;
+        }
+
+    }
+}
