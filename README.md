@@ -6,9 +6,6 @@ This repository contains the source code and resources for the "Life Under Water
 ## Table of Contents
 - [Project Description](#project-description)
 - [Features](#features)
-- [Team Members](#team-members)
-- [Folder Structure](#folder-structure)
-- [How to Run](#how-to-run)
 - [Contributing](#contributing)
 - [License](#license)
 
