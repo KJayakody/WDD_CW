@@ -3,11 +3,15 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    background-color: #f4ebff;
-    background-image: url(back1.jpg);
+    height: 100%;
+    /* width: 100%; */
+    /* background-color: #f4ebff; */
+    /* background-image: url(../assests/back1.jpg); */
     background-repeat: no-repeat;
     background-size: cover;
+    background: linear-gradient(to bottom, #001f3f, #005f73);
+    color: white;
+    font-family: Arial, sans-serif;
 }
 
 svg {
@@ -16,7 +20,8 @@ svg {
 }
 
 .node {
-    fill: white;
+    /* fill: white; */
+    fill: url(#gradient1);
     stroke: #4c9dbd;
     stroke-width: 2;
     cursor: pointer;
@@ -29,7 +34,8 @@ svg {
 }
 
 .sub_node {
-    fill: white;
+    /* fill: white; */
+    fill: url(#gradient1);
     stroke: #4c9dbd;
     stroke-width: 2;
     cursor: pointer;
@@ -42,23 +48,28 @@ svg {
 }
 
 text {
-    font-size: 14px;
+    /* font-size: 14px;
     text-anchor: middle;
     dominant-baseline: middle;
     fill: #333;
-    pointer-events: none;
+    pointer-events: none; */
+    fill: black;
+    font-size: 12px;
+    font-weight: bold;
+    text-anchor: middle;
+    dominant-baseline: middle;
 }
 
 .line{
     fill: rgb(216, 216, 216); 
     stroke: #4c9dbd;
-    stroke-width: 2;
+    stroke-width: 2px;
     fill: none;
 
 }
 
 .sub_text {
-    font-size: 12px;
+    font-size: 11px;
 }
 
 .background {
