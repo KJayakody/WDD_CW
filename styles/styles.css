@@ -1,8 +1,15 @@
+html {
+    scroll-behavior: smooth;
+}
+
+
 body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
 }
 
+
+/* Header Section */
 header {
     background-color: #2A25BE;
     color: white;
@@ -158,5 +165,50 @@ header {
             color: #2A25BE;
         }
 
+    }
+}
+
+
+#stats {
+    height: 280px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .stats-container {
+        width: 1264px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
+
+        .stats-box {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: 155px;
+            width: 300px;
+            text-align: center;
+            background-color: #EFF6FF;
+            border-radius: 10px;
+
+            .svg {
+                margin: 16px auto;
+            }
+
+            h2 {
+                font-size: 27px;
+                margin: 0;
+                color: #2A25BE;
+            }
+
+            p {
+                font-size: 15px;
+                margin-top: 10px;
+                text-align: center;
+                color: #2563EB;
+                line-height: 147%;
+            }
+        }
     }
 }
