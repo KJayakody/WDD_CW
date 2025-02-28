@@ -1,3 +1,9 @@
+:root {
+    --themeColor: #2A25BE;
+    --btnColor: #2563EB;
+  }
+
+
 html {
     scroll-behavior: smooth;
 }
@@ -11,7 +17,7 @@ body {
 
 /* Header Section */
 header {
-    background-color: #2A25BE;
+    background-color: var(--themeColor);
     color: white;
     height: 60px;
     display: flex;
@@ -164,7 +170,7 @@ header {
         h2 {
             font-size: 27px;
             margin: 0;
-            color: #2A25BE;
+            color: var(--themeColor);
         }
 
     }
@@ -201,14 +207,14 @@ header {
             h2 {
                 font-size: 27px;
                 margin: 0;
-                color: #2A25BE;
+                color: var(--themeColor);
             }
 
             p {
                 font-size: 15px;
                 margin-top: 10px;
                 text-align: center;
-                color: #2563EB;
+                color: var(--btnColor);
                 line-height: 147%;
             }
         }
@@ -219,7 +225,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #2A25BE;
+    background-color: var(--themeColor);
     height: 430px;
 
     .initiatives-container {
@@ -300,12 +306,12 @@ header {
         h2 {
             font-size: 27px;
             margin: 0;
-            color: #2A25BE;
+            color: var(--themeColor);
         }
 
         .btn3 {
-            background-color: #2563EB;
-            border: 2px solid #2563EB;
+            background-color: var(--btnColor);
+            border: 2px solid var(--btnColor);
             padding: 15px 35px;
             margin: 0 5px;
             border-radius: 50px;
@@ -315,9 +321,9 @@ header {
         }
 
         .btn3:hover {
-            border: 2px solid #2563EB;
+            border: 2px solid var(--btnColor);
             background-color: transparent;
-            color: #2563EB;
+            color: var(--btnColor);
             cursor: pointer;
         }
 
@@ -330,7 +336,7 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #2A25BE;
+    background-color: var(--themeColor);
     color: white;
     height: auto;
 
