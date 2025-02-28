@@ -10,8 +10,8 @@ const submitBtn = document.getElementById("submit-btn");
 const form = document.getElementById("forum-body");
 const formId = document.getElementById("fname");
 const dropBtn = document.getElementById("dropbtn");
-console.log("🚀 ~ dropBtn:", dropBtn);
 const dropContent = document.getElementById("dropContent");
+
 let currentStep = 0;
 
 const selections = document.querySelectorAll(".forum");
@@ -132,3 +132,12 @@ window.onclick = (event) => {
     }
   }
 };
+// Showing the charater counter in textBox
+function updateCounter() {
+  const counter = document.getElementById("counter")
+  const textBox = document.getElementById("sugestion-box")
+
+  counter.textContent = `${textBox.value.length}/${textBox.maxLength}`
+}
+
+document.addEventListener("DOMContentLoaded", updateCounter)

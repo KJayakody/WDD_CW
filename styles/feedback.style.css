@@ -156,6 +156,29 @@ nav {
   justify-content: space-between;
 }
 
+.address {
+  margin-bottom: 10px;
+  width: 80%;
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#address-box {
+  border: 2px solid white;
+  border-radius: 5px;
+  margin: 2% 0 0 0;
+  background-color: unset;
+  color: rgba(255, 255, 255, 0.6);
+  font-style: italic;
+  width: 50%;
+}
+
+textarea:focus {
+  border-color: cyan;
+  box-shadow: 0 0 5px rgba(0, 255, 255, 0.6);
+}
+
 /* Forum Navigation */
 .forum-nav {
   width: 90%;
@@ -221,11 +244,19 @@ nav {
 }
 
 #sugestion-box {
-  border-radius: unset;
+  border: 2px solid white;
+  border-radius: 5px;
   margin: 2% 0 0 0;
   background-color: unset;
-  color: #e0e0e0;
+  color: rgba(255, 255, 255, 0.6);
   font-style: italic;
+}
+
+#counter {
+  font-size: 14px;
+  color: rgb(168, 164, 164);
+  position: relative;
+  left: 80%;
 }
 
 /* submit button */
@@ -272,7 +303,7 @@ nav {
 .rating .rating-radio .rating-vert {
   display: flex;
   flex-direction: column;
-  align-items: center ;
+  align-items: center;
 }
 
 /* adding effects to radio buttons - global */
@@ -289,44 +320,13 @@ input[type="radio"]:hover {
   width: 80%;
 }
 
-.updates label {
-  width: 60%;
-}
-
-#dropbtn {
-  background-color: unset;
-  border: 2px solid;
-  min-width: 125px;
-  width: auto;
-  height: 30px;
-  color: white;
-  font-size: 16px;
-  cursor: pointer;
-  margin: 8% 0 0 0;
-}
-
-
-#dropdown {
-  position: relative;
-  display: inline-block;
-}
-
-.drop-content {
-  display: none;
+#dropdown-items {
   position: absolute;
-  background-color: #f1f1f1;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
+  background-color: DodgerBlue;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 99;
 }
-
-.drop-content span {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-}
-
-.drop-content span:hover {background-color: #ddd;}
 
 .show {display:block;}

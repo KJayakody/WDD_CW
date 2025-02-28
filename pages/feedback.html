@@ -36,7 +36,7 @@
                                 <label for="contact">Contact no.</label>
                                 <input type="contact" id="contact" name="contact" placeholder="0123456789 " >
                             </div>
-                            <div class="address-line1">
+                            <!-- <div class="address-line1">
                                 <label for="address-line1">Address line 1</label>
                                 <input type="text" id="address-line1" name="address-line1 " placeholder="123 " required>
                             </div>
@@ -47,6 +47,15 @@
                             <div class="address-line3">
                                 <label for="address-line3">Address line 3</label>
                                 <input type="text" id="address-line3" name="address-line3" placeholder="Colombo" required>
+                            </div> -->
+
+                            <div class="address">
+                                <label for="address-box">Address</label>
+                                <textarea id="address-box" name="address" rows="3" cols="25" placeholder="123, Temple Rd, Colombo." required></textarea>
+                            </div>
+
+                            <div class="occupation">
+                                <label for="occupation-id">occupation</label>
                             </div>
                         </section>
                         <section class="forum">
@@ -74,7 +83,8 @@
                              </div>
                             <div class="sugestion inactive" id="sugestionId">
                                 <label for="sugestion-box">If "No" Suggest any improvement for future.</label>
-                                <textarea type="text" id="sugestion-box" name="sugestion-box" rows="10" cols="50" placeholder="Type your text here."></textarea>
+                                <textarea type="text" id="sugestion-box" name="sugestion-box" rows="10" cols="50" placeholder="Type your text here." form="forum-body" maxlength="300" oninput="updateCounter()"></textarea>
+                                <p id="counter">0/300</p>
                             </div>
                         </section>
                         <section class="forum">
@@ -135,14 +145,19 @@
                             </div>
                             <div class="updates">
                                 <label for="dropdown">Would you like to recieve updates about the website and any offers ?</label>
-                                <div id="dropdown">
+                                <!-- <div id="dropdown">
                                     <button type="button" onclick="dropDownFunc()" id="dropbtn">Select</button>
                                     <div class="drop-content" id="dropContent">
                                         <span onclick="changeBtnText('yes - via email')">Yes - via email</span>
                                         <span onclick="changeBtnText('Yes - Follow on X')">Yes - Follow on X</span>
                                         <span onclick="changeBtnText('No')">No</span>
                                     </div>
-                                </div>
+                                </div> -->
+                                <select name="dropdown" id="dropdown">
+                                    <option value="Yes - Via email">Yes - Via email</option>
+                                    <option value="Yes - Follow on X">Yes - Follow on x</option>
+                                    <option value="No">No</option>
+                                </select>
                             </div>
                         </section>
                         <div class="forum-nav">
