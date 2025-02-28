@@ -212,3 +212,61 @@ header {
         }
     }
 }
+
+#initiatives {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F9FAFB;
+    height: 430px;
+
+    .initiatives-container {
+        h2 {
+            font-size: 27px;
+            margin: 0 0 32px 0;
+            color: #2A25BE;
+            text-align: center;
+        }
+
+        .initiatives-box {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 1315px;
+
+            .initiative {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                width: 313px;
+                height: 237px;
+                background-color: white;
+                border-radius: 14px;
+                overflow: hidden;
+                box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+                transition: transform 0.3s ease-in-out;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+
+                h3 {
+                    font-size: 20px;
+                    margin-top: 10px;
+                    text-align: center;
+                    color: #1F2937;
+                }
+            }
+
+            .initiative:hover {
+                transform: translateY(-10px);
+                box-shadow: 0px 12px 15px -3px rgba(0,0,0,0.1);
+            }
+        }
+    }
+
+
+}
