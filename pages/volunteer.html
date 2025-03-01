@@ -13,6 +13,7 @@
     />
 
     <link rel="stylesheet" href="../styles/volunteer.css" />
+    <link rel="stylesheet" href="../styles/global.css"/>
   </head>
   <body>
     <header>
@@ -39,37 +40,53 @@
       <h1 class="title">VOLUNTEER</h1>
       <div class="programs">
         <h2>Volunteer Programs</h2>
-        <div class="program_cards">
-          <div class="card">
-            <img src="../assests/volunteer_aquaitca.jpg" alt="Aquatica" />
-            <h3>Aquatica</h3>
-            <p>Sri Lanka Life Saving (SLLS)</p>
-            <button>View</button>
-            <button>Apply</button>
-          </div>
-          <div class="card">
-            <img src="../assests/volunteer_whale_shark.jpg" alt="Whale Shark Conservation" />
-            <h3>Whale Shark Conservation</h3>
-            <p>Find the thrill of swimming with a whale shark</p>
-            <button>View</button>
-            <button>Apply</button>
-          </div>
-          <div class="card">
-            <img src="../assests/volunteer_srilanka_turtle.jpg" alt="Turtle Conservation" />
-            <h3>Sri Lanka Turtle Conservation</h3>
-            <p>Help protect and rehabilitate at-risk sea turtles</p>
-            <button>View</button>
-            <button>Apply</button>
-          </div>
-          <div class="card">
-            <img src="../assests/volunteer_sea_turtle.jpg" alt="Sea Turtle Ambassador" />
-            <h3>Sea Turtle Conservation</h3>
-            <p>Volunteer and save turtles, make a difference</p>
-            <button>View</button>
-            <button>Apply</button>
-          </div>
+
+        <!-- Filter Inputs -->
+        <div class="filter-container">
+            <input type="text" id="programFilter" placeholder="Search for a program...">
+            <select id="categoryFilter">
+                <option value="all">All Categories</option>
+                <option value="rescue">Rescue</option>
+                <option value="marine-life">Marine Life</option>
+                <option value="conservation">Conservation</option>
+            </select>
         </div>
-      </div>
+
+        <!-- Program Cards -->
+        <div class="program_cards">
+            <div class="card" data-category="rescue">
+                <img src="../assests/volunteer_aquaitca.jpg" alt="Aquatica">
+                <h3>Aquatica</h3>
+                <p>Sri Lanka Life Saving (SLLS)</p>
+                <button>View</button>
+                <button>Apply</button>
+            </div>
+            <div class="card" data-category="marine-life">
+                <img src="../assests/volunteer_whale_shark.jpg" alt="Whale Shark Conservation">
+                <h3>Whale Shark Conservation</h3>
+                <p>Find the thrill of swimming with a whale shark</p>
+                <button>View</button>
+                <button>Apply</button>
+            </div>
+            <div class="card" data-category="conservation">
+                <img src="../assests/volunteer_srilanka_turtle.jpg" alt="Turtle Conservation">
+                <h3>Sri Lanka Turtle Conservation</h3>
+                <p>Help protect and rehabilitate at-risk sea turtles</p>
+                <button>View</button>
+                <button>Apply</button>
+            </div>
+            <div class="card" data-category="conservation">
+                <img src="../assests/volunteer_sea_turtle.jpg" alt="Sea Turtle Ambassador">
+                <h3>Sea Turtle Conservation</h3>
+                <p>Volunteer and save turtles, make a difference</p>
+                <button>View</button>
+                <button>Apply</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="../scripts/volunteer.js"></script>
 
       <div class="reviews">
         <h2 class="review_title">Reviews</h2>
@@ -84,7 +101,7 @@
             <p>Good Job! Keep up the good work</p>
             <div class="profile">
               <a href="pages\profile.html"><img src="..\assests\profile2.png" width="34px" class="profile_icon"></a>
-              <p>John Doe - 12.02.2025</p>
+              <p>John Doe - 15.02.2025</p>
           </div>
             <a href="#" target="_blank" rel="noopener noreferrer" class="see_more">See More...</a>
           </div>
@@ -102,7 +119,7 @@
             <p>Good Job! Keep up the good work</p>
             <div class="profile3">
               <a href="pages\profile.html"><img src="..\assests\profile4.png" width="34px" class="profile_icon"></a>
-              <p>John Doe - 12.02.2025</p>
+              <p>John Doe - 27.02.2025</p>
           </div>
             <a href="#" target="_blank" rel="noopener noreferrer" class="see_more">See More...</a>
           </div>
@@ -118,7 +135,6 @@
         <textarea placeholder="Write your review here..." class="review_message"></textarea>
         <br />
         <button>Submit</button>
-        <button>Cancel</button>
       </div>
       </div>
     </div>
