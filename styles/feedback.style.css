@@ -1,0 +1,332 @@
+nav {
+  background-color: white;
+}
+
+/*Background*/
+.main-cont {
+  background-image: url("../assests/feedback.bg.png");
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  background-attachment: fixed;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* .main-cont #main-title {
+  all: unset;
+  color: #0f0a8d;
+  text-align: center;
+  font-feature-settings: "liga" off, "clig" off;
+  font-family: Roboto;
+  font-size: 70px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 24px;
+  letter-spacing: 0.15px;
+} */
+
+#main-title {
+  position: absolute;
+  top: 13.5%;
+  left: 50%;
+  /* check this */
+  transform: translateX(-50%); /* Centers it horizontally */
+
+  font-size: 60px;
+  font-weight: bold;
+  color: #0f0a8d;
+  text-align: center;
+  /* above the other elements */
+  z-index: 10;
+}
+/*Forum */
+.forum-section {
+  width: 75%;
+  height: auto;
+  border-radius: 30px;
+  opacity: 0.8;
+  background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.5) 0%,
+      rgba(0, 0, 0, 0.5) 100%
+    ),
+    #2a25be;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.forum-title {
+  color: #fff;
+  text-align: center;
+  font-family: Righteous;
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 63px;
+  letter-spacing: 0.15px;
+  /*check this*/
+  font-feature-settings: "liga" off, "clig" off;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #1d3c4e;
+
+  min-width: 250px;
+  width: 30%;
+  height: 100%;
+  margin-left: 5%;
+}
+
+#forum-body {
+  margin: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 70%;
+}
+
+.inactive {
+  display: none;
+}
+
+.forum label {
+  color: #e0e0e0;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.15px;
+}
+
+.forum input {
+  border-radius: 30px;
+  background: transparent;
+  border: 2px solid white;
+  padding: 10px 15px;
+  color: white;
+  outline: none;
+  width: 100%;
+  max-width: 250px;
+}
+.forum input::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+  font-style: italic;
+}
+.forum input:hover {
+  border-color: lightgray;
+}
+
+.forum input:focus {
+  border-color: cyan;
+  box-shadow: 0 0 5px rgba(0, 255, 255, 0.6);
+}
+
+.forum .name {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 800px;
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.forum .email {
+  margin-top: 5px;
+}
+
+.forum .name .name-group {
+  gap: 10px;
+  display: inline-flex;
+}
+
+.email,
+.contact,
+.address-line1,
+.address-line2,
+.address-line3 {
+  margin-bottom: 10px;
+  width: 80%;
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.address {
+  margin-bottom: 10px;
+  width: 80%;
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#address-box {
+  border: 2px solid white;
+  border-radius: 5px;
+  margin: 2% 0 0 0;
+  background-color: unset;
+  color: rgba(255, 255, 255, 0.6);
+  font-style: italic;
+  width: 50%;
+}
+
+textarea:focus {
+  border-color: cyan;
+  box-shadow: 0 0 5px rgba(0, 255, 255, 0.6);
+}
+
+/* Forum Navigation */
+.forum-nav {
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: relative;
+  bottom: 0;
+}
+
+.arrow {
+  min-width: 18%;
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.right {
+  border: none;
+  background-color: unset;
+}
+
+.right:hover:enabled {
+  transform: scale(1.1);
+
+  /* Study this */
+  transition: transform 0.2s ease-in-out;
+}
+
+.left {
+  border: none;
+  background-color: unset;
+}
+
+.left:hover:enabled {
+  transform: scale(1.1);
+
+  /* Study this */
+  transition: transform 0.2s ease-in-out;
+}
+
+/* Radio buttons */
+
+.radio-btn {
+  display: flex;
+  flex-direction: row;
+  margin: 0 0 2% 0;
+}
+.radio-btn input {
+  width: auto;
+}
+
+.radio-btn div {
+  margin: 0 0 0 2%;
+}
+
+/* sugestion box */
+#sugestionId {
+  display: none;
+  flex-direction: column;
+  margin: 0 0 2% 0;
+}
+
+#sugestion-box {
+  border: 2px solid white;
+  border-radius: 5px;
+  margin: 2% 0 0 0;
+  background-color: unset;
+  color: rgba(255, 255, 255, 0.6);
+  font-style: italic;
+}
+
+#counter {
+  font-size: 14px;
+  color: rgb(168, 164, 164);
+  position: relative;
+  left: 80%;
+}
+
+/* submit button */
+#submit-btn {
+  background-color: unset;
+  border-radius: 20px;
+  border: 2px solid #e0e0e0;
+  color: #e0e0e0;
+  font-size: medium;
+  display: inline-block;
+  width: 10%;
+}
+
+#submit-btn:hover:enabled {
+  transform: scale(1.1);
+
+  /* Study this */
+  transition: transform 0.2s ease-in-out;
+  border-color: cyan;
+  box-shadow: 0 0 5px rgba(0, 255, 255, 0.6);
+  background-color: #e0e0e0;
+  color: #1d3c4e;
+}
+
+#submit-btn:disabled {
+  border: 2px solid gray;
+  color: gray;
+}
+
+/* rating area */
+.rating {
+  display: flex;
+  flex-direction: column;
+  margin: 0 0 2% 0;
+}
+
+.rating .rating-radio {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-top: 25;
+}
+
+.rating .rating-radio .rating-vert {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* adding effects to radio buttons - global */
+input[type="radio"]:hover {
+  outline: cyan;
+  cursor: pointer;
+}
+
+/* Dropdown menu */
+.updates {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 80%;
+}
+
+#dropdown-items {
+  position: absolute;
+  background-color: DodgerBlue;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 99;
+}
+
+.show {display:block;}
