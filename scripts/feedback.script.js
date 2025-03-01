@@ -11,6 +11,8 @@ const form = document.getElementById("forum-body");
 const formId = document.getElementById("fname");
 const dropBtn = document.getElementById("dropbtn");
 const dropContent = document.getElementById("dropContent");
+const ratingInput = document.getElementById("rating");
+const ratingOutput = document.getElementById("output");
 
 let currentStep = 0;
 
@@ -27,7 +29,7 @@ function showStep(step) {
 if (currentStep === 1) {
   console.log("image changing");
   rightArrowBtn.disabled = true;
-  rightArrowImg.src = "../assests/arrow.right.disabled.png";
+  rightArrowImg.src = "../assets/arrow.right.disabled.png";
 }
 
 function nextStep() {
@@ -37,10 +39,10 @@ function nextStep() {
   }
   if (currentStep === selections.length - 1) {
     rightArrowBtn.disabled = true;
-    rightArrowImg.src = "../assests/arrow.right.disabled.png";
+    rightArrowImg.src = "../assets/arrow.right.disabled.png";
   }
   leftArrowBtn.disabled = false;
-  leftArrowImg.src = "../assests/arrow.left.png";
+  leftArrowImg.src = "../assets/arrow.left.png";
 }
 
 function prevStep() {
@@ -50,10 +52,10 @@ function prevStep() {
   }
   if (currentStep === 0) {
     leftArrowBtn.disabled = true;
-    leftArrowImg.src = "../assests/arrow.left.disabled.png";
+    leftArrowImg.src = "../assets/arrow.left.disabled.png";
   }
   rightArrowBtn.disabled = false;
-  rightArrowImg.src = "../assests/arrow.right.png";
+  rightArrowImg.src = "../assets/arrow.right.png";
 }
 
 // form.addEventListener("input", () => {
@@ -134,10 +136,15 @@ window.onclick = (event) => {
 };
 // Showing the charater counter in textBox
 function updateCounter() {
-  const counter = document.getElementById("counter")
-  const textBox = document.getElementById("sugestion-box")
+  const counter = document.getElementById("counter");
+  const textBox = document.getElementById("sugestion-box");
 
-  counter.textContent = `${textBox.value.length}/${textBox.maxLength}`
+  counter.textContent = `${textBox.value.length}/${textBox.maxLength}`;
 }
 
-document.addEventListener("DOMContentLoaded", updateCounter)
+document.addEventListener("DOMContentLoaded", updateCounter);
+
+// for rating range.
+document.addEventListener("input", () => {
+  ratingOutput.textContent = ratingInput.value;
+});

@@ -1,20 +1,40 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <link rel="stylesheet" href="../styles/styles.css">
         <link rel="stylesheet" href="../styles/feedback.style.css">
-        
     </head>
     <body>
         <!--Temporary area till the nav bar is create-->
-        <nav>
-            <h1>uhkhkjhikh</h1>
-        </nav>
-
+        <header>
+            <div class="nav-bar">
+                <div class="logo"><img src="../assets/logo.svg" /></div>
+                <div class="nav-links">
+                    <nav>
+                        <ul>
+                            <li><a href="../home.html">Home</a></li>
+                            <li><a href="team.html">Team</a></li>
+                            <li>
+                                <a href="volunteer.html">Volunteer</a>
+                            </li>
+                            <li><a href="table.html">Table</a></li>
+                            <li><a href="sitemap.html">Sitemap</a></li>
+                            <li><a href="feedback.html">Feedback</a></li>
+                        </ul>
+                    </nav>
+                    <div class="profile">
+                        <a href="pages/profile.html"
+                            ><img src="../assets/profile.png" width="34px"
+                        /></a>
+                    </div>
+                </div>
+            </div>
+        </header>
         <div class="main-cont">
             <h1><span id="main-title">Feedback</span></h1>
             <section class="forum-section">
                 <div class="forum-title">
-                    <h2>"Your </br> Feedback <br> is Matters to <br> Us"</h2>
+                    <h2>"Your </br> Feedback <br>  Matters to <br> Us"</h2>
                 </div>
                     <form id="forum-body">
                         <section class="forum">
@@ -56,6 +76,16 @@
 
                             <div class="occupation">
                                 <label for="occupation-id">occupation</label>
+                                <input list="occupations" name="occupation-id" id="occupation-id" required>
+                                <datalist id="occupations">
+                                    <option value="Teacher">
+                                    <option value="Doctor">
+                                    <option value="Driver">
+                                    <option value="Engineer">
+                                    <option value="Builder">
+                                    <option value="Job1">
+                                    <option value="Job2">
+                                </datalist>
                             </div>
                         </section>
                         <section class="forum">
@@ -86,50 +116,24 @@
                                 <textarea type="text" id="sugestion-box" name="sugestion-box" rows="10" cols="50" placeholder="Type your text here." form="forum-body" maxlength="300" oninput="updateCounter()"></textarea>
                                 <p id="counter">0/300</p>
                             </div>
+                            <div class="date-time">
+                                <label for="submitDate">Subnitted Date</label>
+                                <input type="datetime-local" id="submitDate" name="submitDate" required>
+                            </div>
+                            <div class="resources">
+                                <label for="resSub">Upload Resources</label>
+                                <input type="file" id="resSub" name="resSub">
+                            </div>
                         </section>
                         <section class="forum">
                             <div class="rating">
-                                <label for="rating-label">
+                                <label for="rating">
                                     How satisfied you with our services ? </br>
                                     (Choose from 1 to 10, with 1 being "Not satisfied at All!" and 10 being "Extremly Satisfied.")
                                 </label>
-                                <div class="rating-radio">
-                                    <div class="rating-vert">
-                                        <input type="radio" name="rate" value="1" required>
-                                        <label>1</label>
-                                    </div>
-                                    <div class="rating-vert">
-                                        <input type="radio" name="rate" value="2">
-                                        <label>2</label>
-                                    </div>
-                                    <div class="rating-vert">
-                                        <input type="radio" name="rate" value="3">
-                                        <label>3</label>
-                                    </div>
-                                    <div class="rating-vert">
-                                        <input type="radio" name="rate" value="4">
-                                        <label>4</label>
-                                    </div>
-                                    <div class="rating-vert">
-                                        <input type="radio" name="rate" value="5">
-                                        <label>5</label>
-                                    </div>
-                                    <div class="rating-vert">
-                                        <input type="radio" name="rate" value="6">
-                                        <label>6</label>
-                                    </div>
-                                    <div class="rating-vert">
-                                        <input type="radio" name="rate" value="7">
-                                        <label>7</label>
-                                    </div>
-                                    <div class="rating-vert">
-                                        <input type="radio" name="rate" value="8">
-                                        <label>9</label>
-                                    </div>
-                                    <div class="rating-vert">
-                                        <input type="radio" name="rate" value="10">
-                                        <label>10</label>
-                                    </div>
+                                <div class="rating-container">
+                                    <input type="range" id="rating" name="rating" min="1" max="10" required>
+                                    <output for="rating" id="output"></output>
                                 </div>
                             </div>
                             <div class="radio-btn">
@@ -163,10 +167,10 @@
                         <div class="forum-nav">
                             <div class="arrow">
                                 <button class="arrow left" type="button" onclick="prevStep()">
-                                    <img src="../assests/arrow.left.png" alt="arrow left" id="arrow-left-img">
+                                    <img src="../assets/arrow.left.png" alt="arrow left" id="arrow-left-img">
                                 </button>
                                 <button class="arrow right" type="button" onclick="nextStep()" >
-                                    <img src="../assests/arrow.right.png" alt="arrow right" id="arrow-right-img">
+                                    <img src="../assets/arrow.right.png" alt="arrow right" id="arrow-right-img">
                                 </button>
                             </div>
                             <button type="submit" id="submit-btn" >Send</button>
