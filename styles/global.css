@@ -14,6 +14,11 @@ body {
     font-family: var(--font-family);
 }
 
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
 /* Header Section */
 header {
     background-color: var(--primary-color);
@@ -48,7 +53,6 @@ header {
 
                 a {
                     color: white;
-                    text-decoration: none;
                 }
 
                 a:hover {
@@ -108,7 +112,6 @@ footer {
 
                     svg {
                         margin-right: 14px;
-                        text-decoration: none;
                         opacity: 70%;
                         transition: ease-in 0.2s;
                         fill: white;
@@ -128,7 +131,6 @@ footer {
 
                 a {
                     color: white;
-                    text-decoration: none;
                     opacity: 70%;
                     transition: ease 0.2s;
                 }
