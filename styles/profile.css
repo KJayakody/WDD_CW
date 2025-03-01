@@ -12,7 +12,7 @@ div.container {
     /* margin-bottom: -100px; */
 }
 
-div.profile {
+div.profile-border {
     background-color: #fff;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -70,4 +70,198 @@ div.social-links {
     display: flex;
     justify-content: right;
     margin-top: -100px;
+}
+
+.social-media {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    width: 100%;
+}
+
+.social-icons {
+    margin-right: 14px;
+    text-decoration: none;
+    opacity: 70%;
+    transition: ease-in 0.2s;
+    fill: rgb(0, 0, 0);
+}
+
+.info-about {
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    
+}
+
+.about {
+    width: 60%;
+}
+
+.info {
+    width: 40%;
+}
+
+/* .about-content {
+    display: flex;
+} */
+
+.about-right {
+    margin-left: 50px;
+}
+
+/* .about-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+} */
+
+td {
+    padding: 10px;
+}
+
+table {
+    border-collapse: collapse;
+    border-color: #f0f0f0;
+    width: 100%;
+    border: none;
+}
+
+.vl-1 {
+    border-left: 1px solid;
+    margin-right: 50px;
+    height: 200px;
+}
+
+.skills-section {
+    /* background: #ffffff; */
+    padding: 20px;
+    width: 40%;
+    border-radius: 8px;
+}
+
+.skills-section h2 {
+    margin: 0 0 10px;
+    /* font-size: 18px; */
+}
+
+.skill {
+    margin-bottom: 12px;
+    padding: 5px;
+}
+
+.skill span {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 8px;
+    background: #dcdcdc;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.progress {
+    height: 100%;
+    background: #3399ff;
+    border-radius: 4px;
+}
+
+hr {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.skills-experience {
+    display: flex;
+    justify-content: space-between;
+}
+
+.experience {
+    width: 60%;
+}
+
+img.exp-image {
+    height: 50px;
+    width: 50px;
+}
+
+/* .experience-1, .experience-2, .experience-3 {
+    display: flex;
+    justify-content: space-between;
+} */
+
+.experience-section {
+    /* background: #e6e6e6; */
+    /* padding: 20px; */
+    width: 60%;
+    /* margin-left: 100px; */
+    /* border-radius: 8px; */
+}
+
+/* .experience-section h2 {
+    margin: 0 0 15px;
+    font-size: 18px;
+} */
+
+.experience {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 15px;
+}
+
+.icon {
+    width: 40px;
+    height: 40px;
+    background-image: url(../assets/exp.png);
+    background-size: cover;
+    background-position: center;
+    /* background: #f5f5f5; */
+    border-radius: 8px;
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center;  */
+    margin-right: 20px;
+}
+
+/* .icon i {
+    font-size: 16px;
+    color: #333;
+} */
+
+.details {
+    flex: 1;
+}
+
+.title {
+    font-size: 14px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.date, .location {
+    font-size: 13px;
+    color: #666;
+    margin: 2px 0;
+}
+
+.vl-2 {
+    border-left: 1px solid;
+    margin-right: 50px;
+    height: 310px;
+    margin-left: 50px;
+    
+}
+
+.support-goals h2 {
+    text-align: center;
+}
+
+.goals {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
 }
