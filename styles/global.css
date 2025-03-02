@@ -1,23 +1,27 @@
 :root {
-    --themeColor: #2A25BE;
-    --btnColor: #2563EB;
+    --primary-color: #2A25BE;
+    --secondary-color: #2563EB;
+    --font-family: Arial, Helvetica, sans-serif;
   }
-
 
 html {
     scroll-behavior: smooth;
 }
 
-
 body {
     margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    font-family: var(--font-family);
 }
 
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
 
 /* Header Section */
 header {
-    background-color: var(--themeColor);
+    background-color: var(--primary-color);
     color: white;
     height: 60px;
     display: flex;
@@ -49,7 +53,6 @@ header {
 
                 a {
                     color: white;
-                    text-decoration: none;
                 }
 
                 a:hover {
@@ -67,7 +70,7 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: var(--themeColor);
+    background-color: var(--primary-color);
     color: white;
     height: auto;
 
@@ -109,11 +112,9 @@ footer {
 
                     svg {
                         margin-right: 14px;
-                        text-decoration: none;
                         opacity: 70%;
                         transition: ease-in 0.2s;
                         fill: white;
-
                     }
 
                     svg:hover {
@@ -130,7 +131,6 @@ footer {
 
                 a {
                     color: white;
-                    text-decoration: none;
                     opacity: 70%;
                     transition: ease 0.2s;
                 }
