@@ -1,8 +1,5 @@
 body {
     background-color: #f0f0f0;
-    font-family: 'Roboto', sans-serif;
-    margin: 0;
-    padding: 0;
 }
 
 div.container {
@@ -35,16 +32,19 @@ img.profile-image {
     width: 200px;
 }
 
-div.profile-name {
-    font-size: 18px;
+.profile-name h2 {
+    /* font-family:Verdana, Geneva, Tahoma, sans-serif; */
+    font-size: 24px;
     font-weight: bold;
     margin: -50px 0 20px 0;
     margin-left: 200px;
 }
 
-div.profile-name h3 {
+.profile-name h3 {
+    /* font-family:Verdana, Geneva, Tahoma, sans-serif; */
     margin-top: -15px;
-    font-size: 15px;
+    font-size: 16px;
+    margin-left: 200px;
 }
 
 /* img.twitter {
@@ -65,18 +65,19 @@ div.profile-name h3 {
     width: 30px;
 } */
 
-div.social-links {
-    /* margin-top: 20px; */
+/* div.social-links {
+    margin-top: 20px;
     display: flex;
     justify-content: right;
     margin-top: -100px;
-}
+} */
 
-.social-media {
+.social-media-top {
     display: flex;
     justify-content: right;
     align-items: center;
     width: 100%;
+    margin-top: -50px;
 }
 
 .social-icons {
@@ -85,6 +86,11 @@ div.social-links {
     opacity: 70%;
     transition: ease-in 0.2s;
     fill: rgb(0, 0, 0);
+}
+
+.social-icons:hover {
+    fill: #3399ff;
+    opacity: 100%;
 }
 
 
@@ -194,20 +200,6 @@ hr {
 
 /* Experience Section */
 
-.experience {
-    width: 60%;
-}
-
-img.exp-image {
-    height: 50px;
-    width: 50px;
-}
-
-/* .experience-1, .experience-2, .experience-3 {
-    display: flex;
-    justify-content: space-between;
-} */
-
 .experience-section {
     /* background: #e6e6e6; */
     /* padding: 20px; */
@@ -217,10 +209,14 @@ img.exp-image {
     /* border-radius: 8px; */
 }
 
-/* .experience-section h2 {
-    margin: 0 0 15px;
-    font-size: 18px;
-} */
+.experience {
+    width: 100%;
+}
+
+img.exp-image {
+    height: 50px;
+    width: 50px;
+}
 
 .experience {
     display: flex;
