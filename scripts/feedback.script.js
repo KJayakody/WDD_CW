@@ -13,9 +13,7 @@ const dropBtn = document.getElementById("dropbtn");
 const dropContent = document.getElementById("dropContent");
 const ratingInput = document.getElementById("rating");
 const ratingOutput = document.getElementById("output");
-
 let currentStep = 0;
-
 const selections = document.querySelectorAll(".forum");
 console.log(selections);
 console.log("hello world");
@@ -26,6 +24,20 @@ function showStep(step) {
   });
 }
 
+function validateStep() {
+  console.log("validating step");
+  const currentStep = selections[currentStep];
+  const inputs = currentStep.querySelectorAll("input, textarea");
+  console.log(inputs);
+  for (let i in inputs) {
+    if (!i.checkValidity()) {
+      i.reportValidity();
+      return false;
+    }
+  }
+  return true;
+}
+
 if (currentStep === 1) {
   console.log("image changing");
   rightArrowBtn.disabled = true;
@@ -34,8 +46,10 @@ if (currentStep === 1) {
 
 function nextStep() {
   if (currentStep < selections.length - 1) {
-    currentStep++;
-    showStep(currentStep);
+    if (validateStep(currentStep)) {
+      currentStep++;
+      showStep(currentStep);
+    }
   }
   if (currentStep === selections.length - 1) {
     rightArrowBtn.disabled = true;

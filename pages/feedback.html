@@ -48,9 +48,9 @@
                                     <input type="text" id="lname" name="lname" placeholder="Doe" required>
                                 </div>
                             </div>
-                            <div class="email">
+                            <div class="email" >
                                 <label for="email">Email</label>
-                                <input type="email" id="email" name="email" placeholder="abcd@example.com" required>
+                                <input type="email" id="email" name="email" placeholder="abcd@example.com" title="Email must have '@' and Domain" required>
                             </div>
                             <div class="contact">
                                 <label for="contact">Contact no.</label>
@@ -132,7 +132,7 @@
                                     (Choose from 1 to 10, with 1 being "Not satisfied at All!" and 10 being "Extremly Satisfied.")
                                 </label>
                                 <div class="rating-container">
-                                    <input type="range" id="rating" name="rating" min="1" max="10" required>
+                                    <input type="range" class="rating-slider" id="rating" name="rating" min="1" max="10" required>
                                     <output for="rating" id="output"></output>
                                 </div>
                             </div>

@@ -298,6 +298,11 @@ textarea:focus {
     align-items: center;
     width: 50%;
 }
+
+.rating-slider {
+    cursor: pointer;
+}
+
 #output {
     color: white;
     font-size: 20px;
