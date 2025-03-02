@@ -1,6 +1,5 @@
 body {
     font-family: Arial, sans-serif;
-    
     height: 100%;
     /* width: 100%; */
     /* background-color: #f4ebff; */
@@ -26,6 +25,7 @@ svg {
 .node {
     /* fill: white; */
     fill: url(#gradient1);
+    transition: fill 0.2s;
     stroke: #4c9dbd;
     stroke-width: 2;
     cursor: pointer;
@@ -34,6 +34,7 @@ svg {
 
 .node:hover {
     fill: #4c9dbd;
+    transition: 0.3s;
     stroke: rgb(255, 255, 255);
 }
 
@@ -48,6 +49,7 @@ svg {
 
 .sub_node:hover {
     fill: #4c9dbd;
+    transition: 0.3s;
     /* stroke: rgb(0, 0, 0); */
 }
 

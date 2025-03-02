@@ -2,30 +2,29 @@ body {
     background-color: #f0f0f0;
 }
 
-div.container {
+.container {
     width: 90%;
     margin: 0 auto;
     padding: 0;
-    /* margin-bottom: -100px; */
 }
 
-div.profile-border {
+.profile-section {
     background-color: #fff;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin: 20px 0;
+    margin: 20px 0 40px 0;
     padding: 20px;
     display: flex;
     flex-direction: column;
 }
 
-img.cover-image {
+.cover-image {
     border-radius: 5px;
     height: 300px;
     width: 100%;
 }
 
-img.profile-image {
+.main-profile-image {
     border-radius: 50%;
     height: 200px;
     margin: -100px 0 20px 20px;
@@ -46,31 +45,6 @@ img.profile-image {
     font-size: 16px;
     margin-left: 200px;
 }
-
-/* img.twitter {
-    height: 30px;
-    margin-right: 10px;
-    width: 30px;
-} */
-
-/* img.instagram {
-    height: 30px;
-    margin-right: 10px;
-    width: 30px;
-} */
-
-/* img.linkedin {
-    height: 30px;
-    margin-right: 10px;
-    width: 30px;
-} */
-
-/* div.social-links {
-    margin-top: 20px;
-    display: flex;
-    justify-content: right;
-    margin-top: -100px;
-} */
 
 .social-media-top {
     display: flex;
@@ -226,6 +200,7 @@ img.exp-image {
 
 .exp-links {
     color: black;
+    transition: ease-in 0.2s;
 }
 
 .exp-links:hover {
@@ -310,6 +285,7 @@ h2 {
     border-radius: 8px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     text-align: center;
+    transition: ease-in 0.2s;
 }
 
 .goal-card img {
@@ -437,6 +413,7 @@ button {
 
 .days span {
     background: #eee;
+    transition: ease-in 0.2s;
 }
 
 .days span:hover {
@@ -485,6 +462,7 @@ button {
     font-size: 18px;
     /* align-items: center; */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: ease-in 0.2s;
 }
 .contact-btn:hover {
     background-color: #3399ff;
@@ -581,110 +559,16 @@ button {
 .social-icons-contact {
     margin-top: 120px;
 }
-.social-icons-contact .social-icons:hover {
+.social-icons-modal {
+    margin-right: 14px;
+    text-decoration: none;
+    opacity: 70%;
+    transition: ease-in 0.2s;
+    fill: rgb(0, 0, 0);
+}
+.social-icons-modal:hover {
     transform: scale(1.1);
     transition: 0.3s;
     cursor: pointer;
+    opacity: 100%;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* .contact-container {
-    display: flex;
-    width: 900px;
-    background: white;
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
-}
-
-.contact-info {
-    width: 40%;
-    background: #007bff;
-    color: white;
-    padding: 30px;
-}
-
-.contact-info h2 {
-    margin-bottom: 10px;
-}
-
-.contact-info .info p {
-    margin: 10px 0;
-}
-
-.social-icons {
-    margin-top: 20px;
-}
-
-.social-icons a {
-    display: inline-block;
-    margin-right: 10px;
-    font-size: 20px;
-    text-decoration: none;
-    color: white;
-}
-
-.contact-form {
-    width: 60%;
-    padding: 30px;
-}
-
-.form-group {
-    display: flex;
-    justify-content: space-between;
-}
-
-.input-box {
-    width: 48%;
-    margin-bottom: 15px;
-}
-
-label {
-    display: block;
-    font-size: 14px;
-    margin-bottom: 5px;
-}
-
-input, textarea {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-textarea {
-    height: 80px;
-    resize: none;
-}
-
-button {
-    background: #007bff;
-    color: white;
-    border: none;
-    padding: 12px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    width: 100%;
-    font-size: 16px;
-}
-
-button:hover {
-    background: #0056b3;
-} */
-
