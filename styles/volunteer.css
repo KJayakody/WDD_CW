@@ -14,7 +14,7 @@ body {
   font-size: 50px;
   /* text-align: top; */
   /* font-weight: bold; */
-  color: #3c39a3;
+  color: #2A25BE;
   margin-bottom: 10px;
   text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
 }
@@ -22,7 +22,7 @@ body {
 .programs {
   text-align: center;
   padding: 30px;
-  background-color: #3c39a3;
+  background-color: #2A25BE;
   color: white;
 }
 
@@ -69,15 +69,15 @@ body {
 
 .review_title {
   font-size: 40px;
-  background-color: #3c39a3;
+  background-color: #2A25BE;
   opacity: 0.5;
   color: #ffffff;
   margin-bottom: 10px;
 }
 
 .review_summery {
-  background-color: rgba(60, 57, 163, 0.5); /* 50% transparent background */
-  color: #3c39a3; /* Fully opaque text */
+  background-color: rgba(42, 37, 190, 0.5); /* 50% transparent background */
+  color: #2A25BE; /* Fully opaque text */
   padding: 20px;
   width: 400px;
   border-radius: 10px;
@@ -90,7 +90,7 @@ body {
 }
 
 .review {
-  background-color: rgba(60, 57, 163, 0.5); /* 50% transparent background */
+  background-color: rgba(42, 37, 190, 0.5); /* 50% transparent background */
   color: #000000; /* Fully opaque text */
   padding: 20px;
   width: 300px;
