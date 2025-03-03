@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Interactive Sitemap</title>
+    <script src="../scripts/sitemap.js"></script>
     <link rel="stylesheet" href="../styles/global.css">
     <link rel="stylesheet" href="../styles/sitemap.css">
 </head>
@@ -321,34 +322,5 @@
             <p>&copy; 2024 OceanGuard. All rights reserved.</p>
         </div>
     </footer>
-
-    <script>
-        function navigate(page) {
-            window.location.href = page;
-        }
-
-        function handleKeyPress(event, page) {
-            if (event.key === "Enter" || event.key === " ") {
-                navigate(page);
-            }
-        }
-
-        document.addEventListener("keydown", function(event) {
-            let focusableNodes = document.querySelectorAll(".node, .sub_node");
-            let currentIndex = Array.from(focusableNodes).indexOf(document.activeElement);
-
-            if (event.key === "ArrowDown") {
-                event.preventDefault();
-                let nextIndex = (currentIndex + 1) % focusableNodes.length;
-                focusableNodes[nextIndex].focus();
-            }
-            
-            if (event.key === "ArrowUp") {
-                event.preventDefault();
-                let prevIndex = (currentIndex - 1 + focusableNodes.length) % focusableNodes.length;
-                focusableNodes[prevIndex].focus();
-            }
-        });
-    </script>
 </body>
 </html>
