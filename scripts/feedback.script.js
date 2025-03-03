@@ -1,3 +1,11 @@
+/**
+ * ToDo
+ * Remove commented lines after checking.
+ * Uncomment Validagtion in nexStep() [prod]
+ *
+ * **/
+
+
 const sugest = document.getElementById("sugestionId");
 const sugestBox = document.getElementById("sugestion-box");
 const yesRadio = document.getElementById("yes-radio");
@@ -13,8 +21,8 @@ const dropBtn = document.getElementById("dropbtn");
 const dropContent = document.getElementById("dropContent");
 const ratingInput = document.getElementById("rating");
 const ratingOutput = document.getElementById("output");
-let currentStep = 0;
 const selections = document.querySelectorAll(".forum");
+var currentStep = 0;
 console.log(selections);
 console.log("hello world");
 
@@ -26,12 +34,12 @@ function showStep(step) {
 
 function validateStep() {
   console.log("validating step");
-  const currentStep = selections[currentStep];
-  const inputs = currentStep.querySelectorAll("input, textarea");
+  const currentSection = selections[currentStep];
+  const inputs = currentSection.querySelectorAll("input, textarea");
   console.log(inputs);
-  for (let i in inputs) {
-    if (!i.checkValidity()) {
-      i.reportValidity();
+  for (let i = 0; i < inputs.length; i++) {
+    if (!inputs[i].checkValidity()) {
+      inputs[i].reportValidity();
       return false;
     }
   }
@@ -46,10 +54,12 @@ if (currentStep === 1) {
 
 function nextStep() {
   if (currentStep < selections.length - 1) {
-    if (validateStep(currentStep)) {
+    /*if (validateStep(currentStep)) {
       currentStep++;
       showStep(currentStep);
-    }
+    }*/
+    currentStep++
+    showStep(currentStep)
   }
   if (currentStep === selections.length - 1) {
     rightArrowBtn.disabled = true;
@@ -89,7 +99,7 @@ function downloadJson(data, filename) {
   a.href = URL.createObjectURL(blob);
   a.download = filename;
   a.click();
-  document.body.removeChild(a);
+  // document.body.removeChild(a);
 }
 
 document

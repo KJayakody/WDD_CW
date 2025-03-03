@@ -1,3 +1,11 @@
+<!--ToDo
+    * Delete commented lines after checking.
+    * check datetime field working correctly.
+    * Customize validation error messages.
+    * Use fieldset/ legend tags
+-->
+
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -54,7 +62,7 @@
                             </div>
                             <div class="contact">
                                 <label for="contact">Contact no.</label>
-                                <input type="contact" id="contact" name="contact" placeholder="0123456789 " >
+                                <input type="tel" id="contact" name="contact" pattern="^0\d{9}$" placeholder="0123456789 " required>
                             </div>
                             <!-- <div class="address-line1">
                                 <label for="address-line1">Address line 1</label>
@@ -117,8 +125,8 @@
                                 <p id="counter">0/300</p>
                             </div>
                             <div class="date-time">
-                                <label for="submitDate">Subnitted Date</label>
-                                <input type="datetime-local" id="submitDate" name="submitDate" required>
+                                <label for="submitDate">Submitted Date</label>
+                                <input type="datetime-local" id="submitDate" name="submitDate">
                             </div>
                             <div class="resources">
                                 <label for="resSub">Upload Resources</label>

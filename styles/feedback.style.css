@@ -1,3 +1,10 @@
+/**ToDo
+ * Delete commented lines after checking [prod]
+ * Study the mentined lines.
+ * The calender icon of datetime is in blcak in edge.
+ * */
+
+
 /*Background*/
 .main-cont {
     background-image: url("../assets/feedback.bg.png");
@@ -172,6 +179,7 @@
     width: 50%;
 }
 
+
 textarea:focus {
     border-color: cyan;
     box-shadow: 0 0 5px rgba(0, 255, 255, 0.6);
@@ -265,7 +273,6 @@ textarea:focus {
     color: #e0e0e0;
     font-size: medium;
     display: inline-block;
-    width: 10%;
 }
 
 #submit-btn:hover:enabled {
@@ -303,6 +310,17 @@ textarea:focus {
     cursor: pointer;
 }
 
+.rating-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 23px;
+  height: 24px;
+  border: 0;
+  background: url('../assets/rating.slider.png');
+  size: containe;
+  cursor: pointer;
+}
+
 #output {
     color: white;
     font-size: 20px;
@@ -334,4 +352,8 @@ input[type="radio"]:hover {
 
 .show {
     display: block;
+}
+
+#dropdown {
+    height: 5vh;
 }
