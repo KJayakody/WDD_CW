@@ -153,7 +153,9 @@
 .address-line3,
 .occupation,
 .date-time,
-.resources {
+.resources,
+.updates,
+.update-check {
     margin-bottom: 10px;
     width: 80%;
     display: inline-flex;
@@ -174,7 +176,7 @@
     border-radius: 5px;
     margin: 2% 0 0 0;
     background-color: unset;
-    color: rgba(255, 255, 255, 0.6);
+    color: white;
     font-style: italic;
     width: 50%;
 }
@@ -357,3 +359,33 @@ input[type="radio"]:hover {
 #dropdown {
     height: 5vh;
 }
+
+/* Check Box - trying grid layout */
+.update-check {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 8px;
+}
+
+.update-check input {
+    width: fit-content;
+}
+
+.checkbox-label {
+    grid-column: span 3 / span 3;
+}
+
+.checkbox-cont1 {
+    grid-row-start: 2;
+}
+
+.checkbox-cont2 {
+    grid-row-start: 2;
+}
+
+.checkbox-cont3 {
+    grid-row-start: 2;
+}
+
+
