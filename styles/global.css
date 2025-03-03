@@ -100,7 +100,7 @@ footer {
                 list-style: none;
                 padding: 0;
 
-                #title-head {
+                .title-head {
                     font-size: 15px;
                 }
 
