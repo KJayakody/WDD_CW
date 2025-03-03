@@ -2,6 +2,10 @@ function navigate(page) {
     window.location.href = page;
 }
 
+function navigateNewTab(page) {
+    window.open(page, "_blank");
+}
+
 function handleKeyPress(event, page) {
     if (event.key === "Enter" || event.key === " ") {
         navigate(page);
