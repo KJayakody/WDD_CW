@@ -137,10 +137,8 @@
 .contact,
 .occupation,
 .date-time,
-.resources,
-.updates,
-.update-check {
-    margin-bottom: 15px;
+.resources {
+    margin-bottom: 10px;
     width: 80%;
     display: inline-flex;
     flex-direction: row;
