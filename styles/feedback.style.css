@@ -1,5 +1,4 @@
 /**ToDo
- * Delete commented lines after checking [prod]
  * Study the mentined lines.
  * The calender icon of datetime is in blcak in edge.
  * */
@@ -17,18 +16,6 @@
     align-items: center;
 }
 
-/* .main-cont #main-title {
-  all: unset;
-  color: #0f0a8d;
-  text-align: center;
-  font-feature-settings: "liga" off, "clig" off;
-  font-family: Roboto;
-  font-size: 70px;
-  font-style: normal;
-  font-weight: 800;
-  line-height: 24px;
-  letter-spacing: 0.15px;
-} */
 
 #main-title {
     position: absolute;
@@ -111,7 +98,7 @@
     color: white;
     outline: none;
     width: 100%;
-    max-width: 250px;
+    max-width: 350px;
 }
 .forum input::placeholder {
     color: rgba(255, 255, 255, 0.6);
@@ -148,15 +135,12 @@
 
 .email,
 .contact,
-.address-line1,
-.address-line2,
-.address-line3,
 .occupation,
 .date-time,
 .resources,
 .updates,
 .update-check {
-    margin-bottom: 10px;
+    margin-bottom: 15px;
     width: 80%;
     display: inline-flex;
     flex-direction: row;
@@ -174,11 +158,12 @@
 #address-box {
     border: 2px solid white;
     border-radius: 5px;
-    margin: 2% 0 0 0;
     background-color: unset;
     color: white;
     font-style: italic;
-    width: 50%;
+    width: 100%;
+    max-width: 380px;
+    margin-bottom: 15px;
 }
 
 

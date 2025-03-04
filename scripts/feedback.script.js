@@ -1,7 +1,7 @@
 /**
  * ToDo
- * Remove commented lines after checking.
  * Uncomment Validagtion in nexStep() [prod]
+ * Try to hide the submit button until form filled.
  *
  * **/
 
@@ -54,10 +54,10 @@ if (currentStep === 1) {
 
 function nextStep() {
   if (currentStep < selections.length - 1) {
-    /*if (validateStep(currentStep)) {
+    if (validateStep(currentStep)) {
       currentStep++;
       showStep(currentStep);
-    }*/
+    }
     currentStep++
     showStep(currentStep)
   }
@@ -82,14 +82,6 @@ function prevStep() {
   rightArrowImg.src = "../assets/arrow.right.png";
 }
 
-// form.addEventListener("input", () => {
-//   console.log("jnbjnl");
-//   if (form.checkValidity()) {
-//     submitBtn.disabled = false;
-//   } else {
-//     submitBtn.disabled = true;
-//   }
-// });
 
 // check this
 function downloadJson(data, filename) {
@@ -126,15 +118,6 @@ yesRadio.addEventListener("change", () => {
     sugest.style.display = "none";
   }
 });
-
-// form.addEventListener("input", () => {
-//   console.log("jnbjnl");
-//   if (form.checkValidity()) {
-//     submitBtn.disabled = false;
-//   } else {
-//     submitBtn.disabled = true;
-//   }
-// });
 
 // Function for dropdown
 function dropDownFunc() {
