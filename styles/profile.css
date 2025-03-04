@@ -19,6 +19,8 @@ body {
     justify-content: center;
     flex-direction: column;
     width: 90%;
+    position: relative;
+    top: 20px;
 }
 
 .cover-image {
@@ -38,15 +40,15 @@ body {
     /* font-family:Verdana, Geneva, Tahoma, sans-serif; */
     font-size: 24px;
     font-weight: bold;
-    margin: -50px 0 20px 0;
-    margin-left: 200px;
+    margin: -90px 0 20px 0;
+    margin-left: 230px;
 }
 
 .profile-name h3 {
     /* font-family:Verdana, Geneva, Tahoma, sans-serif; */
     margin-top: -15px;
     font-size: 16px;
-    margin-left: 200px;
+    margin-left: 230px;
 }
 
 .social-media-top {
@@ -82,7 +84,7 @@ body {
 
 .info-section {
     width: 40%;
-    margin-left: 30px;
+    margin-left: 40px;
 }
 
 /* .about-content {
@@ -122,7 +124,11 @@ table {
 .about-section {
     width: 60%;
     margin-left: 30px;
-    margin-right: 20px;
+    margin-right: 60px;
+}
+
+.about-section p {
+    text-align: justify;
 }
 
 
@@ -136,13 +142,14 @@ table {
 }
 
 .skills-section h2 {
-    margin: 0 0 10px;
+    margin: 0 0 10px 30px;
     /* font-size: 18px; */
 }
 
 .skill {
     margin-bottom: 12px;
     padding: 5px;
+    margin-left: 30px;
 }
 
 .skill span {

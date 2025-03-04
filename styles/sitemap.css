@@ -40,11 +40,13 @@ svg {
 
 .sub_node {
     /* fill: white; */
-    fill: url(#gradient1);
+    /* fill: url(#gradient1); */
+    fill: transparent;
     stroke: #4c9dbd;
     stroke-width: 2;
     cursor: pointer;
     transition: fill 0.3s;
+    /* color: white; */
 }
 
 .sub_node:hover {
@@ -59,7 +61,7 @@ text {
     dominant-baseline: middle;
     fill: #333;
     pointer-events: none; */
-    fill: black;
+    /* fill: black; */
     font-size: 12px;
     font-weight: bold;
     text-anchor: middle;
@@ -76,6 +78,8 @@ text {
 
 .sub_text {
     font-size: 8px;
+    fill: white;
+    /* color: white; */
 }
 
 .background {
