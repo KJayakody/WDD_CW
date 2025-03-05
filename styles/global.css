@@ -106,23 +106,54 @@ footer {
           font-size: 15px;
         }
 
-        .social-media {
-          display: flex;
-          justify-content: space-between;
-          align-items: center;
-          width: 100%;
+        .quick-links, .resources, .follow-us {
+            margin: 0;
+            ul {
+                margin: 0px;
+                list-style: none;
+                padding: 0;
 
-          svg {
-            margin-right: 14px;
-            opacity: 70%;
-            transition: ease-in 0.2s;
-            fill: white;
-          }
+                .title-head {
+                    font-size: 15px;
+                }
 
-          svg:hover {
-            fill: #ffd700;
-            opacity: 100%;
-          }
+                .social-media {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    width: 100%;
+
+                    svg {
+                        margin-right: 14px;
+                        opacity: 70%;
+                        transition: ease-in 0.2s;
+                        fill: white;
+                    }
+
+                    svg:hover {
+                        fill: #FFD700;
+                        opacity: 100%;
+                    }
+                }
+
+                li {
+                    margin-bottom: 14px;
+                    font-size: 14px;
+                    font-weight: normal;
+                }
+
+                a {
+                    color: white;
+                    opacity: 70%;
+                    transition: ease 0.2s;
+                }
+
+                a:hover {
+                    opacity: 100%;
+                    color: #FFD700;
+                }
+            }
+
         }
 
         li {
