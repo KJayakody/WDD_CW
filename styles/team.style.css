@@ -1,13 +1,38 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: url(../assets/team.bg.jpg);
+    background-repeat: no-repeat;
+    width: fit-content;
+    background-position: center;
+    background-size: cover;
+}
+
+.title-cont {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 #title {
     text-align: center;
     font-size: 6em;
-    color: #1d3c4e;
-    text-align: center;
     font-family: Karma;
     font-style: normal;
-    font-weight: 700;
     line-height: 125.2%; /* 50.08px */
     letter-spacing: 10px;
+    font-weight: 900;
+    color: #fff5f5;
+    text-shadow: 3px 3px 6px rgba(255, 242, 242, 0.6);
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px 20px;
+    display: inline-block;
+    border-radius: 8px;
+    background: linear-gradient(to right, #847272, #fff);
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-stroke: 2px black;
+    -webkit-text-stroke: 2px #000;
 }
 
 .card-container {
@@ -18,7 +43,7 @@
     flex-wrap: wrap;
     gap: 10px;
     position: relative;
-    background-color: rgba(114, 116, 251, 0.75);
+    /* background-color: rgba(48, 48, 64, 0.84); */
     padding-top: 30px;
     padding-bottom: 30px;
     margin-bottom: 30px;
@@ -56,7 +81,7 @@
     z-index: 10;
 }
 
-.card-container:has(.card.selected){
+.card-container:has(.card.selected) {
     padding-top: 50px;
     padding-bottom: 50px;
 }
@@ -74,7 +99,7 @@
 }
 
 .card .card-data p {
-    color: #607D8B;
+    color: #607d8b;
 }
 /* .card-container .card:not(.selected) {
     opacity: 0.5;
@@ -136,13 +161,27 @@
     max-width: 80%;
     margin: auto;
     margin-bottom: 30px;
+    background-color: #eaeaeac2;
+    padding: 2rem;
+    border: 10px solid transparent;
+    -webkit-mask-image: radial-gradient(
+        circle,
+        rgba(0, 0, 0, 1) 50%,
+        rgba(0, 0, 0, 0) 100%
+    );
+    mask-image: radial-gradient(
+        circle,
+        rgba(0, 0, 0, 1) 50%,
+        rgba(0, 0, 0, 0) 100%
+    );
 }
 
 .team-blog h2 {
     grid-column: span 2;
     text-align: center;
-    color: #2a0db9;
+    color: #000;
     font-weight: bold;
+    font-size: 2rem;
 }
 
 .team-blog p {
