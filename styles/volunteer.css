@@ -14,7 +14,7 @@ body {
   font-size: 50px;
   /* text-align: top; */
   /* font-weight: bold; */
-  color: #2A25BE;
+  color: #2a25be;
   margin-bottom: 10px;
   text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
 }
@@ -22,7 +22,7 @@ body {
 .programs {
   text-align: center;
   padding: 30px;
-  background-color: #2A25BE;
+  background-color: #004a68;
   color: white;
 }
 
@@ -69,15 +69,14 @@ body {
 
 .review_title {
   font-size: 40px;
-  background-color: #2A25BE;
-  opacity: 0.5;
+  background-color: rgba(0, 150, 211, 0.5);
   color: #ffffff;
   margin-bottom: 10px;
 }
 
 .review_summery {
-  background-color: rgba(42, 37, 190, 0.5); /* 50% transparent background */
-  color: #2A25BE; /* Fully opaque text */
+  background-color: rgba(0, 150, 211, 0.5);
+  color: #2a25be;
   padding: 20px;
   width: 400px;
   border-radius: 10px;
@@ -90,7 +89,7 @@ body {
 }
 
 .review {
-  background-color: rgba(42, 37, 190, 0.5); /* 50% transparent background */
+  background-color: rgba(0, 150, 211, 0.5);
   color: #000000; /* Fully opaque text */
   padding: 20px;
   width: 300px;
@@ -109,7 +108,7 @@ body {
 } */
 
 .send_review {
-  background-color: rgba(60, 57, 163, 0.5);
+  background-color: rgba(0, 150, 211, 0.5);
   text-align: center;
   padding: 30px;
 }
@@ -140,7 +139,7 @@ body {
 }
 
 button {
-  background-color: #ffd700;
+  background-color: #0096d3;
   color: white;
   border: none;
   padding: 10px 20px;
@@ -149,5 +148,11 @@ button {
 }
 
 button:hover {
-  background-color: #9a8301;
+  background-color: #014a67;
+}
+
+.submit-button {
+  width: 40%;
+  border-radius: 20px;
+  margin: 20px;
 }

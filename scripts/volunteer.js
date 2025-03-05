@@ -9,10 +9,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
         cards.forEach(card => {
             let programName = card.querySelector("h3").textContent.toLowerCase();
-            let cardCategory = card.getAttribute("data-category");
+            let cardCategories = card.getAttribute("data-category").toLowerCase().split(" ");
 
             let matchesSearch = programName.includes(searchValue);
-            let matchesCategory = selectedCategory === "all" || cardCategory === selectedCategory;
+            let matchesCategory = selectedCategory === "all" || cardCategories.includes(selectedCategory);
 
             if (matchesSearch && matchesCategory) {
                 card.style.display = "block";
