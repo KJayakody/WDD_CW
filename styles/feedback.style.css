@@ -3,7 +3,6 @@
  * The calender icon of datetime is in blcak in edge.
  * */
 
-
 /*Background*/
 .main-cont {
     background-image: url("../assets/feedback.bg.png");
@@ -15,7 +14,6 @@
     justify-content: center;
     align-items: center;
 }
-
 
 #main-title {
     position: absolute;
@@ -137,10 +135,8 @@
 .contact,
 .occupation,
 .date-time,
-.resources,
-.updates,
-.update-check {
-    margin-bottom: 15px;
+.resources {
+    margin-bottom: 10px;
     width: 80%;
     display: inline-flex;
     flex-direction: row;
@@ -159,13 +155,12 @@
     border: 2px solid white;
     border-radius: 5px;
     background-color: unset;
-    color: white;
+    color: rgba(255, 255, 255, 0.6);
     font-style: italic;
     width: 100%;
     max-width: 380px;
     margin-bottom: 15px;
 }
-
 
 textarea:focus {
     border-color: cyan;
@@ -260,6 +255,7 @@ textarea:focus {
     color: #e0e0e0;
     font-size: medium;
     display: inline-block;
+    width: 100px;
 }
 
 #submit-btn:hover:enabled {
@@ -298,14 +294,14 @@ textarea:focus {
 }
 
 .rating-slider::-webkit-slider-thumb {
-  -webkit-appearance: none;
-  appearance: none;
-  width: 23px;
-  height: 24px;
-  border: 0;
-  background: url('../assets/rating.slider.png');
-  size: containe;
-  cursor: pointer;
+    -webkit-appearance: none;
+    appearance: none;
+    width: 23px;
+    height: 24px;
+    border: 0;
+    background: url("../assets/rating.slider.png");
+    size: containe;
+    cursor: pointer;
 }
 
 #output {
@@ -372,5 +368,3 @@ input[type="radio"]:hover {
 .checkbox-cont3 {
     grid-row-start: 2;
 }
-
-
