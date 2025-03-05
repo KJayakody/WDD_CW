@@ -5,7 +5,6 @@
  *
  * **/
 
-
 const sugest = document.getElementById("sugestionId");
 const sugestBox = document.getElementById("sugestion-box");
 const yesRadio = document.getElementById("yes-radio");
@@ -54,19 +53,25 @@ if (currentStep === 1) {
 
 function nextStep() {
   if (currentStep < selections.length - 1) {
-    if (validateStep(currentStep)) {
+    if (validateStep()) {
       currentStep++;
       showStep(currentStep);
     }
-    currentStep++
-    showStep(currentStep)
   }
+
   if (currentStep === selections.length - 1) {
     rightArrowBtn.disabled = true;
     rightArrowImg.src = "../assets/arrow.right.disabled.png";
+  } else {
+    rightArrowBtn.disabled = false;
+    rightArrowImg.src = "../assets/arrow.right.png";
   }
-  leftArrowBtn.disabled = false;
-  leftArrowImg.src = "../assets/arrow.left.png";
+
+  leftArrowBtn.disabled = currentStep === 0;
+  leftArrowImg.src =
+    currentStep === 0
+      ? "../assets/arrow.left.disabled.png"
+      : "../assets/arrow.left.png";
 }
 
 function prevStep() {
@@ -81,7 +86,6 @@ function prevStep() {
   rightArrowBtn.disabled = false;
   rightArrowImg.src = "../assets/arrow.right.png";
 }
-
 
 // check this
 function downloadJson(data, filename) {
