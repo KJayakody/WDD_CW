@@ -49,42 +49,41 @@
                         <section class="forum">
                             <fieldset>
                                 <legend>Personal Information</legend>
-                                <div class="name">
-                                    <div class="name-group">
-                                        <label for="fname">First Name</label>
-                                        <input type="text" id="fname" name="fname" placeholder="John" required>
+                                    <div class="name">
+                                        <div class="name-group">
+                                            <label for="fname">First Name</label>
+                                            <input type="text" id="fname" name="fname" placeholder="John" required>
+                                        </div>
+                                        <div class="name-group">
+                                            <label for="lname">Last Name</label>
+                                            <input type="text" id="lname" name="lname" placeholder="Doe" required>
+                                        </div>
                                     </div>
-                                    <div class="name-group">
-                                        <label for="lname">Last Name</label>
-                                        <input type="text" id="lname" name="lname" placeholder="Doe" required>
+                                    <div class="email" >
+                                        <label for="email">Email</label>
+                                        <input type="email" id="email" name="email" placeholder="abcd@example.com" title="Email must have '@' and Domain" required>
                                     </div>
-                                </div>
-                                <div class="email" >
-                                    <label for="email">Email</label>
-                                    <input type="email" id="email" name="email" placeholder="abcd@example.com" title="Email must have '@' and Domain" required>
-                                </div>
-                                <div class="contact">
-                                    <label for="contact">Contact no.</label>
-                                    <input type="tel" id="contact" name="contact" pattern="^0\d{9}$" placeholder="0123456789 " required>
-                                </div>
-                                <div class="address">
-                                    <label for="address-box">Address</label>
-                                    <textarea id="address-box" name="address" rows="3" cols="25" placeholder="123, Temple Rd, Colombo." required></textarea>
-                                </div>
-
-                                <div class="occupation">
-                                    <label for="occupation-id">occupation</label>
-                                    <input list="occupations" name="occupation-id" id="occupation-id" required>
-                                    <datalist id="occupations">
-                                        <option value="Teacher">
-                                        <option value="Doctor">
-                                        <option value="Driver">
-                                        <option value="Engineer">
-                                        <option value="Builder">
-                                        <option value="Job1">
-                                        <option value="Job2">
-                                    </datalist>
-                                </div>
+                                    <div class="contact">
+                                        <label for="contact">Contact no.</label>
+                                        <input type="tel" id="contact" name="contact" pattern="^0\d{9}$" placeholder="0123456789 " required>
+                                    </div>
+                                    <div class="address">
+                                        <label for="address-box">Address</label>
+                                        <textarea id="address-box" name="address" rows="3" cols="25" placeholder="123, Temple Rd, Colombo." required></textarea>
+                                    </div>
+                                    <div class="occupation">
+                                        <label for="occupation-id">occupation</label>
+                                        <input list="occupations" name="occupation-id" id="occupation-id" required>
+                                        <datalist id="occupations">
+                                            <option value="Teacher">
+                                            <option value="Doctor">
+                                            <option value="Driver">
+                                            <option value="Engineer">
+                                            <option value="Builder">
+                                            <option value="Job1">
+                                            <option value="Job2">
+                                        </datalist>
+                                    </div>
                             </fieldset>
                         </section>
                         <section class="forum">
@@ -159,6 +158,22 @@
                                         <option value="No">No</option>
                                     </select>
                                 </div>
+                                <div class="update-check">
+                                    <label for="checkBoxes" class="checkbox-label">Select the options you like to get updates about.</label>
+                                    <div class="checkbox-cont1">
+                                        <input type="checkbox" id="checkbox1" name="checkbox1" value="News">
+                                        <label for="checkbox1">News</label>
+                                    </div>
+                                    <div class="checkbox-cont2">
+                                        <input type="checkbox" id="checkbox2" name="checkbox2" value="Events">
+                                        <label for="checkbox2">Events</label>
+                                    </div>
+                                    <div class="checkbox-cont3">
+                                        <input type="checkbox" id="checkbox3" name="checkbox3" value="Fund Rasie">
+                                        <label for="checkbox3">Fund Rasie</label>
+                                    </div>
+                                </div>
+                            </fieldset>
                         </section>
                         <div class="forum-nav">
                             <div class="arrow">
