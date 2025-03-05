@@ -1,0 +1,183 @@
+<!-- TODO:
+    * check datetime field working correctly.(Its not displaying correctly in Edge)
+    * Use fieldset/ legend tags
+    * Validate code
+    * The slider image cant change
+    * Add meta data in header
+    * Add footer
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="../styles/global.css">
+        <link rel="stylesheet" href="../styles/feedback.style.css">
+        <title>Feedback</title>
+    </head>
+    <body>
+        <!--Temporary area till the nav bar is create-->
+        <header>
+            <div class="nav-bar">
+                <div class="logo"><img src="../assets/logo.svg" /></div>
+                <div class="nav-links">
+                    <nav>
+                        <ul>
+                            <li><a href="../pages/home.html">Home</a></li>
+                            <li><a href="../pages/team.html">Team</a></li>
+                            <li>
+                                <a href="../pages/volunteer.html">Volunteer</a>
+                            </li>
+                            <li><a href=".../pages/table.html">Table</a></li>
+                            <li><a href="../pages/sitemap.html">Sitemap</a></li>
+                            <li><a href="../pages/feedback.html">Feedback</a></li>
+                        </ul>
+                    </nav>
+                    <div class="profile">
+                        <a href="../pages/profile.html"
+                            ><img src="../assets/profile.png" width="34px"
+                        /></a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="main-cont">
+            <h1><span id="main-title">Feedback</span></h1>
+            <section class="forum-section">
+                <div class="forum-title">
+                    <h2>"Your </br> Feedback <br>  Matters to <br> Us"</h2>
+                </div>
+                    <form id="forum-body">
+                        <section class="forum">
+                            <fieldset>
+                                <legend>Personal Information</legend>
+                                <div class="name">
+                                    <div class="name-group">
+                                        <label for="fname">First Name</label>
+                                        <input type="text" id="fname" name="fname" placeholder="John" required>
+                                    </div>
+                                    <div class="name-group">
+                                        <label for="lname">Last Name</label>
+                                        <input type="text" id="lname" name="lname" placeholder="Doe" required>
+                                    </div>
+                                </div>
+                                <div class="email" >
+                                    <label for="email">Email</label>
+                                    <input type="email" id="email" name="email" placeholder="abcd@example.com" title="Email must have '@' and Domain" required>
+                                </div>
+                                <div class="contact">
+                                    <label for="contact">Contact no.</label>
+                                    <input type="tel" id="contact" name="contact" pattern="^0\d{9}$" placeholder="0123456789 " required>
+                                </div>
+                                <div class="address">
+                                    <label for="address-box">Address</label>
+                                    <textarea id="address-box" name="address" rows="3" cols="25" placeholder="123, Temple Rd, Colombo." required></textarea>
+                                </div>
+
+                                <div class="occupation">
+                                    <label for="occupation-id">occupation</label>
+                                    <input list="occupations" name="occupation-id" id="occupation-id" required>
+                                    <datalist id="occupations">
+                                        <option value="Teacher">
+                                        <option value="Doctor">
+                                        <option value="Driver">
+                                        <option value="Engineer">
+                                        <option value="Builder">
+                                        <option value="Job1">
+                                        <option value="Job2">
+                                    </datalist>
+                                </div>
+                            </fieldset>
+                        </section>
+                        <section class="forum">
+                            <fieldset>
+                                <legend>Submition-part 1</legend>
+                                <div class="radio-btn">
+                                <label>Is this your first time visiting ?</label>
+                                    <div>
+                                        <input type="radio" name="yesno-1" value="yes"  required>
+                                        <label for="yes-radio">Yes</label>
+                                    </div>
+                                    <div>
+                                        <input type="radio" name="yesno-1" value="no">
+                                        <label for="no-radio">No</label>
+                                    </div>
+                                </div>
+                                <div class="radio-btn">
+                                    <label>Was this web site informative and easy to navigate ?</label>
+                                    <div>
+                                        <input type="radio" name="yesno-2" value="yes" id="yes-radio" required>
+                                        <label for="yes-radio">Yes</label>
+                                    </div>
+                                    <div>
+                                        <input type="radio" name="yesno-2" value="no" id="no-radio">
+                                        <label for="no-radio">No</label>
+                                    </div>
+                                </div>
+                                <div class="sugestion inactive" id="sugestionId">
+                                    <label for="sugestion-box">If "No" Suggest any improvement for future.</label>
+                                    <textarea type="text" id="sugestion-box" name="sugestion-box" rows="10" cols="50" placeholder="Type your text here." form="forum-body" maxlength="300" oninput="updateCounter()"></textarea>
+                                    <p id="counter">0/300</p>
+                                </div>
+                                <div class="date-time">
+                                    <label for="submitDate">Submitted Date</label>
+                                    <input type="datetime-local" id="submitDate" name="submitDate">
+                                </div>
+                                <div class="resources">
+                                    <label for="resSub">Upload Resources</label>
+                                    <input type="file" id="resSub" name="resSub">
+                                </div>
+                            </fieldset>
+                        </section>
+                        <section class="forum">
+                            <fieldset>
+                                <legend>Submition-part 2</legend>
+                                <div class="rating">
+                                    <label for="rating">
+                                        How satisfied you with our services ? </br>
+                                        (Choose from 1 to 10, with 1 being "Not satisfied at All!" and 10 being "Extremly Satisfied.")
+                                    </label>
+                                    <div class="rating-container">
+                                        <input type="range" class="rating-slider" id="rating" name="rating" min="1" max="10" required>
+                                        <output for="rating" id="output"></output>
+                                    </div>
+                                </div>
+                                <div class="radio-btn">
+                                    <label>Would you recommend our services ?</label>
+                                    <div>
+                                        <input type="radio" name="yesno-3" value="yes" required>
+                                        <label>Yes</label>
+                                    </div>
+                                    <div>
+                                        <input type="radio" name="yesno-3" value="yes">
+                                        <label>No</label>
+                                    </div>
+                                </div>
+                                <div class="updates">
+                                    <label for="dropdown">Would you like to recieve updates about the website and any offers ?</label>
+                                    <select name="dropdown" id="dropdown">
+                                        <option value="Yes - Via email">Yes - Via email</option>
+                                        <option value="Yes - Follow on X">Yes - Follow on x</option>
+                                        <option value="No">No</option>
+                                    </select>
+                                </div>
+                        </section>
+                        <div class="forum-nav">
+                            <div class="arrow">
+                                <button class="arrow left" type="button" onclick="prevStep()">
+                                    <img src="../assets/arrow.left.png" alt="arrow left" id="arrow-left-img">
+                                </button>
+                                <button class="arrow right" type="button" onclick="nextStep()" >
+                                    <img src="../assets/arrow.right.png" alt="arrow right" id="arrow-right-img">
+                                </button>
+                            </div>
+                            <button type="submit" id="submit-btn" >Send</button>
+                        </div>
+                    </form>
+            </section>
+        </div>
+
+        <footer>
+            <p>Waiting for footer</footer></p>
+        </footer>
+        <script src="../scripts/feedback.script.js"></script>
+    </body>
+</html>
