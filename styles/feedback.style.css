@@ -148,12 +148,17 @@ fieldset {
 .contact,
 .occupation,
 .date-time,
+.updates,
 .resources {
-    margin-bottom: 10px;
+    margin-bottom: 15px;
     width: 80%;
     display: inline-flex;
     flex-direction: row;
     justify-content: space-between;
+    border-radius: 5px;
+    background-color: unset;
+    color: white;
+    font-style: italic;
 }
 
 .address {
@@ -335,6 +340,7 @@ input[type="radio"]:hover {
     flex-direction: row;
     justify-content: space-between;
     width: 80%;
+    margin-bottom: 15px;
 }
 
 #dropdown-items {
