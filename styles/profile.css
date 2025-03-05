@@ -1,9 +1,11 @@
 body {
-    background-color: #2A25BE;
+    /* background-color: #2A25BE; */
+    background: url(../assets/profile-back.jpg);
+    background-size: cover;
 }
 
 .container {
-    background-color: #f0f0f0;
+    /* background-color: #f0f0f0; */
     width: 85%;
     margin: 0 auto;
     padding: 0;
@@ -85,6 +87,17 @@ body {
 .info-section {
     width: 40%;
     margin-left: 40px;
+    margin-right: 10px;
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 20px;
+    padding:10px 0 10px 20px;
+    transition: ease-in 0.2s;
+}
+
+.info-section:hover {
+    transform: scale(1.05);
+    transition: 0.3s;
+    background: white;
 }
 
 /* .about-content {
@@ -125,6 +138,16 @@ table {
     width: 60%;
     margin-left: 30px;
     margin-right: 60px;
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 20px;
+    padding:10px 20px 0 20px;
+    transition: ease-in 0.2s;
+}
+
+.about-section:hover {
+    transform: scale(1.05);
+    transition: 0.3s;
+    background: white;
 }
 
 .about-section p {
@@ -137,8 +160,19 @@ table {
 .skills-section {
     /* background: #ffffff; */
     padding: 20px;
+    margin-left: 40px;
     width: 40%;
     border-radius: 8px;
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 20px;
+    padding:45px 20px 0 20px;
+    transition: ease-in 0.2s;
+}
+
+.skills-section:hover {
+    transform: scale(1.05);
+    transition: 0.3s;
+    background: white;
 }
 
 .skills-section h2 {
@@ -182,6 +216,9 @@ table {
 hr {
     margin-top: 30px;
     margin-bottom: 30px;
+    background-color: black;
+    height: 1px;
+    border: none;
 }
 
 .skills-experience {
@@ -197,8 +234,19 @@ hr {
     /* padding: 20px; */
     width: 60%;
     margin-left: 30px;
+    margin-right: 60px;
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 20px;
+    padding:10px 20px 0 60px;
     /* margin-left: 100px; */
     /* border-radius: 8px; */
+    transition: ease-in 0.2s;
+}
+
+.experience-section:hover {
+    transform: scale(1.05);
+    transition: 0.3s;
+    background: white;
 }
 
 .experience {
@@ -225,12 +273,14 @@ img.exp-image {
     color: #3399ff;
     text-decoration: none;
     transition: 0.2s;
+    cursor: pointer;
 }
 
 .icon {
-    width: 40px;
-    height: 40px;
-    background-image: url(../assets/exp.png);
+    width: 30px;
+    height: 30px;
+    background-image: url(../assets/briefcase.svg);
+    /* fill: white; */
     background-size: cover;
     background-position: center;
     /* background: #f5f5f5; */
@@ -239,6 +289,7 @@ img.exp-image {
     /* justify-content: center; */
     /* align-items: center;  */
     margin-right: 20px;
+    margin-top: 5px;
 }
 
 .details {
@@ -287,7 +338,7 @@ h2 {
 }
 
 .goal-card {
-    background: white;
+    background: rgba(255, 255, 255, 0.8);
     padding: 20px;
     width: 250px;
     border-radius: 8px;
@@ -329,6 +380,7 @@ h2 {
 .goal-card:hover {
     transform: scale(1.05);
     transition: 0.3s;
+    background: rgba(255, 255, 255);
 }
 
 
@@ -353,6 +405,17 @@ h2 {
 .legend {
     text-align: left;
     margin-right: 50px;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 10px 10px 10px 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: ease-in 0.2s;
+}
+
+.legend:hover {
+    transform: scale(1.05);
+    transition: 0.3s;
+    background: white;
 }
 
 .legend-item {
@@ -360,6 +423,8 @@ h2 {
     align-items: center;
     margin-bottom: 8px;
     font-size: 14px;
+    /* color: white; */
+    
 }
 
 .legend-item span {
@@ -462,8 +527,9 @@ button {
 }
 
 .contact-btn {
-    background-color: #225ecc;
-    color: white;
+    background-color: #caecff;
+    color: rgb(0, 0, 0);
+    /* font-weight: bold; */
     /* padding: 8px 10px; */
     padding: 8px 14px;
     border: none;
