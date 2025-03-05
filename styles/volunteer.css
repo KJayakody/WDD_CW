@@ -12,10 +12,11 @@ body {
 
 .title {
   font-size: 50px;
+  font-family: "Times New Roman", Times, serif;
   /* text-align: top; */
   /* font-weight: bold; */
   color: #2a25be;
-  margin-bottom: 10px;
+  margin-bottom: 25px;
   text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
 }
 
@@ -24,6 +25,8 @@ body {
   padding: 30px;
   background-color: #004a68;
   color: white;
+  margin: 20px;
+  border-radius: 20px;
 }
 
 .filter-container {
@@ -56,6 +59,14 @@ body {
   color: black;
 }
 
+.card:hover {
+  border: solid #2e91f3;
+  background-color: #2e91f3;
+  color: #ffffff;
+  transition: ease-in 0.3s;
+  cursor: pointer;
+}
+
 .card img {
   width: 100%;
   border-radius: 10px;
@@ -63,7 +74,7 @@ body {
 
 .reviews {
   background-color: white;
-  color: D6F1F2;
+  color: #d6f1f2;
   padding: 20px;
 }
 
@@ -72,29 +83,57 @@ body {
   background-color: rgba(0, 150, 211, 0.5);
   color: #ffffff;
   margin-bottom: 10px;
-}
-
-.review_summery {
-  background-color: rgba(0, 150, 211, 0.5);
-  color: #2a25be;
-  padding: 20px;
-  width: 400px;
-  border-radius: 10px;
+  border-radius: 20px;
 }
 
 .review_cards {
   display: flex;
   justify-content: center;
   gap: 20px;
+  align-items: stretch;
 }
 
-.review {
+.review_summery,
+.review_card {
   background-color: rgba(0, 150, 211, 0.5);
-  color: #000000; /* Fully opaque text */
   padding: 20px;
-  width: 300px;
   border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  min-height: 250px;
 }
+
+.review_summery {
+  /* color: #2a25be; */
+  width: 400px;
+  font-weight: bolder;
+  text-shadow: 2px 2px rgb(69, 105, 153);
+}
+
+.review_card {
+  color: #000000;
+  width: 300px;
+}
+
+.review_card .profile {
+  margin-top: auto;
+}
+
+.review_cards :hover {
+  /* border: solid #2e91f3; */
+  background-color: #2e91f3;
+  color: #000000;
+  transition: ease-in 0.3s;
+  cursor: pointer;
+}
+
+/* .review-comment {
+  color: #000000;
+  background-color: whitesmoke;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px;
+} */
 
 /* .review_cards {
   background-color: #3C39A3;
@@ -111,6 +150,16 @@ body {
   background-color: rgba(0, 150, 211, 0.5);
   text-align: center;
   padding: 30px;
+  border-radius: 20px;
+  margin: 20px;
+}
+
+.send-review-topic {
+  font-weight: bolder;
+  font-size: large;
+  color: #ffffff;
+  margin-bottom: 10px;
+  text-shadow: 2px 2px rgb(69, 105, 153);
 }
 
 .review_message {
@@ -139,16 +188,17 @@ body {
 }
 
 button {
-  background-color: #0096d3;
+  background-color: #004a68;
   color: white;
   border: none;
   padding: 10px 20px;
   border-radius: 5px;
   cursor: pointer;
+  margin: 10px;
 }
 
 button:hover {
-  background-color: #014a67;
+  background-color: #012432;
 }
 
 .submit-button {
