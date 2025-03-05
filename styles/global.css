@@ -1,52 +1,37 @@
 :root {
-  --primary-color: #2a25be;
-  --secondary-color: #2563eb;
-  --font-family: Arial, Helvetica, sans-serif;
-}
+    --primary-color: #2A25BE;
+    --secondary-color: #2563EB;
+    --font-family: Arial, Helvetica, sans-serif;
+  }
 
 html {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 
 body {
-  margin: 0;
-  padding: 0;
-  font-family: var(--font-family);
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-family);
 }
 
 a {
-  text-decoration: none;
-  cursor: pointer;
+    text-decoration: none;
+    cursor: pointer;
 }
 
 /* Header Section */
 header {
-  background-color: var(--primary-color);
-  color: white;
-  height: 60px;
-  display: flex;
-  justify-content: center;
-
-  .nav-bar {
+    background-color: var(--primary-color);
+    color: white;
+    height: 60px;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    margin: 0 auto;
-    padding: 0 20px;
+    justify-content: center;
 
-    .nav-links {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      width: 600px;
-
-      ul {
+    .nav-bar {
         display: flex;
         justify-content: space-between;
-        list-style: none;
+        align-items: center;
         width: 100%;
-
         margin: 0 auto;
         padding: 0 20px;
 
@@ -66,63 +51,56 @@ header {
             align-items: center;
             width: 600px;
 
-        li {
-          padding: 0 10px;
-        }
+            ul {
+                display: flex;
+                justify-content: space-between;
+                list-style: none;
+                width: 100%;
 
-        a {
-          color: white;
-        }
+                li {
+                    padding: 0 10px;
+                }
 
-        a:hover {
-          color: #ffd700;
-          transition: ease-in 0.2s;
+                a {
+                    color: white;
+                }
+
+                a:hover {
+                    color: #FFD700;
+                    transition: ease-in 0.2s;
+                }
+            }
         }
-      }
     }
-  }
 }
 
 /* Footer Section */
 footer {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: var(--primary-color);
-  color: white;
-  height: auto;
-
-  .footer-container {
-    margin-top: 37px;
     display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    width: 1315px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--primary-color);
+    color: white;
+    height: auto;
 
-    .logo-text {
-      h3 {
-        margin: 0;
-        font-size: 20px;
-      }
+    .footer-container {
+        margin-top: 37px;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        width: 1315px;
 
-      P {
-        margin: 7px 0 0 0;
-        font-size: 14px;
-      }
-    }
+        .logo-text {
+            h3 {
+                margin: 0;
+                font-size: 20px;
+            }
 
-    .quick-links,
-    .resources,
-    .follow-us {
-      margin: 0;
-      ul {
-        margin: 0px;
-        list-style: none;
-        padding: 0;
-
-        #title-head {
-          font-size: 15px;
+            P {
+                margin: 7px 0 0 0;
+                font-size: 14px;
+            }
         }
 
         .quick-links, .resources, .follow-us {
@@ -172,45 +150,23 @@ footer {
                     color: #FFD700;
                 }
             }
-
         }
-
-        li {
-          margin-bottom: 14px;
-          font-size: 14px;
-          font-weight: normal;
-        }
-
-        a {
-          color: white;
-          opacity: 70%;
-          transition: ease 0.2s;
-        }
-
-        a:hover {
-          opacity: 100%;
-          color: #ffd700;
-        }
-      }
     }
 
-}
-  }
-
-  hr {
-    width: 99%;
-    opacity: 50%;
-    border: 1px solid #ffffff;
-  }
-
-  .copy-right {
-    margin: 15px 0;
-    font-size: 14px;
-
-    p {
-      opacity: 70%;
-      color: white;
-      margin: 0;
+    hr {
+        width: 99%;
+        opacity: 50%;
+        border: 1px solid #ffffff;
     }
-  }
+
+    .copy-right {
+        margin: 15px 0;
+        font-size: 14px;
+
+        p {
+            opacity: 70%;
+            color: white;
+            margin: 0;
+        }
+    }
 }
