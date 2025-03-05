@@ -47,6 +47,25 @@ header {
         list-style: none;
         width: 100%;
 
+        margin: 0 auto;
+        padding: 0 20px;
+
+        .logo {
+            display: flex;
+            align-items: center;
+
+            .logo-01 {
+                width: 120px;
+                margin-right: 10px;
+            }
+        }
+
+        .nav-links {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 600px;
+
         li {
           padding: 0 10px;
         }
@@ -174,6 +193,8 @@ footer {
         }
       }
     }
+
+}
   }
 
   hr {
