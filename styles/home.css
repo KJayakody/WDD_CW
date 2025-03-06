@@ -1,5 +1,5 @@
 /* HERO SECTION */
-   #hero {
+#hero {
     position: relative;
     background-image: url('../assets/hero.png');
     background-size: cover;
@@ -58,7 +58,6 @@
     background-color: #2E91F3;
     color: #ffffff;
     transition: ease-in 0.2s;
-    cursor: pointer;
 }
 
 #hero .hero-container .action-btn .btn2 {
@@ -75,7 +74,6 @@
     background-color: #2E91F3;
     color: #ffffff;
     transition: ease-in 0.2s;
-    cursor: pointer;
 }
 
 /* MISSION SECTION */
@@ -208,7 +206,6 @@
 #initiatives .initiatives-container .initiatives-box .initiative:hover {
     transform: translateY(-10px);
     box-shadow: 0px 12px 15px -3px rgba(0,0,0,0.1);
-    cursor: pointer;
 }
 
 /* VOLUNTEER SECTION */
@@ -258,5 +255,4 @@
     border: 2px solid var(--secondary-color);
     background-color: transparent;
     color: var(--secondary-color);
-    cursor: pointer;
 }
