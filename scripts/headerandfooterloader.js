@@ -30,6 +30,7 @@ const footerHTML = `
             <div class="logo-text">
                 <h3>OceanGuard</h3>
                 <p>Protecting our oceans for future generations.</p>
+                <a id="page-editor-link" href="#">Page Editor</a>
             </div>
             <div class="quick-links">
                 <ul>
@@ -85,4 +86,12 @@ const footerHTML = `
 document.addEventListener("DOMContentLoaded", function () {
     document.getElementById("header-container").innerHTML = headerHTML;
     document.getElementById("footer-container").innerHTML = footerHTML;
+
+    const footerContainer = document.getElementById("footer-container");
+    const editorLink = footerContainer.getAttribute("data-editor-link");
+    
+    const pageEditorLink = document.getElementById("page-editor-link");
+    if (editorLink && editorLink !== "#") {
+        pageEditorLink.href = editorLink;
+    }
 });

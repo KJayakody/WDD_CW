@@ -108,8 +108,20 @@
   }
   
   footer .footer-container .logo-text p {
-    margin: 7px 0 0 0;
+    margin: 7px 0 7px 0;
     font-size: 14px;
+  }
+
+  footer .footer-container .logo-text a {
+    font-size: 14px;
+    color: white;
+    opacity: 70%;
+    transition: ease 0.2s;
+  }
+
+  footer .footer-container .logo-text a:hover {
+    opacity: 100%;
+    color: #FFD700;
   }
   
   footer .footer-container .quick-links,
