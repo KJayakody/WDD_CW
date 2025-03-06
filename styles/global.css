@@ -1,29 +1,31 @@
 /* VARIABLES & ROOT SETTINGS */
    :root {
-    --primary-color: #2A25BE;
-    --secondary-color: #2563EB;
+    --primary-color: #2A25BE !important;
+    --secondary-color: #2563EB !important;
     --font-family: Arial, Helvetica, sans-serif;
+    --cursor-arrow: url('../assets/CursorArrow.png'), default !important;
+    --cursor-pointer: url('../assets/CursorPointer.png'), pointer !important;
   }
   
   /* GLOBAL ELEMENT STYLES */
   html {
-    scroll-behavior: smooth;
+    scroll-behavior: smooth !important;
   }
   
   body {
     margin: 0;
     padding: 0;
     font-family: var(--font-family);
-    cursor: url('../assets/CursorArrow.png'), default;
+    cursor: var(--cursor-arrow);
   }
   
   a {
     text-decoration: none;
-    cursor: url('../assets/CursorPointer.png'), pointer;;
+    cursor: var(--cursor-pointer);
   }
 
   button {
-    cursor: url('../assets/CursorPointer.png'), pointer;
+    cursor: var(--cursor-pointer);
   }
   
   /* HEADER & NAVIGATION */
@@ -167,7 +169,7 @@
   }
   
   footer .footer-container .follow-us .social-media svg:hover {
-    fill: #FFD700;
+    fill: #FFD700 !important;
     opacity: 100%;
     transform: scale(1.1);
   }
