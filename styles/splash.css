@@ -1,0 +1,61 @@
+body {
+    background: url("../assets/splash_background.png") no-repeat center center fixed;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+    margin: 0;
+    font-family: "Protest Strike", serif;
+  }
+  
+  .content {
+    max-width: 900px;
+    padding: 20px;
+  }
+  
+  .title {
+    font-size: 100px;
+    font-weight: bold;
+    color: #fdfefe;
+    margin-bottom: 10px;
+    text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.8);
+  }
+  
+  .mission {
+    font-size: 30px;
+    color: #1e3d4e;
+    margin-bottom: 40px;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+  }
+  
+  .team {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+  }
+  
+  .team li {
+    font-size: 25px;
+    /* font-weight: bold; */
+    color: #fdfefe;
+    padding: 10px;
+    text-transform: uppercase;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7);
+  }
+  
+  .loader img {
+    width: 125px;
+    margin-top: 20px;
+  }
+  
