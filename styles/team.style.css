@@ -108,7 +108,7 @@ body {
 .card-container .card.not-selected {
     opacity: 0.5;
     width: 20%;
-    height: 342px;
+    min-height: 342px;
 }
 
 .avatar-img {
@@ -145,6 +145,10 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: center;
+}
+
+.social img:hover {
+    transform: scale(1.2);
 }
 
 .social-icon {
