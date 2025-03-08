@@ -20,11 +20,22 @@
   text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
 }
 
+.sub-title {
+  font-size: 30px;
+  font-family: "Times New Roman", Times, serif;
+  text-align: center;
+  color: #1e3f66;
+  /* margin: 0 25px 0 25px; */
+  padding: 25px 0 25px 0;
+  text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+}
+
 h2 {
   font-size: 30px;
   font-family: "Times New Roman", Times, serif;
   text-align: center;
   margin-bottom: 25px;
+  margin-top: 25px;
   text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
   /* color: #2a25be; */
 }
