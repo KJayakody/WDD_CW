@@ -33,7 +33,50 @@
             <section>
                 <h2 id="splash">Splash Page</h2>
                     <h3>Technical Description</h3>
-                        <p>Explain the HTML and CSS techniques used to implement this page. Justify the logic and purpose of the key tags and styling choices focusing on functionality and design without copying large code sections. Explain the purpose of key HTML tags and CSS properties. Specify key HTML tags and CSS properties used to create structure and styling.</p> 
+                    <h3>Technical Description</h3>
+                    <h4 class="content-title">HTML Structure</h4>
+                    <p class="description-para">
+                        The splash screen uses a straightforward but effective HTML setup:</p>
+                    <p class="description-para">
+                        <ul>
+                            <li>It has all the proper HTML5 basics - DOCTYPE declaration, meta tags for character encoding and responsive design.</li>
+                            <li>It pulls in the "Protest Strike" font from Google Fonts, which gives the page its unique typography.</li>
+                            <li>The content is organized in a simple div container that holds</li>
+							<ul>
+								<li>A big headline for "LIFE BELOW WATER"</li>
+								<li>A short mission statement paragraph</li>
+								<li>A list of team members' names</li>
+								<li>A loading animation (using a GIF)</li>
+							</ul>
+                            <li>There's a simple JavaScript function at the bottom that automatically redirects users to the home page after 5 seconds, so they don't have to click anything.</li>
+                        </ul>
+                    </p>
+                    <h4 class="content-title">CSS Techniques</h4>
+                    <p class="description-para">
+                        The CSS does most of the heavy lifting to make the splash screen visually appealing:</p>
+                    <p class="description-para">
+                        <ul>
+                            <li>It uses a full-screen ocean background image that fills the entire viewport.</li>
+                            <li>Everything is centered using flexbox (display: flex with align-items and justify-content set to center).</li>
+                            <li>The title is huge (100px) with text shadows to make it pop against the background.</li>
+                            <li>The mission statement has a different color (#1e3d4e) to create visual contrast./li>
+                            <li>The team members' names are displayed in a horizontal row at the bottom of the screen using flexbox again, with absolute positioning to keep them at the bottom.</li>
+                            <li>Text has shadows applied to improve readability against the background image.</li>
+                            <li>The loading spinner is sized appropriately (125px) with some top margin to separate it from other elements.</li>
+                        </ul>
+                    </p>
+                    <h4 class="content-title">JavaScript Implementation</h4>
+                    <p class="description-para">
+                        The JavaScript is minimal but serves an important purpose:</p>
+                    <p class="description-para">
+                        <ul>
+                            <li>It uses the setTimeout() function to create a 5-second delay before automatically redirecting the user.</li>
+							<li>After the delay, it changes the window.location.href to "home.html", which takes the user to the main page.</li>
+							<li>This creates a smooth transition from the splash screen to the actual content without requiring any user input.</li>
+							<li>The timing gives users enough time to see the project title, mission statement, and team members before moving on.</li>
+                        </ul>
+						All these techniques work together to create a visually striking intro screen that sets the tone for the website while the main content loads.
+                    </p>  
                     
                     <h3>Accessibility</h3>
                         <p>Explain how you used to addressed accessibility in this particular page you implemented.</p>
