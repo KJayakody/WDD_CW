@@ -267,7 +267,7 @@ button:hover {
 }
 
 .rating-btn:hover, .rating-btn.selected {
-  transform: scale(1.2);
+  transform: scale(1.7);
 }
 
 .popup {
