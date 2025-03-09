@@ -2,22 +2,22 @@ const headerHTML = `
     <header>
         <div class="nav-bar">
             <div class="logo">
-                <a href="home.html"><img class="logo-01" src="../../assets/logo.png" alt="logo"></a>
-                <a href="https://www.globalgoals.org/goals/14-life-below-water/" target="_blank"><img class="logo-02" src="../../assets/logo_related_text.png" alt="logo related text"></a>
+                <a href="home.html"><img class="logo-01" src="../assets/logo.png" alt="logo"></a>
+                <a href="https://www.globalgoals.org/goals/14-life-below-water/" target="_blank"><img class="logo-02" src="../assets/logo_related_text.png" alt="logo related text"></a>
             </div>
             <div class="nav-links">
                 <nav>
                     <ul>
-                        <li><a href="../../pages/home.html">Home</a></li>
-                        <li><a href="../../pages/team.html">Team</a></li>
-                        <li><a href="../../pages/volunteer.html">Volunteer</a></li>
-                        <li><a href="../../pages/table.html">Table</a></li>
-                        <li><a href="../../pages/sitemap.html">Sitemap</a></li>
-                        <li><a href="../../pages/feedback.html">Feedback</a></li>
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="team.html">Team</a></li>
+                        <li><a href="volunteer.html">Volunteer</a></li>
+                        <li><a href="table.html">Table</a></li>
+                        <li><a href="sitemap.html">Sitemap</a></li>
+                        <li><a href="feedback.html">Feedback</a></li>
                     </ul>
                 </nav>
                 <div class="profile">
-                    <a href="../../pages/profile.html"><img src="../../assets/profile.png" width="34" alt="profile"></a>
+                    <a href="../pages/profile.html"><img src="../assets/profile.png" width="34" alt="profile"></a>
                 </div>
             </div>
         </div>
@@ -30,7 +30,6 @@ const footerHTML = `
             <div class="logo-text">
                 <h3>OceanGuard</h3>
                 <p>Protecting our oceans for future generations.</p>
-                <a id="page-editor-link" href="#">Page Editor</a>
             </div>
             <div class="quick-links">
                 <ul>
@@ -86,12 +85,4 @@ const footerHTML = `
 document.addEventListener("DOMContentLoaded", function () {
     document.getElementById("header-container").innerHTML = headerHTML;
     document.getElementById("footer-container").innerHTML = footerHTML;
-
-    const footerContainer = document.getElementById("footer-container");
-    const editorLink = footerContainer.getAttribute("data-editor-link");
-    
-    const pageEditorLink = document.getElementById("page-editor-link");
-    if (editorLink && editorLink !== "#") {
-        pageEditorLink.href = editorLink;
-    }
 });
