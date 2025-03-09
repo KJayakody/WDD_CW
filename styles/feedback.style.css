@@ -1,7 +1,6 @@
-/**ToDo
- * Study the mentined lines.
+/**TODO:
  * The calender icon of datetime is in blcak in edge.
- * */
+ */
 
 /*Background*/
 .main-cont {
@@ -15,6 +14,7 @@
     align-items: center;
 }
 
+/* Main section */
 #main-title {
     position: absolute;
     top: 13.5%;
@@ -68,13 +68,6 @@ fieldset {
     font-weight: 400;
     line-height: 63px;
     letter-spacing: 0.15px;
-    /*check this*/
-    font-feature-settings:
-        "liga" off,
-        "clig" off;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: #1d3c4e;
-
     min-width: 250px;
     width: 30%;
     height: 100%;
@@ -210,10 +203,8 @@ textarea:focus {
 }
 
 .right:hover:enabled {
-    transform: scale(1.1);
-
-    /* Study this */
-    transition: transform 0.2s ease-in-out;
+    transform: scale(1.1);  /*Increase the size of the element by 10% |https://www.w3schools.com/cssref/css3_pr_transform.php */
+    transition: transform 0.2s ease-in-out;  /*Change the properties smoothly || https://www.w3schools.com/css/css3_transitions.asp */
 }
 
 .left {
@@ -223,8 +214,6 @@ textarea:focus {
 
 .left:hover:enabled {
     transform: scale(1.1);
-
-    /* Study this */
     transition: transform 0.2s ease-in-out;
 }
 
@@ -361,7 +350,7 @@ input[type="radio"]:hover {
     height: 5vh;
 }
 
-/* Check Box - trying grid layout */
+/* Check Box - trying grid layout | https://www.w3schools.com/cssref/pr_grid.php */ 
 .update-check {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
