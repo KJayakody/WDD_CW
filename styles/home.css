@@ -197,10 +197,13 @@
 }
 
 #initiatives .initiatives-container .initiatives-box .initiative h3 {
-    font-size: 20px;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 0 50px;
+    line-height: 1.5;
     margin-top: 10px;
     text-align: center;
-    color: #1F2937;
+    color: #3a414b;
 }
 
 #initiatives .initiatives-container .initiatives-box .initiative:hover {
