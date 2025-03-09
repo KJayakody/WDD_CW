@@ -1,18 +1,16 @@
 body {
-    font-family: Arial, sans-serif;
     height: 100%;
     width: 100%;
     background-repeat: no-repeat;
     background-size: cover;
     background: url(../assets/sitemap-back.jpg);
     background-size: cover;
-    color: white;
-    font-family: Arial, sans-serif;
 }
 
 .sitemap-title {
     font-size: 60px;
     text-align: center;
+    color: white;
 }
 
 .content {
@@ -21,7 +19,7 @@ body {
     align-items: center;
 }
 
-svg {
+svg .main-svg {
     width: 80%;
     height: auto;
     margin-left: -50px;
@@ -55,7 +53,7 @@ svg {
     transition: 0.3s;
 }
 
-text {
+.main-text-svg, .sub_text {
     font-size: 12px;
     font-weight: bold;
     text-anchor: middle;
@@ -77,9 +75,4 @@ text {
 
 .background {
     position: relative;
-}
-
-h1 {
-    margin-bottom: 100px;
-    margin-left: 0px;
 }
