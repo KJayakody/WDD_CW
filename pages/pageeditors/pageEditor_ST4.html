@@ -29,18 +29,18 @@
                 <h2 id="splash">Profile Page</h2>
                     <h3>Technical Description</h3>
                         <p style="text-align: justify;">
-                            The profile page is structured using &lt;div&gt; tags to separate different sections, making it 
+                            The profile page is structured using <code>div</code> tags to separate different sections, making it 
                             easier to apply styling. The profile section, which includes the profile image, cover image, and 
                             related content, is styled using display: flex with justify-content: center and a column flex 
                             direction to align elements effectively. Social media icons are implemented using Scalable Vector 
                             Graphics (SVG) for better scalability. The "About" and "Who am I" sections are placed side by side 
                             within a common container using flex display, a technique also applied to the skills and experience 
                             sections. The data in the about section is added using a table structure. Section dividers are created 
-                            using the &lt;hr&gt; tag, while the progress bar effect is 
-                            achieved through a &lt;div&gt; with custom styling. Links in the experience section are styled 
+                            using the <code>hr</code> tag, while the progress bar effect is 
+                            achieved through a <code>div</code> with custom styling. Links in the experience section are styled 
                             with :hover effects for interactivity. Different UN goals are presented in individual cards containing 
                             links to their respective pages. The volunteering availability section includes a calendar, where the 
-                            &lt;span&gt; tag is used to apply styling within a &lt;div&gt;. The calendar layout is structured using 
+                            <code>span</code> tag is used to apply styling within a <code>div</code>. The calendar layout is structured using 
                             grid-template-columns to maintain uniform spacing. A "Contact Me" button triggers a modal form using 
                             JavaScript, allowing users to input data with relevant form field types. Hover effects are applied to 
                             content sections and buttons to enhance visual appeal, and a background image is added for a more engaging design.
@@ -48,11 +48,11 @@
                     
                     <h3>Accessibility</h3>
                         <ul>
-                            <li>I used meaningful tags like &lt;header>, &lt;section>, &lt;h2>, and &lt;p> instead of just &lt;div> to enhance screen reader navigation.</li>
+                            <li>I used meaningful tags like <code>header</code>, <code>section</code>, <code>h2</code>, and <code>p</code> instead of just <code>div</code> to enhance screen reader navigation.</li>
                             <li>All images, including the profile and cover images, have alt attributes to provide descriptive text for users relying on screen readers.</li>
                             <li>Interactive elements like buttons and links are styled appropriately and can be navigated using the Tab key, improving usability for those who don't use a mouse.</li>
                             <li>The text colors and backgrounds maintain sufficient contrast to be readable for users with visual impairments.</li>
-                            <li>I implemented :hover styles on buttons and links to improve visibility when users navigate.</li>
+                            <li>I implemented <code>:hover</code> styles on buttons and links to improve visibility when users navigate.</li>
                             <li>The page uses percentages for layout elements to support zooming and different screen sizes without breaking the design</li>
                             <li>Users are bale to easily access the contact modal through a click of a button and exit the modal by either clicking the black space around the form or the close button.</li>
                             <li>The background opacity is reduced when the modal is opened in order to give the users' full attention to the modal.</li>
@@ -70,30 +70,30 @@
                 <h2 id="volunteer">Sitemap Page</h2>
                     <h3>Technical Description</h3>
                         <p style="text-align: justify;">
-                            The sitemap page is structured using an &lt;svg>-based layout to visually represent the website's 
+                            The sitemap page is structured using an <code>svg</code> based layout to visually represent the website's 
                             structure, ensuring clarity and ease of navigation. The page is styled with a full-width background 
                             image for a visually engaging experience. The central title is positioned using text-align: center and 
                             a large font size for emphasis. The sitemap itself is constructed with SVG elements, where each main 
-                            section is represented as a rectangular node (&lt;rect class="node">), styled with a light blue fill 
-                            and a transition effect for hover interactions. Sub-sections are created using &lt;rect class="sub_node">, 
+                            section is represented as a rectangular node (<code>rect class="main-node-svg"</code>), styled with a light blue fill 
+                            and a transition effect for hover interactions. Sub-sections are created using (<code>rect class="sub_node"</code>), 
                             maintaining a consistent design with white-filled rectangles and smooth hover transitions. Connecting 
-                            lines (&lt;line class="line">) are drawn to visually link parent and child nodes, enhancing the hierarchical 
-                            structure. Text labels (&lt;text>) are centered within each node using text-anchor: middle and 
+                            lines (<code>line class="line"</code>) are drawn to visually link parent and child nodes, enhancing the hierarchical 
+                            structure. Text labels (<code>text</code>) are centered within each node using text-anchor: middle and 
                             dominant-baseline: middle for proper alignment. Interactive elements are made clickable through 
-                            onclick functions that trigger JavaScript navigation. Additionally, hyperlinks (&lt;a> tags) allow 
+                            onclick functions that trigger JavaScript navigation. Additionally, hyperlinks (<code>a</code> tags) allow 
                             external access to relevant pages. The grid-based alignment of elements is controlled using transform 
-                            matrices, ensuring a structured and evenly spaced display. Hover effects (:hover) on nodes and sub-nodes 
+                            matrices, ensuring a structured and evenly spaced display. Hover effects (<code>:hover</code>) on nodes and sub-nodes 
                             provide visual feedback by changing colors and strokes when hovered. The page maintains accessibility 
-                            features, such as tabindex="0" for keyboard navigation and color contrasts for readability. The overall 
+                            features, such as <code>tabindex="0"</code> for keyboard navigation and color contrasts for readability. The overall 
                             design ensures a user-friendly and interactive visualization of the website's structure while maintaining 
                             responsiveness and ease of navigation.
                         </p> 
 
                     <h3>Accessibility</h3>
                         <ul>
-                            <li>I used meaningful tags like &lt;header>, &lt;section>, &lt;h2>, and &lt;p> instead of just &lt;div> to enhance screen reader navigation.</li>
-                            <li>Interactive elements such as nodes (&lt;rect> elements) and links are assigned tabindex="0", ensuring users can navigate the sitemap using the Tab key without requiring a mouse.</li>
-                            <li>The SVG-based sitemap includes text elements (&lt;text>) with clear, readable labels, improving accessibility for screen reader users.</li>
+                            <li>I used meaningful tags like <code>header</code>, <code>section</code>, <code>h2</code>, and <code>p</code> instead of just <code>div</code> to enhance screen reader navigation.</li>
+                            <li>Interactive elements such as nodes (<code>rect</code> elements) and links are assigned <code>tabindex="0"</code>, ensuring users can navigate the sitemap using the Tab key without requiring a mouse.</li>
+                            <li>The SVG-based sitemap includes text elements (<code>text</code>) with clear, readable labels, improving accessibility for screen reader users.</li>
                             <li>I implemented :hover styles on buttons and links to improve visibility when users navigate.</li>
                             <li>The page uses percentages for layout elements to support zooming and different screen sizes without breaking the design</li>
                         </ul>
@@ -111,8 +111,8 @@
                 <h2 id="content">Content Page</h2>
                     <h3>Technical Description</h3>
                         <p style="text-align: justify;">
-                            The content page is structured using &lt;section> and &lt;div> tags for organization. 
-                            The hero section features a background image with a gradient overlay (::before) and flexbox 
+                            The content page is structured using <code>section</code> and <code>tabindex="0"</code> tags for organization. 
+                            The hero section features a background image with a gradient overlay (<code>::before</code>) and flexbox 
                             for centering the title and button. The introduction section uses a solid background color, 
                             centered text, and padding for readability. The main content is divided into a sidebar 
                             (sticky navigation with hover effects) and a main content area (flexbox layout for info boxes 
@@ -126,12 +126,12 @@
 
                     <h3>Accessibility</h3>
                         <ul>
-                            <li>I used meaningful tags like &lt;header>, &lt;section>, &lt;h2>, and &lt;p> instead of just &lt;div> to enhance screen reader navigation.</li>
-                            <li>All images, including those in the hero section and info boxes, have descriptive alt attributes, providing context for users relying on screen readers or those with images disabled.</li>
-                            <li>I implemented :hover styles on buttons and links to improve visibility when users navigate.</li>
+                            <li>I used meaningful tags like <code>header</code>, <code>section</code>, <code>h2</code>, and <code>p</code> instead of just <code>div</code> to enhance screen reader navigation.</li>
+                            <li>All images, including those in the hero section and info boxes, have descriptive <code>alt</code> attributes, providing context for users relying on screen readers or those with images disabled.</li>
+                            <li>I implemented <code>:hover</code> styles on buttons and links to improve visibility when users navigate.</li>
                             <li>The page uses percentages for layout elements to support zooming and different screen sizes without breaking the design</li>
                             <li>The sidebar with quick navigation links is sticky, ensuring it remains accessible as users scroll through the page.</li>
-                            <li>Headings (&lt;h1>, &lt;h2>, etc.) are used hierarchically to structure the content, making it easier for screen readers to navigate and understand the page's organization.</li>
+                            <li>Headings (<code>h1</code>, <code>h2</code>, etc.) are used hierarchically to structure the content, making it easier for screen readers to navigate and understand the page's organization.</li>
                         </ul>
 
                     <h3>Link to the validation page</h3>
@@ -147,7 +147,7 @@
                     <p><b>Challenge:</b> Ensuring all interactive elements (buttons, links, forms) were fully navigable via the Tab key required testing and fixing issues like focus traps or missing focus indicators.</p>
                     <p><b>Lesson Learned:</b> Implementing keyboard navigation from the start and testing it regularly can help identify and address accessibility issues early in the development process.</p>
                     <br>
-                    <p><b>Challenge:</b> Ensuring the svg elements (&lt;rect>, &lt;line>) were positioned at the correct positions.</p>
+                    <p><b>Challenge:</b> Ensuring the svg elements (<code>rect</code>, <code>line</code>) were positioned at the correct positions.</p>
                     <p><b>Lesson Learned:</b> Using the correct x and y coordinates and ensuring the correct width and height of the elements are set can help in positioning the elements correctly.</p>
                     <br>
                     <p><b>Challenge:</b> Implementing accessibility features required additional time and resources, which were sometimes limited.</p>
