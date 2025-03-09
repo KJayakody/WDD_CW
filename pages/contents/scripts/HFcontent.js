@@ -2,7 +2,7 @@ const headerHTML = `
     <header>
         <div class="nav-bar">
             <div class="logo">
-                <a href="home.html"><img class="logo-01" src="../../assets/logo.png" alt="logo"></a>
+                <a href="../../pages/home.html"><img class="logo-01" src="../../assets/logo.png" alt="logo"></a>
                 <a href="https://www.globalgoals.org/goals/14-life-below-water/" target="_blank"><img class="logo-02" src="../../assets/logo_related_text.png" alt="logo related text"></a>
             </div>
             <div class="nav-links">
