@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Editor Student - Hansaja Sandeepa</title>
+
+    <link rel="stylesheet" href="../../styles/pageEditor_validator.css">
+
+    <link rel="stylesheet" type="text/css" href="../../styles/global.css">
+    <script src="scripts/HFpageeditors.js"></script>
+    <link rel="icon" type="image/x-icon" href="../../assets/favicon.ico">
+
+</head>
+
+<body>
+    <!-- Header Section -->
+    <div id="header-container"></div>
+
+    <section id="home" class="stud">
+        <h2>Hansaja Sandeepa, Student 2</h2>
+    </section>
+
+    <div class="container">
+        <!-- Main content area -->
+        <main>
+            <section>
+                <h2 id="home">Home Page</h2>
+                <h3>Technical Description</h3>
+                <h3>HTML Tags and Their Purpose</h3>
+                <ul>
+                    <li>
+                        <strong>&lt;section&gt;</strong>: Defines a section of the document. It is used to group related
+                        content together, which helps in organizing the structure of the page.
+                    </li>
+                    <li>
+                        <strong>&lt;h2&gt;</strong>: Defines a level 2 heading. It is used for major section titles,
+                        improving readability and SEO.
+                    </li>
+                    <li>
+                        <strong>&lt;h3&gt;</strong>: Defines a level 3 heading. It is used for subheadings within
+                        sections.
+                    </li>
+                    <li>
+                        <strong>&lt;div&gt;</strong>: A versatile container element used for grouping and styling
+                        content. It is often used to create sections and layout structures.
+                    </li>
+                    <li>
+                        <strong>&lt;a&gt;</strong>: Defines a hyperlink. It is used to link to other pages or resources.
+                    </li>
+                    <li>
+                        <strong>&lt;img&gt;</strong>: Embeds an image into the document.
+                    </li>
+                    <li>
+                        <strong>&lt;svg&gt; and &lt;path&gt;</strong>: Used to create scalable vector graphics.
+                        &lt;svg&gt; defines the container for the graphic, and &lt;path&gt; defines the shapes within
+                        it.
+                    </li>
+                </ul>
+
+                <h3>CSS Properties and Their Purpose</h3>
+                <ul>
+                    <li>
+                        <strong>position</strong>: Controls the positioning of an element. Values like <b>relative</b>,
+                        <b>absolute</b>, and <b>fixed</b> are used to place elements precisely on the page.
+                    </li>
+                    <li>
+                        <strong>background-image</strong>: Sets the background image of an element. It is used to add
+                        images to sections of the page.
+                    </li>
+                    <li>
+                        <strong>background-size</strong>: Controls how the background image is scaled within the
+                        element.
+                    </li>
+                    <li>
+                        <strong>background-position</strong>: Controls where the background image is positioned within
+                        the element.
+                    </li>
+                    <li>
+                        <strong>height</strong> and <strong>width</strong>: Define the dimensions of an element.
+                    </li>
+                    <li>
+                        <strong>display</strong>: Controls the display type of an element. Values like <b>flex</b>
+                        enable flexible layouts.
+                    </li>
+                    <li>
+                        <strong>justify-content</strong> and <strong>align-items</strong>: Used with <b>display:
+                            flex</b> to align child elements within a container horizontally and vertically.
+                    </li>
+                    <li>
+                        <strong>color</strong>: Sets the text color of an element.
+                    </li>
+                    <li>
+                        <strong>text-align</strong>: Aligns text within an element (e.g., <b>center</b>, <b>left</b>,
+                        <b>right</b>).
+                    </li>
+                    <li>
+                        <strong>z-index</strong>: Controls the stacking order of positioned elements.
+                    </li>
+                    <li>
+                        <strong>content</strong>: Used with pseudo-elements like <b>::before</b> and <b>::after</b> to
+                        insert generated content.
+                    </li>
+                    <li>
+                        <strong>margin</strong> and <strong>padding</strong>: Control the space outside (<b>margin</b>)
+                        and inside (<b>padding</b>) an element.
+                    </li>
+                    <li>
+                        <strong>border-radius</strong>: Adds rounded corners to an element.
+                    </li>
+                    <li>
+                        <strong>text-decoration</strong>: Controls text decorations like underlines and overlines. Often
+                        used to style links.
+                    </li>
+                    <li>
+                        <strong>border</strong>: Adds a border around an element.
+                    </li>
+                    <li>
+                        <strong>transition</strong>: Defines the transition effect for property changes, creating smooth
+                        animations.
+                    </li>
+                    <li>
+                        <strong>background-color</strong>: Sets the background color of an element.
+                    </li>
+                    <li>
+                        <strong>line-height</strong>: Controls the spacing between lines of text.
+                    </li>
+                    <li>
+                        <strong>box-shadow</strong>: Adds a shadow effect to an element, enhancing visual depth.
+                    </li>
+                    <li>
+                        <strong>transform</strong>: Applies transformations like translation, rotation, scaling, and
+                        skewing to elements.
+                    </li>
+                    <li>
+                        <strong>object-fit</strong>: Controls how an image or video should be resized to fit its
+                        container.
+                    </li>
+                </ul>
+                <h3>Accessibility</h3>
+                <p>In the implementation of this webpage, several accessibility considerations were incorporated:</p>
+                <ul>
+                    <li><strong>Text Alternatives</strong>: Images and icons have descriptive <b>alt</b> attributes (e.g., <b>alt="logo"</b>), ensuring screen readers can convey their purpose to visually impaired users.</li>
+                    <li><strong>Keyboard Navigation</strong>: Global navigation links and interactive elements (buttons, links) are accessible via keyboard, adhering to standard tab order for intuitive navigation.</li>
+                    <li><strong>Color Contrast</strong>: The color scheme, defined in <b>global.css</b>, maintains sufficient contrast between text and background (e.g., white text on a blue background in the header), aiding users with visual impairments.</li>
+                    <li><strong>Semantic HTML</strong>: The use of semantic elements like <b>&lt;header&gt;</b>, <b>&lt;section&gt;</b>, and <b>&lt;footer&gt;</b> helps screen readers interpret the page structure accurately.</li>
+                    <li><strong>Focus States</strong>: Custom cursor styles (<b>--cursor-arrow</b>, <b>--cursor-pointer</b>) enhance visual feedback, and interactive elements have clear focus states to guide keyboard users.</li>
+                </ul>
+                <h3>Link to the validation page</h3>
+                <p><a href="../../pages/validations/validation%20_ST2.html#home">Validation - Home</a></p>
+
+                <h3>Link to the page</h3>
+                <p><a href="../../pages/home.html">Home</a></p>
+            </section>
+
+            <section id="table">
+                <h2 id="table">Table Page</h2>
+                <h3>Technical Description</h3>
+                <p>This section provides an overview of the HTML and CSS techniques used to implement the page, focusing
+                    on functionality and design.</p>
+
+                <h4>Key HTML Tags and Their Purpose</h4>
+                <ul>
+                    <li><strong>&lt;!DOCTYPE html&gt;</strong>: Declares the document type and version of HTML being
+                        used. This is essential for ensuring that the browser renders the page correctly according to
+                        the specified HTML standard.</li>
+                    <li><strong>&lt;html&gt;</strong>: The root element of an HTML document. It wraps the entire content
+                        of the page and is necessary for defining the structure of the document.</li>
+                    <li><strong>&lt;head&gt;</strong>: Contains meta-information about the document, such as the title,
+                        character set, and links to external resources like CSS and JavaScript files. This section is
+                        crucial for setting up the document's environment.</li>
+                    <li><strong>&lt;title&gt;</strong>: Sets the title of the document, which appears in the browser's
+                        title bar or tab. It is important for SEO and user experience.</li>
+                    <li><strong>&lt;meta&gt;</strong>: Defines metadata such as the character set
+                        (<b>charset="UTF-8"</b>). This ensures that the document can handle a wide range of characters,
+                        including those from non-English languages.</li>
+                    <li><strong>&lt;link&gt;</strong>: Links external resources like CSS files to the HTML document.
+                        This allows for separation of concerns, keeping the styling separate from the content.</li>
+                    <li><strong>&lt;script&gt;</strong>: Embeds or references executable scripts. The <b>defer</b>
+                        attribute ensures that the script execution is delayed until the DOM is fully parsed, which can
+                        improve page load times.</li>
+                    <li><strong>&lt;body&gt;</strong>: Contains the content of the document, including text, images, and
+                        other media. This is the main part of the HTML document that users interact with.</li>
+                    <li><strong>&lt;div&gt;</strong>: A generic container for flow content. It is used to group elements
+                        together and apply styles or scripts to them. It is essential for creating a structured layout.
+                    </li>
+                    <li><strong>&lt;section&gt;</strong>: Represents a thematic grouping of content. It is used to
+                        divide the page into logical sections, which helps in organizing the content and improving
+                        accessibility.</li>
+                    <li><strong>&lt;h1&gt;</strong>: Defines a top-level heading. Headings are important for SEO and
+                        accessibility, as they provide a hierarchical structure to the content.</li>
+                    <li><strong>&lt;table&gt;</strong>: Defines a table. Tables are used to display tabular data and are
+                        essential for presenting structured information in a readable format.</li>
+                    <li><strong>&lt;tr&gt;</strong>: Defines a row in a table. Rows are used to group cells horizontally
+                        within a table.</li>
+                    <li><strong>&lt;th&gt;</strong>: Defines a header cell in a table. Header cells are used to label
+                        the columns or rows of a table and are typically styled differently from standard cells.</li>
+                    <li><strong>&lt;td&gt;</strong>: Defines a standard cell in a table. Cells contain the actual data
+                        within a table.</li>
+                    <li><strong>&lt;img&gt;</strong>: Embeds an image. Images are used to enhance the visual appeal of
+                        the page and provide additional context or information.</li>
+                    <li><strong>&lt;span&gt;</strong>: A generic inline container for phrasing content. It is used to
+                        apply styles or scripts to a small portion of text without affecting the surrounding content.
+                    </li>
+                    <li><strong>&lt;svg&gt;</strong>: Embeds Scalable Vector Graphics. SVGs are used to create
+                        vector-based graphics that can be scaled without losing quality, making them ideal for icons and
+                        illustrations.</li>
+                    <li><strong>&lt;path&gt;</strong>: Defines a shape in SVG. Paths are used to create complex shapes
+                        and graphics within an SVG element.</li>
+                </ul>
+
+                <h4>Key CSS Properties and Their Purpose</h4>
+                <ul>
+                    <li><strong>width</strong>: Specifies the width of an element. This is crucial for controlling the
+                        layout and ensuring that elements fit within their containers.</li>
+                    <li><strong>height</strong>: Specifies the height of an element. This helps in defining the size of
+                        elements and ensuring they are properly displayed.</li>
+                    <li><strong>background-image</strong>: Sets one or more background images for an element. This is
+                        used to enhance the visual appeal of the page by adding background graphics.</li>
+                    <li><strong>border-collapse</strong>: Sets whether table borders should collapse into a single
+                        border or be separated. This property is essential for controlling the appearance of tables and
+                        ensuring they are readable.</li>
+                    <li><strong>margin</strong>: Specifies the margin around an element. Margins are used to create
+                        space between elements and improve the overall layout.</li>
+                    <li><strong>padding</strong>: Specifies the padding inside an element. Padding is used to create
+                        space within an element, improving readability and user experience.</li>
+                    <li><strong>text-align</strong>: Specifies the horizontal alignment of text. This property is
+                        important for ensuring that text is properly aligned within its container.</li>
+                    <li><strong>font-size</strong>: Specifies the font size of text. This is crucial for ensuring that
+                        text is readable and consistent across the page.</li>
+                    <li><strong>font-weight</strong>: Specifies the font weight of text. This property is used to make
+                        text bold or light, which can help in emphasizing certain parts of the content.</li>
+                    <li><strong>color</strong>: Specifies the text color. This is important for ensuring that text is
+                        visible and readable against the background.</li>
+                    <li><strong>margin-block-start</strong> and <strong>margin-block-end</strong>: Specifies the margin
+                        at the start and end of the block. These properties are used to control the spacing around
+                        block-level elements.</li>
+                    <li><strong>min-width</strong>: Specifies the minimum width of an element. This ensures that
+                        elements do not become too narrow, which can improve the layout on smaller screens.</li>
+                    <li><strong>border-radius</strong>: Specifies the radius of an element's corners. This property is
+                        used to create rounded corners, which can enhance the visual appeal of the page.</li>
+                    <li><strong>overflow</strong>: Specifies what happens if content overflows an element's box. This
+                        property is important for ensuring that content is properly displayed and does not spill outside
+                        its container.</li>
+                    <li><strong>background-color</strong>: Specifies the background color of an element. This is used to
+                        set the background color of elements, improving the visual contrast and user experience.</li>
+                    <li><strong>cursor</strong>: Specifies the mouse cursor to be displayed when pointing over an
+                        element. This property is used to provide visual feedback to users, indicating that an element
+                        is interactive.</li>
+                    <li><strong>border</strong>: Specifies the border around an element. Borders are used to create
+                        visual boundaries and separate elements from each other.</li>
+                    <li><strong>align-items</strong>: Specifies the alignment of items inside a flexible container. This
+                        property is used in Flexbox layouts to control the alignment of child elements.</li>
+                    <li><strong>justify-content</strong>: Specifies the alignment of items along the main axis of a
+                        flexible container. This property is used in Flexbox layouts to control the distribution of
+                        space among child elements.</li>
+                    <li><strong>display</strong>: Specifies the display type of an element. This property is used to
+                        control how an element is displayed, such as <b>block</b>, <b>inline</b>, or <b>flex</b>.</li>
+                    <li><strong>flex</strong>: Specifies how a flexible item should grow or shrink to fit the container.
+                        This property is used in Flexbox layouts to control the flexibility of child elements.</li>
+                    <li><strong>:hover</strong>: Applies a style to an element when the user places the mouse over it.
+                        This is used to provide visual feedback and enhance interactivity.</li>
+                    <p>
+                        These tags and properties ensure that the table is both functional and visually appealing, while
+                        also considering accessibility for all users.
+                    </p>
+
+                    <h3>Accessibility</h3>
+                    <p>
+                        Accessibility was addressed through several techniques:
+                    <ul>
+                        <li><strong>Semantic HTML</strong>: Using &lt;table&gt;, &lt;tr&gt;, &lt;th&gt;, and &lt;td&gt;
+                            tags ensures that the table structure is clear and understandable to screen readers.</li>
+                        <li><strong>Header Cells</strong>: Using &lt;th&gt; for header cells helps screen readers
+                            identify the column headers, making it easier for users to understand the data.</li>
+                        <li><strong>Text Alternatives</strong>: Images within table cells have alt attributes, providing
+                            descriptions for screen readers.</li>
+                        <li><strong>Color Contrast</strong>: Sufficient color contrast between text and background
+                            ensures readability for users with visual impairments.</li>
+                    </ul>
+                    </p>
+
+                    <h3>Link to the validation page</h3>
+                    <p><a href="../../pages/validations/validation%20_ST2.html#table">Validation - Table</a></p>
+
+                    <h3>Link to the page</h3>
+                    <p><a href="../../pages/table.html">Table</a></p>
+            </section>
+
+            <section id="content">
+                <h2 id="content">Content Page</h2>
+                <h3>Technical Description</h3>
+                <h3>Key HTML Tags and Their Purpose</h3>
+                <ul>
+                    <li>
+                        <strong>&lt;!DOCTYPE html&gt;</strong>: Declares the document type and version of HTML being
+                        used. This ensures the browser renders the page correctly according to HTML5 standards.
+                    </li>
+                    <li>
+                        <strong>&lt;html&gt;</strong>: The root element of the HTML document. It encapsulates the entire
+                        content of the webpage.
+                    </li>
+                    <li>
+                        <strong>&lt;head&gt;</strong>: Contains meta-information about the HTML document, such as
+                        character set declarations, viewport settings, stylesheets, and scripts. It helps in setting up
+                        the environment for the webpage.
+                    </li>
+                    <li>
+                        <strong>&lt;title&gt;</strong>: Sets the title of the webpage, which appears in the browser tab.
+                        It is important for SEO and user experience.
+                    </li>
+                    <li>
+                        <strong>&lt;meta&gt;</strong>: Provides metadata about the HTML document, such as character
+                        encoding and viewport settings. The <b>charset="UTF-8"</b> ensures proper character rendering,
+                        while <b>name="viewport"</b> ensures the page is responsive on different devices.
+                    </li>
+                    <li>
+                        <strong>&lt;link&gt;</strong>: Used to link external resources like CSS stylesheets. This
+                        separates the styling from the content, making the b more maintainable.
+                    </li>
+                    <li>
+                        <strong>&lt;script&gt;</strong>: Embeds or references executable scripts. The <b>defer</b>
+                        attribute ensures the script execution is delayed until the DOM is fully parsed, improving page
+                        load times.
+                    </li>
+                    <li>
+                        <strong>&lt;body&gt;</strong>: Contains the content of the HTML document that is visible to the
+                        user. It is the main container for all the visible elements.
+                    </li>
+                    <li>
+                        <strong>&lt;div&gt;</strong>: A generic container for flow content. It is used to group elements
+                        together and apply styles or scripts to them. It helps in creating a modular structure.
+                    </li>
+                    <li>
+                        <strong>&lt;section&gt;</strong>: Represents a standalone section of the document, typically
+                        with a heading. It is used to organize content into logical sections, improving readability and
+                        structure.
+                    </li>
+                    <li>
+                        <strong>&lt;h1&gt; to &lt;h6&gt;</strong>: Headings that define headings from largest
+                        (<b>&lt;h1&gt;</b>) to smallest (<b>&lt;h6&gt;</b>). They are used to create a hierarchical
+                        structure of content, which is important for SEO and accessibility.
+                    </li>
+                    <li>
+                        <strong>&lt;a&gt;</strong>: Hyperlink tag used to create links to other pages or resources. It
+                        is essential for navigation within and outside the website.
+                    </li>
+                    <li>
+                        <strong>&lt;p&gt;</strong>: Paragraph tag used to define a paragraph of text. It helps in
+                        structuring the content and improving readability.
+                    </li>
+                    <li>
+                        <strong>&lt;ul&gt; and &lt;li&gt;</strong>: Unordered list and list item tags used to create
+                        lists. They are useful for organizing content in a structured manner.
+                    </li>
+                    <li>
+                        <strong>&lt;img&gt;</strong>: Image tag used to embed images into the webpage. It enhances the
+                        visual appeal and provides additional context.
+                    </li>
+                    <li>
+                        <strong>&lt;svg&gt; and &lt;path&gt;</strong>: Used to embed SVG graphics directly into the
+                        HTML. This allows for scalable and high-quality graphics that can be styled with CSS.
+                    </li>
+                    <li>
+                        <strong>&lt;button&gt;</strong>: Defines a clickable button. It is used to create interactive
+                        elements like buttons for user actions.
+                    </li>
+                </ul>
+
+                <h3>Key CSS Properties and Their Purpose</h3>
+                <ul>
+                    <li>
+                        <strong>position</strong>: Determines the type of positioning context (static, relative,
+                        absolute, fixed). It is used to place elements precisely on the page.
+                    </li>
+                    <li>
+                        <strong>background-image</strong>: Sets the background image of an element. It is used to add
+                        visual appeal and context to sections of the page.
+                    </li>
+                    <li>
+                        <strong>background-size</strong> and <strong>background-position</strong>: Control the size and
+                        position of the background image. They ensure the background image is displayed correctly and
+                        covers the intended area.
+                    </li>
+                    <li>
+                        <strong>height</strong>: Specifies the height of an element. It is used to control the size of
+                        elements like headers and sections.
+                    </li>
+                    <li>
+                        <strong>display</strong>: Defines the type of box used for an element (block, inline, flex,
+                        grid). It is crucial for layout and alignment.
+                    </li>
+                    <li>
+                        <strong>justify-content</strong> and <strong>align-items</strong>: Used with flexbox to align
+                        items horizontally and vertically. They help in creating responsive and flexible layouts.
+                    </li>
+                    <li>
+                        <strong>color</strong>: Sets the text color of an element. It is used to enhance readability and
+                        create visual hierarchy.
+                    </li>
+                    <li>
+                        <strong>z-index</strong>: Controls the stack order of positioned elements. It ensures elements
+                        are layered correctly, especially in complex layouts.
+                    </li>
+                    <li>
+                        <strong>content</strong>: Used with pseudo-elements (<b>::before</b> and <b>::after</b>) to
+                        insert generated content. It is useful for adding decorative elements or icons.
+                    </li>
+                    <li>
+                        <strong>margin</strong> and <strong>padding</strong>: Control the space outside and inside an
+                        element, respectively. They are essential for spacing and layout.
+                    </li>
+                    <li>
+                        <strong>font-size</strong>, <strong>font-style</strong>, <strong>font-weight</strong>,
+                        <strong>line-height</strong>: Control the typography of text elements. They are important for
+                        readability and visual hierarchy.
+                    </li>
+                    <li>
+                        <strong>border-radius</strong>: Adds rounded corners to an element. It is used to create
+                        visually appealing and modern designs.
+                    </li>
+                    <li>
+                        <strong>text-decoration</strong>: Controls the decoration of text (e.g., underline, overline,
+                        line-through). It is often used to style links.
+                    </li>
+                    <li>
+                        <strong>background-color</strong>: Sets the background color of an element. It is used to create
+                        visual contrast and enhance the user interface.
+                    </li>
+                    <li>
+                        <strong>transition</strong>: Defines the transition effect for property changes. It is used to
+                        create smooth animations and enhance user experience.
+                    </li>
+                    <li>
+                        <strong>box-shadow</strong>: Adds shadow effects to elements. It is used to create depth and
+                        visual interest.
+                    </li>
+                    <li>
+                        <strong>border-bottom</strong>: Adds a bottom border to an element. It is used for visual
+                        separation and styling.
+                    </li>
+                    <li>
+                        <strong>transform</strong>: Applies a 2D or 3D transformation to an element. It is used for
+                        scaling, rotating, and translating elements.
+                    </li>
+                    <li>
+                        <strong>overflow-y</strong>: Controls the overflow of content in the vertical direction. It is
+                        used to manage content that exceeds the element's height.
+                    </li>
+                    <li>
+                        <strong>object-fit</strong>: Specifies how the content of a replaced element should be resized
+                        to fit its container. It is used to ensure images scale correctly within their containers.
+                    </li>
+                    <li>
+                        <strong>word-wrap</strong>: Specifies how to break lines within words. It is used to prevent
+                        text from overflowing its container.
+                    </li>
+                    <li>
+                        <strong>text-align</strong>: Aligns text horizontally. It is used to center, left-align, or
+                        right-align text within an element.
+                    </li>
+                    <li>
+                        <strong>flex-direction</strong>: Specifies the direction of the flex container. It is used to
+                        control the layout of flex items.
+                    </li>
+                    <li>
+                        <strong>cursor</strong>: Defines the type of cursor to display for an element. It is used to
+                        provide visual feedback to users.
+                    </li>
+                    <li>
+                        <strong>fill</strong> and <strong>viewBox</strong>: Used with SVG elements to control the fill
+                        color and the coordinate system of the SVG. They are important for creating scalable graphics.
+                    </li>
+                    <li>
+                        <strong>fill-rule</strong> and <strong>d</strong>: Used with SVG paths to define the fill
+                        behavior and the path data. They are essential for creating complex shapes.
+                    </li>
+                </ul>
+
+                <h3>Pseudo-elements and Media Queries</h3>
+                <ul>
+                    <li>
+                        <strong>Pseudo-elements (<b>::before</b> and <b>::after</b>)</strong>: Used to insert content
+                        before or after an element's content. They are often used for decorative purposes, such as
+                        adding icons or visual effects.
+                    </li>
+                    <li>
+                        <strong>Pseudo-classes (<b>:hover</b>)</strong>: Used to define a special state of an element.
+                        For example, <b>:hover</b> is used to change the style of an element when the user hovers over
+                        it with the mouse.
+                    </li>
+                    <li>
+                        <strong>Media Queries (<b>@media</b>)</strong>: Used to apply different styles for different
+                        device characteristics (e.g., screen width). They are essential for creating responsive designs
+                        that adapt to various screen sizes.
+                    </li>
+                </ul>
+                <h3>Accessibility</h3>
+                <p>In the implementation of this content page, several accessibility considerations were incorporated:</p>
+                <ul>
+                    <li><strong>Text Alternatives</strong>: All images include descriptive <b>alt</b> attributes to assist screen readers.</li>
+                    <li><strong>Keyboard Navigation</strong>: Interactive elements are accessible via keyboard, ensuring users can navigate without a mouse.</li>
+                    <li><strong>Color Contrast</strong>: High contrast between text and background colors to aid readability.</li>
+                    <li><strong>Semantic HTML</strong>: Use of semantic elements like <b>&lt;header&gt;</b>, <b>&lt;section&gt;</b>, and <b>&lt;footer&gt;</b> to enhance screen reader compatibility.</li>
+                    <li><strong>Focus States</strong>: Visible focus indicators for interactive elements to guide keyboard users.</li>
+                </ul>
+                <p>These measures help make the webpage more accessible to a broader audience.</p>
+
+                <h3>Link to the validation page</h3>
+                <p><a href="../../pages/validations/validation%20_ST2.html#content">Validation - Content</a></p>
+                <h3>Link to the page</h3>
+                <p><a href="../../pages/contents/content_ST2.html">Content</a></p>
+            </section>
+
+            <section id="challenge">
+                <h2 id="challenge"> Challenges and Lessons Learned</h2>
+                <ul>
+                    <li><b>Merge Conflicts</b>: Frequent merge conflicts arose when collaborating on shared files. We resolved this by improving version control practices, committing changes frequently, and coordinating edits.</li>
+                    <li><b>Header and Footer Issues</b>: Initially, manually adding the header and footer caused inconsistencies and required repetitive updates. We solved this by using JavaScript to dynamically load them, ensuring uniformity and easier maintenance.</li>
+                    <li><b>Global CSS Conflicts</b>Defining a global CSS file led to conflicts with page-specific styles. We resolved this by using structured naming conventions, CSS variables, scoped styles, and applying <b>!important</b> where necessary to enforce global rules.</li>
+                </ul>
+            </section>
+
+            <section id="compliance">
+                <h2 id="compliance"> Compliance</h2>
+                <p>Our website follows best practices in HTML5, CSS3, and JavaScript to create a clean
+                and efficient user experience. We prioritize accessibility by using proper
+                semantic structure, adding alternative text for images, and offering high-contrast designs for better visibility. We 
+                regularly test the site’s performance to maintain optimal speed and ensure 
+                all content is ethical, clear, and free from misleading information, providing 
+                a safe and user-friendly experience for everyone.</p>
+            </section>
+
+            <section id="ref">
+                <h2 id="ref">References</h2>
+                <ul class="ref">
+                    <li>ChatGPT (2025) <i>OpenAI.</i> Available at: <a href="https://www.openai.com/chatgpt">https://www.openai.com/chatgpt</a></li>
+                    <li>Kimi.ai (2025) <i>Kimi AI.</i> Available at: <a href="https://www.kimi.ai">https://www.kimi.ai</a></li>
+                    <li>W3Schools <i>W3Schools.</i> Available at: <a href="https://www.w3schools.com">https://www.w3schools.com</a></li>
+                    <li>Freepik <i>Freepik.</i> Available at: <a href="https://www.freepik.com">https://www.freepik.com</a></li>
+                    <li>Bootstrap Icons <i>Bootstrap Icons.</i> Available at: <a href="https://icons.getbootstrap.com">https://icons.getbootstrap.com</a></li>
+                    <li>Google <i>Google.</i> Available at: <a href="https://www.google.com">https://www.google.com</a> .</li>
+                    <li>Figma <i>Figma.</i> Available at: <a href="https://www.figma.com">https://www.figma.com</a></li>
+                </ul>
+            </section>
+
+            <p class="top"><a href="#top">Go top</a></p>
+        </main>
+
+        <!-- Sidebar area -->
+        <aside>
+            <h3>Core pages developed:</h3>
+
+            <ul class="top-level-ul">
+                <li>Student 2</li>
+                <ul>
+                    <li><a href="#home">Home page </a></li>
+                    <li><a href="#table">Table page</a></li>
+                    <li><a href="#content">Content page</a></li>
+                </ul>
+                <li><a href="#challenge">Challenges and Lessons Learned</a></li>
+                <li><a href="#compliance">Compliance</a></li>
+                <li><a href="#ref">References</a></li>
+            </ul>
+        </aside>
+    </div>
+
+    <!-- Footer Section -->
+    <div id="footer-container" data-editor-link="../../pages/pageeditors/pageEditor_ST2.html"></div>
+</body>
+
+</html>
