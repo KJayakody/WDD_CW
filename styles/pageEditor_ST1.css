@@ -1,93 +1,82 @@
+
 body {
-    /* background: #3399ff; */
-    height: 100%;
-    background: url(../assets/editors-background.jpg);
-    background-size: cover;
-    /* background: linear-gradient(180deg, #1F4FA0 0%, #3C47E1 100%); */
-    /* opacity: 0.7; */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
-.page-title {
-    margin-left: 20px; 
-     text-align: center; 
-     opacity: 1;
-}
-
-h3.page-sub-title {
-    text-align: center;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    opacity: 0.9;
-}
-
-.content-title {
-    margin-left: 30px;
-}
-
-.description-para {
-    /* margin-left: 0 40px 0 40px; */
-    text-align: justify;
-    padding: 0 30px 0 30px;
-    /* opacity: 1; */
-}
-
-.link-to-pages {
-    color: #007bff;
-    margin-left: 30px;
-    /* text-decoration: none; */
-}
-
-.title-section {
-    width: 80%;
-    /* align-items: center; */
-    margin: 20px auto;
-    padding: 10px;
-    /* background-color: #f9f9f9; */
-    background-color: rgba(202, 231, 255, 0.8);
-    /* opacity: 0.7; */
-    border: 1px solid #e5e5e5;
-    border-radius: 10px;
-    text-align: center;
-}
-
-.content-section {
-    width: 80%;
-    margin: 20px auto;
-    padding: 20px;
-    /* opacity: 0.7; */
-    /* background-color: #f9f9f9; */
-    background-color: rgba(202, 231, 255, 0.8);
-    border: 1px solid #e5e5e5;
-    border-radius: 10px;
-}
-
-.back-to-top-button {
+.container {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 60px;
-    position: relative;
-    top: -30px;
+    flex-direction: row-reverse;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+main {
+    flex: 3;
+}
+aside {
+    flex: 1;
+    background-color: #f4f4f4;
+    padding: 15px;
+    border: 1px solid #ddd;
+    margin-right: 20px;
+}
+section {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    background-color: #fafafa;
+}
+/* header, footer {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+} */
+
+.ref li{
+    list-style: none;
+    padding-bottom: 9px;
 }
 
-.to-top-btn {
-    background-color: #225ecc;
-    color: white;
-    padding: 8px 14px;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-    font-size: 18px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: ease-in 0.2s;
-}
-.to-top-btn:hover {
-    background-color: #3399ff;
-    transform: scale(1.05);
-    transition: 0.3s;
+aside a{
+    text-decoration : none;
 }
 
-.to-top-btn a {
-    color: white;
-    text-decoration: none;
+aside li{
+    padding-bottom: 4px;
 }
+
+.stud {
+    text-align: center;
+    line-height: 0;
+    background-color: #cbccc2ef;
+    color: white;
+    margin-top: 8px;
+}
+
+.top {
+    position: fixed;
+    bottom: 5%;
+    right: 5%;
+}
+        
+.top a {
+    padding: 10px 20px; /* Adds padding for button-like feel */
+    background-color: #007bff; /* Button color */
+    color: white; /* Text color */
+    text-decoration: none; /* Removes underline */
+    border-radius: 20px; /* Rounds the corners */
+    font-size: 12px; /* Adjust font size */
+    font-weight: bold; /* Make the text stand out */
+}
+
+.top a:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow */
+}
+
+/* img{
+    width: 90%;
+} */
