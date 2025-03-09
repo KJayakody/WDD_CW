@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Meet the team behind the project" />
+    <link rel="stylesheet" href="../../styles/global.css" />
+    <link rel="stylesheet" href="../../styles/pageEditor_ST3.style.css" />
+    <title>Page Editor - Student_3</title>
+  </head>
+  <body>
+    <!-- Header Section -->
+    <div id="header-container"></div>
+
+    <section class="stud">
+      <h2>Migara Mewantha, student 3</h2>
+    </section>
+
+    <div class="container">
+      <!-- Main content area -->
+      <main>
+        <!-- Update those first three sections for the pages you were responsible to implement -->
+
+        <section>
+          <h2 id="feedback">Feedback Page</h2>
+          <h3>Technical Description</h3>
+          <ul>
+            <li>
+              Used multiple <code>section</code> tags to divide the long form
+              into pages. Within a <code>section</code> used
+              <code>filedset</code> to categorized inputs.
+            </li>
+            <li>
+              Form fields are contained within a <code>div</code>. The elements
+              inside the <code>div</code> is structured using
+              <code>dislpay: flex;</code> and <code>flex-direction: row;</code>
+            </li>
+            <li>
+              To structuring the <code>inputs</code> and <code>label</code> used
+              <code>flex</code> styling.
+              <br />
+              <pre>
+                <code>
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                </code>
+              </pre>
+            </li>
+            <li>
+              Added CSS to multiple classes to keep consistancy. <br />
+              <pre>
+                    <code>
+                        .email,
+                        .contact,
+                        .occupation,
+                        .date-time,
+                        .updates,
+                        .resources-form {
+                            /*styles*/
+                        }
+                    </code>
+                  </pre>
+            </li>
+            <li>
+              Defined <code>inputs</code> with related types, to validate the
+              user input.<br />
+            </li>
+            <li>
+              For the navigation between <code>form</code> used two image button
+              arrows with custom JavaScript functions <br />
+              <pre>
+                    <code>
+                        nextStep()
+                        // Checks the inputs filled correctly before moving to next page.
+                        // Disable the next button if no more pages.
+                        prevStep()
+                        // Disable the button if no more pages.
+                    </code>
+                  </pre>
+            </li>
+          </ul>
+
+          <h3>Accessibility</h3>
+          <p>
+            Explain how you used to addressed accessibility in this particular
+            page you implemented.
+          </p>
+
+          <h3>Validation</h3>
+          <!-- Update the path to link the Page Editor with the splash page -->
+          <p>
+            <a href="../../pages/validations/validation _ST3.html#feedbackVal"
+              >Feedback page validation</a
+            >
+          </p>
+          <!-- Update the path to link the Page Editor with the validation page and make it jump to the marker that contains a snapshot for the splash page -->
+
+          <h3>Link to the page</h3>
+          <p>
+            <a href="../../pages/feedback.html">Feedback</a>
+          </p>
+        </section>
+
+        <section>
+          <h2 id="team">Team Page</h2>
+          <h3>Technical Description</h3>
+          <li>
+            The team page is divided into two <code>section</code> and
+            structured using <code>display: flex;</code> and
+            <code>flex-direction: column;</code>. <br />
+          </li>
+          <li>
+            Set a backgroung image to <code>body</code> using CSS.
+            <pre>
+                <code>
+                    background: url(../assets/team.bg.jpg);
+                </code>
+              </pre>
+          </li>
+          <li>
+            Created image cards with thumbnails using
+            <code>div class="card"</code> and placed inside the
+            <code>section class="card-container"</code>. To scale up when hover
+            above the card added <code>transform: scale(1.1)</code> to CSS. This
+            scale the element without moving the other elements.
+          </li>
+          <li>
+            To create the effects (exapnd and transparency) on cards when
+            selected, used two seperate CSS classes <code>selected</code> and
+            <code>not-selected</code>. Using JS
+            <code>element.classList.toggle("class")</code> add or remove the
+            class when card selected or not.
+          </li>
+          <li>
+            To show/ hide extra details in cards, used two seperate classes
+            <code>show</code> with <code>display: block;</code> and
+            <code>hide</code> with <code>display: none;</code>.
+          </li>
+          <h3>Accessibility</h3>
+          <p>
+            Explain how you used to addressed accessibility in this particular
+            page you implemented.
+          </p>
+
+          <h3>Link to the validation page</h3>
+          <!-- Update the path to link the Page Editor with the splash page -->
+          <p>
+            <a href="../../pages/validations/validation _ST3.html#teamVal"
+              >Team page - validation</a
+            >
+          </p>
+          <!-- Update the path to link the Page Editor with the validation page and make it jump to the marker that contains a snapshot for the splash page -->
+
+          <h3>Link to the page</h3>
+          <p>
+            <a href="../../pages/team.html">Visit Team Page</a>
+          </p>
+        </section>
+
+        <section>
+          <h2 id="content_ST3">Content Page</h2>
+          <h3>Technical Description</h3>
+          <li>
+            This page use <code>display: grid;</code> to layout. with 3 columns
+            and 6 rows.<br />
+            <pre>
+                <code>
+                    .parent {
+                        display: grid;
+                        grid-template-columns: repeat(3, auto);
+                        grid-template-rows: repeat(6, auto);
+                        gap: 8px;
+                        column-gap: 20px;
+                    }
+                </code>
+              </pre>
+          </li>
+          <li>
+            The side pannel <code>side-nav</code> is locked in place by
+            <code>position: sticky;</code>.
+          </li>
+
+          <h3>Accessibility</h3>
+          <p>
+            Explain how you used to addressed accessibility in this particular
+            page you implemented.
+          </p>
+
+          <h3>Link to the validation page</h3>
+          <!-- Update the path to link the Page Editor with the splash page -->
+          <p>
+            <a
+              href="../../pages/validations/validation _ST3.html#content_ST3Val"
+              >content_ST3 - Validation</a
+            >
+          </p>
+          <!-- Update the path to link the Page Editor with the validation page and make it jump to the marker that contains a snapshot for the splash page -->
+
+          <h3>Link to the page</h3>
+          <p>
+            <a href="../../pages/contents/content_ST3.html">Content_ST3 page</a>
+          </p>
+        </section>
+
+        <section>
+          <h2 id="challenge">Challenges and Lessons Learned</h2>
+          <dl>
+            <dt><u>Designing a basic structure for the web page</u></dt>
+            <dd>
+              It challenging to develop the web pages without having a clear
+              design to follow. For resolve this we used Figma(<a
+                href="https://www.figma.com/design/hVyi0TFf0KhQmSsYHqCcBA/WDD?node-id=20-290&p=f&t=g0nqH2kr8sKZeIo9-0"
+                target="_blank"
+                >Visit design</a
+              >) to design the web page before statrt coding.
+            </dd>
+            <dt><u>Layouting multiple elements</u></dt>
+            <dd>
+              Its difficult to position multiple elements only using margin
+              properties. By using position CSS like <code>flex</code> and
+              <code>grid</code> It is easy to position elements.
+            </dd>
+            <dt><u>Keeping track with the other members</u></dt>
+            <dd>
+              When each member developing the pages remotly, it's hard to keep
+              track on pages and testing the web site. We used GitHub (<a
+                href="https://github.com/KJayakody/WDD_CW"
+                target="_blank"
+                >Visit Repository</a
+              >) to share and review our changes. We also joined weekly sheduled
+              online meetings using Google Meet to overview the progrees and
+              palning the future tasks. To keep all this managed and tracked we
+              used Jira Project Mangement.
+            </dd>
+          </dl>
+          <p>
+            In this experience I am able to learn about how to develop a project
+            while collaborating with others, basic web developing. This also
+            helped to learn tools like Figma, GitHub, Jira etc.
+          </p>
+        </section>
+
+        <section>
+          <h2 id="compliance">Compliance</h2>
+          <p>
+            Discuss how the pages you have created are compliant with Janet
+            regulations governing web page publication. This includes
+            demonstrating your understanding and application of these
+            regulations. Be realistic and truthful.
+          </p>
+        </section>
+
+        <section class="ref">
+          <h2 id="ref">References</h2>
+          <ul class="ref">
+            <li>
+              <p><strong>Flaticon (Icons)</strong></p>
+              <p>
+                "arrow_left","arrow_right"
+                <a href="https://www.flaticon.com/" target="_blank"
+                  >Flaticon Icons</a
+                >. Retrieved on [20/02/2025].
+              </p>
+            </li>
+            <li>
+              <p><strong>Freepik (Images)</strong></p>
+              <p>
+                "team.bg.ipg"
+                <a href="https://www.freepik.com/" target="_blank"
+                  >Freepik Images</a
+                >. Retrieved on [28/02/2025].
+              </p>
+            </li>
+            <li>
+              <p><strong>W3Schools (Further Learning)</strong></p>
+              <p>
+                W3Schools. (n.d.).
+                <a href="https://www.w3schools.com/" target="_blank"
+                  >W3Schools</a
+                >.
+              </p>
+            </li>
+            <li>
+              <p><strong>ChatGPT (Further Learning)</strong></p>
+              <p>
+                OpenAI. (2025).
+                <a href="https://openai.com/chatgpt" target="_blank"
+                  >ChatGPT (March 9 Version)</a
+                >.
+              </p>
+            </li>
+          </ul>
+        </section>
+
+        <p class="top"><a href="#top">Go top</a></p>
+      </main>
+
+      <!-- Sidebar area -->
+      <aside>
+        <h3>Core pages developed:</h3>
+
+        <!-- Customize this to the role you undertook. Keep only the list items you were responsible to develop, delete the rest -->
+        <ul class="top-level-ul">
+          <!-- Keep only the list items you were responsible to develop, delete the rest and update the links to the corresponding markers -->
+          <li>Student 3</li>
+          <ul>
+            <li><a href="#feedback">Feedback page</a></li>
+            <li><a href="#team">Team page</a></li>
+            <li><a href="#content_ST3">Content page</a></li>
+          </ul>
+          <li><a href="#challenge">Challenges and Lessons Learned</a></li>
+          <li><a href="#compliance">Compliance</a></li>
+          <li><a href="#ref">References</a></li>
+        </ul>
+      </aside>
+    </div>
+
+    <!-- Footer Section -->
+    <div id="footer-container"></div>
+    <script src="../scripts/headerandfooterloader.js"></script>
+    <script src="../scripts/team.script.js"></script>
+  </body>
+</html>

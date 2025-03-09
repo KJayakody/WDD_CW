@@ -1,10 +1,3 @@
-/**
- * ToDo
- * Uncomment Validagtion in nexStep() [prod]
- * Try to hide the submit button until form filled.
- *
- * **/
-
 const sugest = document.getElementById("sugestionId");
 const sugestBox = document.getElementById("sugestion-box");
 const yesRadio = document.getElementById("yes-radio");
@@ -21,21 +14,25 @@ const dropContent = document.getElementById("dropContent");
 const ratingInput = document.getElementById("rating");
 const ratingOutput = document.getElementById("output");
 const selections = document.querySelectorAll(".forum");
-var currentStep = 0;
-console.log(selections);
-console.log("hello world");
 
+// counter for the steps
+var currentStep = 0;
+
+// function to show the current step
 function showStep(step) {
   selections.forEach((section, index) => {
     section.classList.toggle("inactive", index !== step);
   });
 }
 
+// function to validate the current step
 function validateStep() {
-  console.log("validating step");
+  // console.log("validating step");
   const currentSection = selections[currentStep];
   const inputs = currentSection.querySelectorAll("input, textarea");
-  console.log(inputs);
+  // console.log(inputs);
+
+  // check if all inputs are valid
   for (let i = 0; i < inputs.length; i++) {
     if (!inputs[i].checkValidity()) {
       inputs[i].reportValidity();
@@ -45,12 +42,14 @@ function validateStep() {
   return true;
 }
 
+// disable the left arrow button if the current step is 0
 if (currentStep === 1) {
-  console.log("image changing");
+  // console.log("image changing");
   rightArrowBtn.disabled = true;
   rightArrowImg.src = "../assets/arrow.right.disabled.png";
 }
 
+// event listener for the right arrow button
 function nextStep() {
   if (currentStep < selections.length - 1) {
     if (validateStep()) {
@@ -59,6 +58,7 @@ function nextStep() {
     }
   }
 
+  // disable the right arrow button if the current step is the last step
   if (currentStep === selections.length - 1) {
     rightArrowBtn.disabled = true;
     rightArrowImg.src = "../assets/arrow.right.disabled.png";
@@ -68,12 +68,14 @@ function nextStep() {
   }
 
   leftArrowBtn.disabled = currentStep === 0;
+  // ternary operator to change the image of the left arrow button
   leftArrowImg.src =
     currentStep === 0
       ? "../assets/arrow.left.disabled.png"
       : "../assets/arrow.left.png";
 }
 
+// event listener for the left arrow button
 function prevStep() {
   if (currentStep > 0) {
     currentStep--;
@@ -87,7 +89,7 @@ function prevStep() {
   rightArrowImg.src = "../assets/arrow.right.png";
 }
 
-// check this
+// Download the json file of the feedback form - Ai code for simulating the form submission
 function downloadJson(data, filename) {
   let jsonString = JSON.stringify(data, null, 2);
   let blob = new Blob([[jsonString], { type: "application/json" }]);
@@ -95,9 +97,9 @@ function downloadJson(data, filename) {
   a.href = URL.createObjectURL(blob);
   a.download = filename;
   a.click();
-  // document.body.removeChild(a);
 }
 
+// event listener for the form submission
 document
   .getElementById("forum-body")
   .addEventListener("submit", function (event) {
@@ -110,6 +112,7 @@ document
 
 showStep(currentStep);
 
+// display the suggestions box when the no radio button is checked
 noRadio.addEventListener("change", function () {
   if (noRadio.checked) {
     sugest.style.display = "inline-flex";
@@ -117,35 +120,15 @@ noRadio.addEventListener("change", function () {
   }
 });
 
+// hide the suggestions box when the yes radio button is checked
 yesRadio.addEventListener("change", () => {
   if (yesRadio.checked) {
     sugest.style.display = "none";
+    sugestBox.required = false;
   }
 });
 
-// Function for dropdown
-function dropDownFunc() {
-  dropContent.classList.toggle("show");
-}
-
-function changeBtnText(text) {
-  dropBtn.textContent = text;
-  dropContent.classList.toggle("show");
-}
-
-window.onclick = (event) => {
-  if (!event.target.matches("#dropbtn")) {
-    var dropdowns = document.getElementsByClassName("drop-content");
-    var i;
-    for (i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains("show")) {
-        openDropdown.classList.remove("show");
-      }
-    }
-  }
-};
-// Showing the charater counter in textBox
+// Showing the charater counter in suggestion textBox
 function updateCounter() {
   const counter = document.getElementById("counter");
   const textBox = document.getElementById("sugestion-box");
