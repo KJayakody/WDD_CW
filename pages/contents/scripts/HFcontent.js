@@ -35,11 +35,11 @@ const footerHTML = `
             <div class="quick-links">
                 <ul>
                     <li class="title-head">Quick Links</li>
-                    <li><a href="team.html">Team</a></li>
-                    <li><a href="volunteer.html">Volunteer</a></li>
-                    <li><a href="table.html">Table</a></li>
-                    <li><a href="sitemap.html">Sitemap</a></li>
-                    <li><a href="feedback.html">Feedback</a></li>
+                    <li><a href="../../pages/team.html">Team</a></li>
+                    <li><a href="../../pages/volunteer.html">Volunteer</a></li>
+                    <li><a href="../../pages/table.html">Table</a></li>
+                    <li><a href="../../pages/sitemap.html">Sitemap</a></li>
+                    <li><a href="../../pages/feedback.html">Feedback</a></li>
                 </ul>
             </div>
             <div class="resources">
