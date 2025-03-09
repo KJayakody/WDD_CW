@@ -1,0 +1,273 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Editor Student - Anupama</title>
+
+    <link rel="stylesheet" href="../../styles/global.css">
+    <link rel="stylesheet" href="../../styles/pageEditor_ST1.css">
+    <script src="../../scripts/headerandfooterloader.js" defer></script>
+
+</head>
+<body>
+    
+    <!-- Update the header and the footer to be consistent with the rest of the pages you implemented -->
+
+    <div id="top"></div>
+    
+    <!-- Header Section -->
+    <div id="header-container"></div>
+
+    <section class="stud">
+        <h2>Anupama Abeyrathna, Student 01</h2>
+    </section>
+
+    <div class="container">
+        <!-- Main content area -->
+        <main>
+
+            <!-- Update those first three sections for the pages you were responsible to implement -->
+
+            <section>
+                <h2 id="splash">Splash Page</h2>
+                    <h3>Technical Description</h3>
+                    <h3>Technical Description</h3>
+                    <h4 class="content-title">HTML Structure</h4>
+                    <p class="description-para">
+                        The splash screen uses a straightforward but effective HTML setup:</p>
+                    <p class="description-para">
+                        <ul>
+                            <li>It has all the proper HTML5 basics - DOCTYPE declaration, meta tags for character encoding and responsive design.</li>
+                            <li>It pulls in the "Protest Strike" font from Google Fonts, which gives the page its unique typography.</li>
+                            <li>The content is organized in a simple div container that holds</li>
+							<ul>
+								<li>A big headline for "LIFE BELOW WATER"</li>
+								<li>A short mission statement paragraph</li>
+								<li>A list of team members' names</li>
+								<li>A loading animation (using a GIF)</li>
+							</ul>
+                            <li>There's a simple JavaScript function at the bottom that automatically redirects users to the home page after 5 seconds, so they don't have to click anything.</li>
+                        </ul>
+                    </p>
+                    <h4 class="content-title">CSS Techniques</h4>
+                    <p class="description-para">
+                        The CSS does most of the heavy lifting to make the splash screen visually appealing:</p>
+                    <p class="description-para">
+                        <ul>
+                            <li>It uses a full-screen ocean background image that fills the entire viewport.</li>
+                            <li>Everything is centered using flexbox (display: flex with align-items and justify-content set to center).</li>
+                            <li>The title is huge (100px) with text shadows to make it pop against the background.</li>
+                            <li>The mission statement has a different color (#1e3d4e) to create visual contrast./li>
+                            <li>The team members' names are displayed in a horizontal row at the bottom of the screen using flexbox again, with absolute positioning to keep them at the bottom.</li>
+                            <li>Text has shadows applied to improve readability against the background image.</li>
+                            <li>The loading spinner is sized appropriately (125px) with some top margin to separate it from other elements.</li>
+                        </ul>
+                    </p>
+                    <h4 class="content-title">JavaScript Implementation</h4>
+                    <p class="description-para">
+                        The JavaScript is minimal but serves an important purpose:</p>
+                    <p class="description-para">
+                        <ul>
+                            <li>It uses the setTimeout() function to create a 5-second delay before automatically redirecting the user.</li>
+							<li>After the delay, it changes the window.location.href to "home.html", which takes the user to the main page.</li>
+							<li>This creates a smooth transition from the splash screen to the actual content without requiring any user input.</li>
+							<li>The timing gives users enough time to see the project title, mission statement, and team members before moving on.</li>
+                        </ul>
+						All these techniques work together to create a visually striking intro screen that sets the tone for the website while the main content loads.
+                    </p>  
+                    
+                    <h3>Accessibility</h3>
+                        <p>Explain how you used to addressed accessibility in this particular page you implemented.</p>
+                    
+                    <h3>Link to the validation page</h3> <!-- Update the path to link the Page Editor with the splash page -->
+                        <p><a class="link-to-pages" href="../validations/validation_ST1.html#splashVal">Link to the Validation Content</a></p>
+
+                    <h3>Link to the page</h3>
+                        <p><a href="../splash.html">Splash page</a></p>
+            </section>
+
+            <section>
+                <h2 id="volunteer">Volunteer Page</h2>
+                    <h3>Technical Description</h3>
+                    <h4 class="content-title">HTML Structure</h4>
+                    <p class="description-para">
+                        The volunteer page employs a user-centered approach with interactive elements that allow visitors to discover volunteer opportunities. Key structural elements include:</p>
+                    <p class="description-para">
+                        <ul>
+                            <li><b>Filter System</b>: Implemented search input and category dropdown for filtering volunteer programs</li>
+                            <li><b>Program Cards</b>: Structured display of volunteer opportunities with consistent information architecture</li>
+                            <li><b>Review Section</b>: Showcases user feedback with a summary and individual review cards</li>
+                            <li><b>Interactive Form</b>: Includes emoji-based rating system and feedback submission functionality</li>
+                        </ul>
+                    </p>
+                    <h4 class="content-title">CSS Techniques</h4>
+                    <p class="description-para">
+                        The styling for the Volunteer page employs several advanced CSS techniques:</p>
+                    <p class="description-para">
+                        <ul>
+                            <li><b>Background Handling</b>: Full-page background image with fixed positioning and overlay</li>
+                            <li><b>Card Design</b>: Consistent card components with hover effects for interactive feedback</li>
+                            <li><b>Flexbox Layouts</b>: Used for organizing program cards, review sections, and rating buttons</li>
+                            <li><b>Interactive Elements</b>: Custom styling for form elements, buttons, and rating emojis</li>
+                            <li><b>Color Transparency</b>: Used rgba() color values to create semi-transparent backgrounds</li>
+                            <li><b>Custom Typography</b>: Applied font styling to create visual hierarchy</li>
+                            <li><b>Border Radius</b>: Consistently applied rounded corners for a cohesive design language</li>
+                            <li><b>Box Shadows</b>: Added subtle shadows to create depth and emphasize important elements</li>
+                        </ul>
+                    </p>
+                    <h4 class="content-title">JavaScript Implementation</h4>
+                    <p class="description-para">
+                        I developed JavaScript functionality for volunteer page to enhance interactivity with the user (Filtering System, Rating System)</p>
+                    <p class="description-para">
+                        <ul>
+                            <li>
+                                Program Filtering System
+                                <ul>
+                                    <li>Created event listeners for the search input and category dropdown</li>
+                                    <li>Implemented filtering logic based on program names and categories</li>
+                                    <li>Applied dynamic display changes based on filter criteria</li>
+                                </ul>
+                            </li>
+                            <li>
+                                Rating System
+                                <ul>
+                                    <li>Developed an emoji-based rating selection with visual feedback</li>
+                                    <li>Added validation to ensure ratings are selected before submission</li>
+                                    <li>Implemented popup feedback system</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </p> 
+
+                    <h3>Accessibility</h3>
+                        <p>Explain how you used to addressed accessibility in this particular page you implemented.</p>
+
+                    <h3>Link to the validation page</h3> <!-- Update the path to link the Page Editor with the splash page -->
+                        <p><a class="link-to-pages" href="../validations/validation_ST1.html#volunteerVal">Link to the Validation Content</a></p>
+
+                        
+                    <h3>Link to the page</h3>
+                        <p><a class="link-to-pages" href="../volunteer.html">Link to the Volunteer</a></p>
+            </section>
+
+            <section>
+                <h2 id="content">Content Page</h2>
+                <h3 class="page-sub-title">The Importance of Oceans for the Planet</h3>
+                    <h3>Technical Description</h3>
+                    <h4 class="content-title">HTML Structure</h4>
+                    <p class="description-para">
+                        For the content page about ocean importance, I implemented a structured layout using semantic HTML5 elements to enhance accessibility and SEO. Key HTML elements include:</p>
+                    <p class="description-para">
+                        <ul>
+                            <li><code>&lt;section&gt;</code> tags to divide content into meaningful sections (hero, introduction, information, challenges, conclusion)</li>
+                            <li>Hero section with a compelling background image and call-to-action button</li>
+                            <li>Information boxes using flexbox containers to present environmental, economic, and social importance of oceans</li>
+                            <li>Strategic use of headings (<code>&lt;h1&gt;through&lt;h1&gt;</code>) to create a logical document outline</li>
+                            <li>SVG icons for interactive elements like the scroll-to-top button</li>
+                        </ul>
+                    </p>
+                    <h4 class="content-title">CSS Techniques</h4>
+                    <p class="description-para">
+                        The styling for the content page employs several advanced CSS techniques:</p>
+                    <p class="description-para">
+                        <ul>
+                            <li><b>Responsive Design</b>: Applied flexible layouts that adapt to different screen sizes</li>
+                            <li><b>CSS Variables</b>: Used for consistent color themes (primary and secondary colors)</li>
+                            <li><b>Pseudo-elements</b>: Created decorative elements like the underline after section headings using ::after</li>
+                            <li><b>Flexbox</b>: Implemented for layout organization, particularly in the information boxes section</li>
+                            <li><b>CSS Positioning</b>: Used relative and absolute positioning for elements like the hero overlay and scroll button</li>
+                            <li><b>Image Handling</b>: Applied object-fit: cover to ensure images maintain proper proportions</li>
+                            <li><b>Transitions</b>: Added subtle animations for interactive elements like the related content boxes</li>
+                            <li><b>Linear Gradients</b>: Created overlay effects on the hero section and content boxes</li>
+                        </ul>
+                    </p>
+                    <h4 class="content-title">JavaScript Implementation</h4>
+                    <p class="description-para">
+                        I developed JavaScript functionality for content page to enhance interactivity with the user(Scroll-to-top Functionaity)</p>
+                    <p class="description-para">
+                        <ul>
+                            <li>Created a smooth scrolling effect using the Window.scrollTo() method</li>
+                            <li>Applied event handling for button clicks</li>
+                        </ul>
+                    </p> 
+
+                    <h3>Accessibility</h3>
+                        <p>Explain how you used to addressed accessibility in this particular page you implemented.</p>
+
+                    <h3>Link to the validation page</h3> <!-- Update the path to link the Page Editor with the splash page -->
+                        <p><a class="link-to-pages" href="../validations/validation_ST1.html#contentVal">Link to the Validation Content</a></p>
+
+                        
+                    <h3>Link to the page</h3>
+                        <p><a class="link-to-pages" href="../contents/content_ST1.html">Link to the Content Page</a></p>
+            </section>
+
+            <section>
+                <h2 id="challenge"> Challenges and Lessons Learned</h2>
+                    <p>During the development of this website as Student 01, I encountered several challenges. However, through collaboration, research, and the use of various tools, I was able to overcome these obstacles effectively.</p>
+                    <ul>
+                        <li>Difficulty in Team Collaboration</li>
+                        <ul>
+                            <li>To ensure efficient task distribution and progress tracking, we utilized Jira for project management.</li>
+                            <li>We used GitHub for seamless code collaboration, enabling better version control and teamwork.</li>
+                        </ul>
+                        <li>Lack of Design for Website Development</li>
+                        <ul>
+                            <li>To address this, we used Figma to create structured designs for the required web pages before implementation.</li>
+                        </ul>
+                        <li>Limited Knowledge in JavaScript for Certain Functionalities</li>
+                        <ul>
+                            <li>We leveraged online resources such as W3Schools and GeeksforGeeks to enhance our understanding and implement the necessary functions.</li>
+                        </ul>
+                        <li>GitHub Merge Conflicts</li>
+                        <ul><li>We carefully reviewed each other's code, discussed potential conflicts, and worked together to resolve them efficiently.</li></ul>
+                    </ul> 
+            </section>
+
+            <section>
+                <h2 id="compliance"> Compliance</h2>
+                    <p>Discuss how the pages you have created are compliant with Janet regulations governing web page publication. This includes demonstrating your understanding and application of these regulations. Be realistic and truthful.</p> 
+
+                    
+            </section>
+
+            <section>
+                <h2 id="ref">References</h2>
+                <p>Provide links to resources you used following a consistent format (e.g., APA, MLA, or a simplified style). For example:<br><br>
+                    <ul class="ref">
+                        <li>perplexity ai, Chat Available at : <a href="https://www.perplexity.ai/search/i-need-content-to-an-article-i-LdJbd9JUSaOliWJRDXHL0g">perplexity chat</a> </li>
+                        <li>freepik for images : <a href="https://www.freepik.com/">freepik</a></li>
+                        <li>Splash Screen Transitions: <a href="https://www.geeksforgeeks.org/create-a-splash-page-app-in-html-css-javascript/">GeeksForGeeks</a></li>
+                        <li>Program filter functionality : <a href="https://www.w3schools.com/howto/howto_js_filter_lists.asp">w3schools</a></li>
+                    </ul>
+            </section>
+
+            <p class="top"><a href="#top">Go top</a></p>
+        </main>
+
+        <!-- Sidebar area -->
+        <aside>
+            <h3>Core pages developed:</h3>
+
+        <!-- Customize this to the role you undertook. Keep only the list items you were responsible to develop, delete the rest -->
+            <ul class="top-level-ul">
+                <!-- Keep only the list items you were responsible to develop, delete the rest and update the links to the corresponding markers -->
+                <li>Student 1</li>
+                    <ul> 
+                        <li><a href="#splash">Splash page</a></li>
+                        <li><a href="#volunteer">Volunteer page</a></li>
+                        <li><a href="#content">Content page</a></li>
+                    </ul>
+                <li><a href="#challenge">Challenges and Lessons Learned</a></li>
+                <li><a href="#compliance">Compliance</a></li>
+                <li><a href="#ref">References</a></li>
+            </ul>
+        </aside>
+    </div>
+
+   <!-- Footer Section -->
+   <div id="footer-container" data-editor-link="../../pages/pageeditors/pageEditor_ST1.html"></div>
+</body>
+</html>

@@ -1,5 +1,5 @@
 body {
-  background: url("../assests/background.jpg") no-repeat center center fixed;
+  background: url("../assets/volunteer_background.jpg") no-repeat center center fixed;
   background-size: cover;
   min-height: 100vh;
   display: flex;
@@ -87,17 +87,35 @@ body {
   border-radius: 10px;
 }
 
+p {
+  text-align: justify;
+}
+
+.volunteer-card-buttons {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #004a68;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.volunteer-card-buttons:hover {
+  background-color: #012432;
+}
+
 .reviews {
-  opacity: 0.9;
+  /* opacity: 0.9; */
   text-align: center;
-  background-color: white;
+  /* background-color: white; */
+  margin: 50px 50px 50px 50px;
   color: #d6f1f2;
   padding: 20px;
 }
 
 .review_title {
   font-size: 40px;
-  background-color: rgba(0, 150, 211, 0.5);
+  background-color: rgba(0, 150, 211, 1);
   color: #ffffff;
   margin-bottom: 10px;
   border-radius: 20px;
@@ -112,7 +130,7 @@ body {
 
 .review_summery,
 .review_card {
-  background-color: rgba(0, 150, 211, 0.5);
+  background-color: rgba(0, 150, 211, 1);
   padding: 20px;
   border-radius: 10px;
   display: flex;
@@ -129,11 +147,19 @@ body {
 
 .review_card {
   color: #000000;
+  text-align: center;
   width: 300px;
 }
 
 .review_card .profile {
   margin-top: auto;
+}
+
+.profile{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
 }
 
 .review_cards :hover {
@@ -177,6 +203,7 @@ body {
   color: #ffffff;
   margin-bottom: 10px;
   text-shadow: 2px 2px rgb(69, 105, 153);
+  text-align: center;
 }
 
 .review_message {
@@ -222,4 +249,48 @@ button:hover {
   width: 40%;
   border-radius: 20px;
   margin: 20px;
+}
+
+.rating-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.rating-btn {
+  font-size: 2rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.rating-btn:hover, .rating-btn.selected {
+  transform: scale(1.2);
+}
+
+.popup {
+  align-items: center;
+  /* display: flex; */
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #004a68;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+}
+
+.popup button {
+  /* margin: 10px 100px 10px 100px; */
+  padding: 5px 10px;
+  border: none;
+  background: #ff5c5c;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+  align-self: center;
 }
