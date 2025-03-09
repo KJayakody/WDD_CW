@@ -9,7 +9,8 @@
     <link rel="stylesheet" href="../../styles/global.css">
     <link rel="stylesheet" href="../../styles/pageEditor_validator.css">
 
-    <script src="../../scripts/headerandfooterloader.js"></script>
+    <!-- <script src="../../scripts/headerandfooterloader.js"></script> -->
+    <script src="scripts/HFpageeditors.js"></script>
 </head>
 
 <body>
@@ -22,15 +23,25 @@
     <div class="container">
         <!-- Main content area -->
         <main>
-
-            <!-- Update those first three sections for the pages you were responsible to implement -->
-
             <section>
                 <div id="profileEdit"></div>
                 <h2 id="splash">Profile Page</h2>
                     <h3>Technical Description</h3>
-                        <p>
-                            The profile page is structured using &lt;div&gt; tags to separate different sections, making it easier to apply styling. The profile section, which includes the profile image, cover image, and related content, is styled using display: flex with justify-content: center and a column flex direction to align elements effectively. Social media icons are implemented using Scalable Vector Graphics (SVG) for better scalability. The "About" and "Who am I" sections are placed side by side within a common container using flex display, a technique also applied to the skills and experience sections. Section dividers are created using the &lt;hr&gt; tag, while the progress bar effect is achieved through a &lt;div&gt; with custom styling. Links in the experience section are styled with :hover effects for interactivity. Different UN goals are presented in individual cards containing links to their respective pages. The volunteering availability section includes a calendar, where the &lt;span&gt; tag is used to apply styling within a &lt;div&gt;. The calendar layout is structured using grid-template-columns to maintain uniform spacing. A "Contact Me" button triggers a modal form using JavaScript, allowing users to input data with relevant form field types. Hover effects are applied to content sections and buttons to enhance visual appeal, and a background image is added for a more engaging design.
+                        <p style="text-align: justify;">
+                            The profile page is structured using &lt;div&gt; tags to separate different sections, making it 
+                            easier to apply styling. The profile section, which includes the profile image, cover image, and 
+                            related content, is styled using display: flex with justify-content: center and a column flex 
+                            direction to align elements effectively. Social media icons are implemented using Scalable Vector 
+                            Graphics (SVG) for better scalability. The "About" and "Who am I" sections are placed side by side 
+                            within a common container using flex display, a technique also applied to the skills and experience 
+                            sections. Section dividers are created using the &lt;hr&gt; tag, while the progress bar effect is 
+                            achieved through a &lt;div&gt; with custom styling. Links in the experience section are styled 
+                            with :hover effects for interactivity. Different UN goals are presented in individual cards containing 
+                            links to their respective pages. The volunteering availability section includes a calendar, where the 
+                            &lt;span&gt; tag is used to apply styling within a &lt;div&gt;. The calendar layout is structured using 
+                            grid-template-columns to maintain uniform spacing. A "Contact Me" button triggers a modal form using 
+                            JavaScript, allowing users to input data with relevant form field types. Hover effects are applied to 
+                            content sections and buttons to enhance visual appeal, and a background image is added for a more engaging design.
                         </p> 
                     
                     <h3>Accessibility</h3>
@@ -41,6 +52,8 @@
                             <li>The text colors and backgrounds maintain sufficient contrast to be readable for users with visual impairments.</li>
                             <li>I implemented :hover styles on buttons and links to improve visibility when users navigate.</li>
                             <li>The page uses percentages for layout elements to support zooming and different screen sizes without breaking the design</li>
+                            <li>Users are bale to easily access the contact modal through a click of a button and exit the modal by either clicking the black space around the form or the close button.</li>
+                            <li>The background opacity is reduced when the modal is opened in order to give the users' full attention to the modal.</li>
                         </ul>
                     
                     <h3>Link to the validation page</h3>
@@ -51,10 +64,27 @@
             </section>
 
             <section>
+                <div id="sitemapEdit"></div>
                 <h2 id="volunteer">Sitemap Page</h2>
                     <h3>Technical Description</h3>
-                        <p>
-                            The sitemap page is structured using an &lt;svg>-based layout to visually represent the website's structure, ensuring clarity and ease of navigation. The page is styled with a full-width background image for a visually engaging experience. The central title is positioned using text-align: center and a large font size for emphasis. The sitemap itself is constructed with SVG elements, where each main section is represented as a rectangular node (&lt;rect class="node">), styled with a light blue fill and a transition effect for hover interactions. Sub-sections are created using &lt;rect class="sub_node">, maintaining a consistent design with white-filled rectangles and smooth hover transitions. Connecting lines (&lt;line class="line">) are drawn to visually link parent and child nodes, enhancing the hierarchical structure. Text labels (&lt;text>) are centered within each node using text-anchor: middle and dominant-baseline: middle for proper alignment. Interactive elements are made clickable through onclick functions that trigger JavaScript navigation. Additionally, hyperlinks (&lt;a> tags) allow external access to relevant pages. The grid-based alignment of elements is controlled using transform matrices, ensuring a structured and evenly spaced display. Hover effects (:hover) on nodes and sub-nodes provide visual feedback by changing colors and strokes when hovered. The page maintains accessibility features, such as tabindex="0" for keyboard navigation and color contrasts for readability. The overall design ensures a user-friendly and interactive visualization of the website's structure while maintaining responsiveness and ease of navigation.
+                        <p style="text-align: justify;">
+                            The sitemap page is structured using an &lt;svg>-based layout to visually represent the website's 
+                            structure, ensuring clarity and ease of navigation. The page is styled with a full-width background 
+                            image for a visually engaging experience. The central title is positioned using text-align: center and 
+                            a large font size for emphasis. The sitemap itself is constructed with SVG elements, where each main 
+                            section is represented as a rectangular node (&lt;rect class="node">), styled with a light blue fill 
+                            and a transition effect for hover interactions. Sub-sections are created using &lt;rect class="sub_node">, 
+                            maintaining a consistent design with white-filled rectangles and smooth hover transitions. Connecting 
+                            lines (&lt;line class="line">) are drawn to visually link parent and child nodes, enhancing the hierarchical 
+                            structure. Text labels (&lt;text>) are centered within each node using text-anchor: middle and 
+                            dominant-baseline: middle for proper alignment. Interactive elements are made clickable through 
+                            onclick functions that trigger JavaScript navigation. Additionally, hyperlinks (&lt;a> tags) allow 
+                            external access to relevant pages. The grid-based alignment of elements is controlled using transform 
+                            matrices, ensuring a structured and evenly spaced display. Hover effects (:hover) on nodes and sub-nodes 
+                            provide visual feedback by changing colors and strokes when hovered. The page maintains accessibility 
+                            features, such as tabindex="0" for keyboard navigation and color contrasts for readability. The overall 
+                            design ensures a user-friendly and interactive visualization of the website's structure while maintaining 
+                            responsiveness and ease of navigation.
                         </p> 
 
                     <h3>Accessibility</h3>
@@ -67,47 +97,91 @@
                         </ul>
 
                     <h3>Link to the validation page</h3>
-                        <p><a href="validation_ST0.html#volunteerVal">Include a link to the validation page</a></p>
+                        <p><a href="../validations/validation_ST4.html#sitemapVal">Include a link to the validation page</a></p>
 
                         
                     <h3>Link to the page</h3>
-                        <p><a href="volunteer.html">Include a link to the actual page you describe.</a></p>
+                        <p><a href="../sitemap.html">Include a link to the actual page you describe.</a></p>
             </section>
 
             <section>
+                <div id="contentST4Edit"></div>
                 <h2 id="content">Content Page</h2>
                     <h3>Technical Description</h3>
-                        <p>Explain the HTML and CSS techniques used to implement this page. Justify the logic and purpose of the key tags and styling choices focusing on functionality and design without copying large code sections. Explain the purpose of key HTML tags and CSS properties. Specify key HTML tags and CSS properties used to create structure and styling.</p> 
+                        <p style="text-align: justify;">
+                            The content page is structured using &lt;section> and &lt;div> tags for organization. 
+                            The hero section features a background image with a gradient overlay (::before) and flexbox 
+                            for centering the title and button. The introduction section uses a solid background color, 
+                            centered text, and padding for readability. The main content is divided into a sidebar 
+                            (sticky navigation with hover effects) and a main content area (flexbox layout for info boxes 
+                            with images and text). The challenges section mirrors the introduction's styling, with bullet 
+                            points for challenges. The conclusion section repeats the introduction's design, emphasizing 
+                            the call to action. The "Other Contents" section uses a grid layout for related content cards, 
+                            with hover effects and image overlays for interactivity. A "Back to Top" button is fixed at the 
+                            bottom right, with a hover effect for scaling. The page employs flexbox, grid, and absolute 
+                            positioning for a responsive layout, with gradients, shadows, and SVG icons for a cohesive and engaging design.
+                        </p> 
 
                     <h3>Accessibility</h3>
-                        <p>Explain how you used to addressed accessibility in this particular page you implemented.</p>
+                        <ul>
+                            <li>I used meaningful tags like &lt;header>, &lt;section>, &lt;h2>, and &lt;p> instead of just &lt;div> to enhance screen reader navigation.</li>
+                            <li>All images, including those in the hero section and info boxes, have descriptive alt attributes, providing context for users relying on screen readers or those with images disabled.</li>
+                            <li>I implemented :hover styles on buttons and links to improve visibility when users navigate.</li>
+                            <li>The page uses percentages for layout elements to support zooming and different screen sizes without breaking the design</li>
+                            <li>The sidebar with quick navigation links is sticky, ensuring it remains accessible as users scroll through the page.</li>
+                            <li>Headings (&lt;h1>, &lt;h2>, etc.) are used hierarchically to structure the content, making it easier for screen readers to navigate and understand the page's organization.</li>
+                        </ul>
 
-                    <h3>Link to the validation page</h3> <!-- Update the path to link the Page Editor with the splash page -->
-                        <p><a href="validation_ST0.html#contentVal">Include a link to the validation page</a>, use the marker to jump to the corresponding section of the validation page.</p> <!-- Update the path to link the Page Editor with the validation page and make it jump to the marker that contains a snapshot for the splash page -->
+                    <h3>Link to the validation page</h3>
+                        <p><a href="../validations/validation_ST4.html#contentST4Val">Include a link to the validation page</a>, use the marker to jump to the corresponding section of the validation page.</p> <!-- Update the path to link the Page Editor with the validation page and make it jump to the marker that contains a snapshot for the splash page -->
 
                         
                     <h3>Link to the page</h3>
-                        <p><a href="content.html">Include a link to the actual page you describe.</a></p>
+                        <p><a href="../contents/content_ST4.html">Include a link to the actual page you describe.</a></p>
             </section>
 
             <section>
                 <h2 id="challenge"> Challenges and Lessons Learned</h2>
-                    <p>Detail any challenges encountered during the implementation process and explain how they were resolved. Reflect on the lessons learned from overcoming these challenges.</p> 
+                    <p><b>Challenge:</b> Ensuring all interactive elements (buttons, links, forms) were fully navigable via the Tab key required testing and fixing issues like focus traps or missing focus indicators.</p>
+                    <p><b>Lesson Learned:</b> Implementing keyboard navigation from the start and testing it regularly can help identify and address accessibility issues early in the development process.</p>
+                    <br>
+                    <p><b>Challenge:</b> Ensuring the svg elements (&lt;rect>, &lt;line>) were positioned at the correct positions.</p>
+                    <p><b>Lesson Learned:</b> Using the correct x and y coordinates and ensuring the correct width and height of the elements are set can help in positioning the elements correctly.</p>
+                    <br>
+                    <p><b>Challenge:</b> Implementing accessibility features required additional time and resources, which were sometimes limited.</p>
+                    <p><b>Lesson Learned:</b> Prioratizing major accessibility features at the beginning of the project and implementing others later.</p>
+                    <br>
+                    <p><b>Challenge:</b> Collaborating with team members.</p>
+                    <p><b>Lesson Learned:</b> Using collaboration tools like GitHub and holding regular meetings helped us to maintain a understanding of the progress of the website.</p>
             </section>
 
             <section>
                 <h2 id="compliance"> Compliance</h2>
-                    <p>Discuss how the pages you have created are compliant with Janet regulations governing web page publication. This includes demonstrating your understanding and application of these regulations. Be realistic and truthful.</p> 
-
-                    
+                    <p><b>Text Alternatives:</b> All images, including the hero section background and info box images, have descriptive alt attributes. This ensures that users relying on screen readers can understand the content of the images.</p> 
+                    <p><b>Adaptable Content:</b> The layout uses flexible units (e.g., percentages, flexbox, and grid) to ensure the content adapts to different screen sizes and zoom levels without breaking the design.</p>
+                    <p><b>Contrast and Readability:</b> Text and background colors maintain sufficient contrast (e.g., white text on dark backgrounds) to meet WCAG 2.1 standards, ensuring readability for users with visual impairments.</p>
+                    <p><b>Structure:</b> Proper semantic HTML structure for better readability and navigation.</p>
+                    <p><b>Ethical Aspect:</b> No prohibited, harmful, or misleading information is presented, aligning with ethical content standards</p>
             </section>
 
             <section>
                 <h2 id="ref">References</h2>
-                <p>Provide links to resources you used following a consistent format (e.g., APA, MLA, or a simplified style). For example:<br><br>
+                <!-- <p>Provide links to resources you used following a consistent format (e.g., APA, MLA, or a simplified style). For example:<br><br> -->
                     <ul class="ref">
-                        <li>iStock (2025) <i>iStock.</i> Available at: <a href="#">https://www.istockphoto.com/</a> (Last accessed: 11 Feb 2025).</li>
-                        <li>Duckett, J., 2011. HTML and CSS: Design and Build Websites,<i>John Willey&Sons. Inc. Indianappolis.</i></li>
+                        <!-- <li>iStock (2025) <i>iStock.</i> Available at: <a href="#">https://www.istockphoto.com/</a> (Last accessed: 11 Feb 2025).</li> -->
+                        <!-- <li>Duckett, J., 2011. HTML and CSS: Design and Build Websites,<i>John Willey&Sons. Inc. Indianappolis.</i></li> -->
+                        <li>Learndirect. (2023, June 8). <i>Why Ocean Conservation is Important | learndirect.</i> Learndirect. <a href="https://www.learndirect.com/blog/why-ocean-conservation-is-important" target="_blank">https://www.learndirect.com/blog/why-ocean-conservation-is-important</a></li>
+                        <li>Marine Conservation Institute. (2024, December 10). <i>Why protect oceans? » Marine Conservation Institute.</i> <a href="https://marine-conservation.org/why-protect-the-ocean/" target="_blank">https://marine-conservation.org/why-protect-the-ocean/</a></li>
+                        <li>FutureLearn. (2021, July 7). <i>World Ocean Day: What is ocean sustainability? - FutureLearn.</i> FutureLearn. <a href="https://www.futurelearn.com/info/blog/ocean-sustainability" target="_blank">https://www.futurelearn.com/info/blog/ocean-sustainability</a></li>
+                        <li>10 things you can do to save the Ocean. (2010, April 27). <i>Environment</i>. <a href="https://www.nationalgeographic.com/environment/article/10-things-you-can-do-to-save-the-ocean" target="_blank">https://www.nationalgeographic.com/environment/article/10-things-you-can-do-to-save-the-ocean</a></li>
+                        <li><i>Freepik | Create great designs, faster.</i> (n.d.). Freepik. <a href="https://www.freepik.com/" target="_blank">https://www.freepik.com/</a></li>
+                        <li><i>W3Schools.com.</i> (n.d.). <a href="https://www.w3schools.com/html/" target="_blank">https://www.w3schools.com/html/</a></li>
+                        <li><i>W3Schools.com.</i> (n.d.). <a href="https://www.w3schools.com/css/" target="_blank">https://www.w3schools.com/css/</a></li>
+                        <li><i>W3Schools.com.</i> (n.d.). <a href="https://www.w3schools.com/js/" target="_blank">https://www.w3schools.com/js/</a></li>
+                        <li>Florin Pop. (2022, November 2). <i>Build a Popup with JavaScript | 1-Minute Tutorial</i> [Video]. YouTube. <a href="https://www.youtube.com/watch?v=r_PL0K2fGkY" target="_blank">https://www.youtube.com/watch?v=r_PL0K2fGkY</a></li>
+                        <li><i>Boxy SVG Editor</i>. (n.d.). <a href="https://boxy-svg.com/" target="_blank">https://boxy-svg.com/</a></li>
+                        <li><i>Bootstrap Icons</i>. (n.d.). <a href="https://icons.getbootstrap.com/" target="_blank">https://icons.getbootstrap.com/</a></li>
+                        <li><i>ChatGPT</i>. (n.d.). <a href="https://chatgpt.com/" target="_blank">https://chatgpt.com/</a></li>
                     </ul>
             </section>
 
@@ -118,9 +192,7 @@
         <aside>
             <h3>Core pages developed:</h3>
 
-        <!-- Customize this to the role you undertook. Keep only the list items you were responsible to develop, delete the rest -->
             <ul class="top-level-ul">
-                <!-- Keep only the list items you were responsible to develop, delete the rest and update the links to the corresponding markers -->
                 <!-- <li>Student 1</li>
                     <ul> 
                         <li><a href="#splash">Splash page</a></li>
@@ -141,9 +213,9 @@
                     </ul> -->
                 <li>Student 4</li>
                     <ul>
-                        <li><a href="#">Profile page </a></li>
-                        <li><a href="#">Sitemap page</a></li>
-                        <li><a href="#">Content page</a></li>
+                        <li><a href="#profileEdit">Profile page </a></li>
+                        <li><a href="#sitemapEdit">Sitemap page</a></li>
+                        <li><a href="#contentST4Edit">Content page</a></li>
                     </ul>
                 <li><a href="#challenge">Challenges and Lessons Learned</a></li>
                 <li><a href="#compliance">Compliance</a></li>
