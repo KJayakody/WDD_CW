@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
     const counters = document.querySelectorAll('.count-up');
-    const speed = 2000; // Animation duration in milliseconds
+    const speed = 2000;
 
     counters.forEach(counter => {
         const updateCount = () => {
@@ -17,12 +17,10 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         };
 
-        // Extract the numeric part and store it in data-target
         const textContent = counter.innerText;
         const numericPart = +textContent.match(/\d+/)[0];
         counter.setAttribute('data-target', numericPart);
 
-        // Reset the counter to 0 but keep the non-numeric part
         counter.innerText = textContent.replace(/\d+/, '0');
 
         updateCount();
