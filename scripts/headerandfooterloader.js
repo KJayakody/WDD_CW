@@ -8,12 +8,12 @@ const headerHTML = `
             <div class="nav-links">
                 <nav>
                     <ul>
-                        <li><a href="home.html">Home</a></li>
-                        <li><a href="team.html">Team</a></li>
-                        <li><a href="volunteer.html">Volunteer</a></li>
-                        <li><a href="table.html">Table</a></li>
-                        <li><a href="sitemap.html">Sitemap</a></li>
-                        <li><a href="feedback.html">Feedback</a></li>
+                        <li><a href="../pages/home.html">Home</a></li>
+                        <li><a href="../pages/team.html">Team</a></li>
+                        <li><a href="../pages/volunteer.html">Volunteer</a></li>
+                        <li><a href="../pages/table.html">Table</a></li>
+                        <li><a href="../pages/sitemap.html">Sitemap</a></li>
+                        <li><a href="../pages/feedback.html">Feedback</a></li>
                     </ul>
                 </nav>
                 <div class="profile">
@@ -30,6 +30,7 @@ const footerHTML = `
             <div class="logo-text">
                 <h3>OceanGuard</h3>
                 <p>Protecting our oceans for future generations.</p>
+                <a id="page-editor-link" href="#">Page Editor</a>
             </div>
             <div class="quick-links">
                 <ul>
@@ -85,4 +86,12 @@ const footerHTML = `
 document.addEventListener("DOMContentLoaded", function () {
     document.getElementById("header-container").innerHTML = headerHTML;
     document.getElementById("footer-container").innerHTML = footerHTML;
+
+    const footerContainer = document.getElementById("footer-container");
+    const editorLink = footerContainer.getAttribute("data-editor-link");
+    
+    const pageEditorLink = document.getElementById("page-editor-link");
+    if (editorLink && editorLink !== "#") {
+        pageEditorLink.href = editorLink;
+    }
 });
