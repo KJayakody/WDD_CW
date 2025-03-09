@@ -1,63 +1,215 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Page Editor - Hansaja Sandeepa</title>
-    <script src="../../scripts/headerandfooterloader.js"></script>
-    <link rel="stylesheet" href="../../styles/global.css">
-    <link rel="stylesheet" href="../../styles/pageEditor_ST4.css">
+    <title>Page Editor Student - Hansaja Sandeepa</title>
+
+    <link rel="stylesheet" href="../../styles/pageEditor_validator.css"> <!-- External CSS link -->
+
+    <link rel="stylesheet" type="text/css" href="../../styles/global.css">
+    <script src="../../scripts/headerandfooterloader.js" defer></script>
+    <link rel="icon" type="image/x-icon" href="../../assets/favicon.ico">
+
 </head>
 <body>
-    <div id="top"></div>
+    
+    <!-- Update the header and the footer to be consistent with the rest of the pages you implemented -->
 
     <!-- Header Section -->
     <div id="header-container"></div>
 
-    <div class="container-editors">
+    <section class="stud">
+        <h2>Hansaja Sandeepa, Student 2</h2>
+    </section>
 
-        <div class="title-section">
-            <h1>Hansaja Sandeepa - Editor's Page</h1>
-            <h2>Role - Student 2</h2>
-        </div>
+    <div class="container">
+        <!-- Main content area -->
+        <main>
 
-        <div class="content-section">
-            <h2 class="page-title">Home Page</h2>
-            <p class="description-para">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at libero sollicitudin lectus dapibus venenatis vitae vitae nibh. Curabitur mollis, arcu in commodo dictum, eros nunc viverra nisi, at tempor tellus lorem et enim. Donec a imperdiet velit. Fusce sed felis dui. Phasellus pulvinar magna velit, vitae viverra sem rutrum vel. Donec eu commodo ante, consectetur blandit arcu. Etiam in dolor vel nulla eleifend tincidunt. Pellentesque placerat ante ex, et ullamcorper enim ultricies eu. Sed convallis augue vel nisl mollis, sed mattis lorem bibendum. Nunc in erat mi. Nam tincidunt sapien vitae felis faucibus semper. Sed tristique massa nec luctus accumsan. Aliquam varius eros lorem, vel imperdiet justo rutrum at. Donec a magna dictum metus sodales laoreet eget ut mauris.
-                Pellentesque ultricies at ligula a lacinia. Vivamus ipsum ex, accumsan quis diam vel, venenatis tincidunt ante. Donec sed arcu nibh. Vestibulum sed auctor dolor, eu sollicitudin libero. Pellentesque euismod volutpat lectus, id venenatis diam fringilla ut. Nunc justo tellus, vestibulum ut dolor ut, accumsan convallis arcu. Nulla facilisi. Etiam gravida aliquam massa, id gravida erat porttitor ac. Sed sem felis, ultricies in accumsan tempor, dignissim vel ipsum. Donec porttitor, dolor sed egestas iaculis, felis erat sollicitudin ligula, a accumsan tellus leo a leo. Donec tempus quam in aliquet egestas. Sed pulvinar faucibus risus vel condimentum. Curabitur venenatis pretium massa, ac rutrum sapien luctus tincidunt. Phasellus accumsan at felis vitae malesuada. Nulla dictum urna eu nisi dapibus elementum.
-                Vestibulum elementum mauris euismod, ultrices magna at, gravida lorem. Praesent ac condimentum justo. In facilisis, arcu nec mollis ornare, risus nulla molestie lacus, a lobortis elit libero nec turpis.
-            </p>
-            <a class="link-to-pages" href="profile.html">Link to the Profile Page</a>
-        </div>
+            <!-- Update those first three sections for the pages you were responsible to implement -->
 
-        <div class="content-section">
-            <h2 class="page-title">Table</h2>
-            <p class="description-para">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at libero sollicitudin lectus dapibus venenatis vitae vitae nibh. Curabitur mollis, arcu in commodo dictum, eros nunc viverra nisi, at tempor tellus lorem et enim. Donec a imperdiet velit. Fusce sed felis dui. Phasellus pulvinar magna velit, vitae viverra sem rutrum vel. Donec eu commodo ante, consectetur blandit arcu. Etiam in dolor vel nulla eleifend tincidunt. Pellentesque placerat ante ex, et ullamcorper enim ultricies eu. Sed convallis augue vel nisl mollis, sed mattis lorem bibendum. Nunc in erat mi. Nam tincidunt sapien vitae felis faucibus semper. Sed tristique massa nec luctus accumsan. Aliquam varius eros lorem, vel imperdiet justo rutrum at. Donec a magna dictum metus sodales laoreet eget ut mauris.
-                Pellentesque ultricies at ligula a lacinia. Vivamus ipsum ex, accumsan quis diam vel, venenatis tincidunt ante. Donec sed arcu nibh. Vestibulum sed auctor dolor, eu sollicitudin libero. Pellentesque euismod volutpat lectus, id venenatis diam fringilla ut. Nunc justo tellus, vestibulum ut dolor ut, accumsan convallis arcu. Nulla facilisi. Etiam gravida aliquam massa, id gravida erat porttitor ac. Sed sem felis, ultricies in accumsan tempor, dignissim vel ipsum. Donec porttitor, dolor sed egestas iaculis, felis erat sollicitudin ligula, a accumsan tellus leo a leo. Donec tempus quam in aliquet egestas. Sed pulvinar faucibus risus vel condimentum. Curabitur venenatis pretium massa, ac rutrum sapien luctus tincidunt. Phasellus accumsan at felis vitae malesuada. Nulla dictum urna eu nisi dapibus elementum.
-                Vestibulum elementum mauris euismod, ultrices magna at, gravida lorem. Praesent ac condimentum justo. In facilisis, arcu nec mollis ornare, risus nulla molestie lacus, a lobortis elit libero nec turpis.
-            </p>
-            <a class="link-to-pages" href="sitemap.html">Link to the Sitemap</a>
-        </div>
+            <section>
+                <h2 id="home">Home Page</h2>
+                <h3>Technical Description</h3>
+                <h4>HTML Techniques</h4>
+                <ul>
+                    <li><b>&lt;!DOCTYPE html&gt;</b>: Declares the document type and version of HTML, ensuring proper rendering in browsers.</li>
+                    <li><b>&lt;html lang="en"&gt;</b>: Specifies the language of the document, which is crucial for screen readers and search engines.</li>
+                    <li><b>&lt;head&gt;</b>: Contains meta-information, such as character set, viewport settings, and links to stylesheets and scripts.</li>
+                    <li><b>&lt;body&gt;</b>: Contains the main content of the HTML document.</li>
+                    <li><b>&lt;header&gt;</b>: Represents the introductory content or navigation links, typically used for the site's header.</li>
+                    <li><b>&lt;section&gt;</b>: Defines a section of the document, such as a hero section, mission section, or initiatives section.</li>
+                    <li><b>&lt;div&gt;</b>: A generic container for grouping and styling elements.</li>
+                    <li><b>&lt;a&gt;</b>: Defines a hyperlink, used for navigation within the site or to external resources.</li>
+                    <li><b>&lt;img&gt;</b>: Embeds an image into the document, enhancing visual content.</li>
+                    <li><b>&lt;svg&gt;</b>: Used to define vector graphics, providing scalable and resolution-independent images.</li>
+                    <li><b>&lt;footer&gt;</b>: Represents content that is typically found at the bottom of the page, such as copyright information and links to related content.</li>
+                </ul>        
+                <h4>CSS Techniques</h4>
+                <ul>
+                    <li><b>:root</b>: Defines custom properties (CSS variables) that can be used throughout the stylesheet.</li>
+                    <li><b>html</b>: Sets global styles for the document, such as scroll behavior.</li>
+                    <li><b>body</b>: Styles the document body, including font family and cursor styles.</li>
+                    <li><b>a and button</b>: Styles hyperlinks and buttons, including hover effects to enhance interactivity.</li>
+                    <li><b>header and footer</b>: Styles the header and footer sections, including background color, text color, and layout.</li>
+                    <li><b>flexbox</b>: Used extensively for layout, providing flexible and responsive design.</li>
+                    <li><b>background-image and background-size</b>: Used to set background images and ensure they cover the entire element.</li>
+                    <li><b>position and z-index</b>: Controls the positioning and stacking order of elements.</li>
+                    <li><b>border-radius</b>: Rounds the corners of an element, creating a more visually appealing design.</li>
+                    <li><b>box-shadow</b>: Adds shadow effects to elements, enhancing depth and visual appeal.</li>
+                    <li><b>transition</b>: Smoothly transitions between property values, improving user experience with animations.</li>
+                    <li><b>::before and ::after</b>: Pseudo-elements used to insert content before or after an element's content.</li>
+                    <li><b>@media queries</b>: Allows styles to adapt to different screen sizes, ensuring responsive design.</li>
+                </ul>        
+                <h3>Accessibility</h3>
+                <p>How Accessibility Was Addressed:</p>
+                <ol>
+                    <li><b>Semantic HTML</b>: The use of semantic HTML tags (<b>&lt;header&gt;</b>, <b>&lt;section&gt;</b>, <b>&lt;footer&gt;</b>) helps screen readers and other assistive technologies understand the structure of the page.</li>
+                    <li><b>Alt Text for Images</b>: All images have alt attributes, providing descriptions for screen readers.</li>
+                    <li><b>Keyboard Navigation</b>: Interactive elements like buttons and links are styled to be visually distinct when focused, ensuring they are usable via keyboard navigation.</li>
+                    <li><b>Color Contrast</b>: The color scheme ensures sufficient contrast between text and background, making content readable for users with visual impairments.</li>
+                    <li><b>Responsive Design</b>: The use of viewport meta tags and responsive CSS ensures the page is usable on a variety of devices, including those with smaller screens.</li>
+                    <li><b>Dynamic Content</b>: JavaScript is used to enhance interactivity but does not rely on it for critical content, ensuring the page remains functional even if JavaScript is disabled.</li>
+                </ol>      
+                <h3>Link to the validation page</h3>
+                <p><a href="validation_ST0.html#splashVal">Include a link to the validation page</a>, use the marker to jump to the corresponding section of the validation page.</p>
+        
+                <h3>Link to the page</h3>
+                <p><a href="home.html">Include a link to the actual page you describe.</a></p>
+            </section>
 
-        <div class="content-section">
-            <h2 class="page-title">Content Page</h2>
-            <p class="description-para">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at libero sollicitudin lectus dapibus venenatis vitae vitae nibh. Curabitur mollis, arcu in commodo dictum, eros nunc viverra nisi, at tempor tellus lorem et enim. Donec a imperdiet velit. Fusce sed felis dui. Phasellus pulvinar magna velit, vitae viverra sem rutrum vel. Donec eu commodo ante, consectetur blandit arcu. Etiam in dolor vel nulla eleifend tincidunt. Pellentesque placerat ante ex, et ullamcorper enim ultricies eu. Sed convallis augue vel nisl mollis, sed mattis lorem bibendum. Nunc in erat mi. Nam tincidunt sapien vitae felis faucibus semper. Sed tristique massa nec luctus accumsan. Aliquam varius eros lorem, vel imperdiet justo rutrum at. Donec a magna dictum metus sodales laoreet eget ut mauris.
-                Pellentesque ultricies at ligula a lacinia. Vivamus ipsum ex, accumsan quis diam vel, venenatis tincidunt ante. Donec sed arcu nibh. Vestibulum sed auctor dolor, eu sollicitudin libero. Pellentesque euismod volutpat lectus, id venenatis diam fringilla ut. Nunc justo tellus, vestibulum ut dolor ut, accumsan convallis arcu. Nulla facilisi. Etiam gravida aliquam massa, id gravida erat porttitor ac. Sed sem felis, ultricies in accumsan tempor, dignissim vel ipsum. Donec porttitor, dolor sed egestas iaculis, felis erat sollicitudin ligula, a accumsan tellus leo a leo. Donec tempus quam in aliquet egestas. Sed pulvinar faucibus risus vel condimentum. Curabitur venenatis pretium massa, ac rutrum sapien luctus tincidunt. Phasellus accumsan at felis vitae malesuada. Nulla dictum urna eu nisi dapibus elementum.
-                Vestibulum elementum mauris euismod, ultrices magna at, gravida lorem. Praesent ac condimentum justo. In facilisis, arcu nec mollis ornare, risus nulla molestie lacus, a lobortis elit libero nec turpis.
-            </p>
-            <a class="link-to-pages" href="content_ST4.html">Link to the Content Page</a>
-        </div>
+            <section>
+                <h2 id="table">Table Page</h2>
+                <h3>Technical Description</h3>
+                <p>
+                    The HTML and CSS techniques used in this page are designed to create a visually appealing and functional table layout that displays information about marine life conservation status. The key HTML tags and CSS properties used are as follows:
+                </p>
+                <ul>
+                    <li>
+                        <strong>HTML Table Tags</strong>:
+                        <ul>
+                            <li><strong>&lt;table&gt;</strong>: Defines the table structure, wrapping all rows and cells.</li>
+                            <li><strong>&lt;tr&gt;</strong>: Defines a row in the table. Used for both header and data rows.</li>
+                            <li><strong>&lt;th&gt;</strong>: Defines a header cell in the table. Used for column headers.</li>
+                            <li><strong>&lt;td&gt;</strong>: Defines a standard cell in the table. Used for data entries.</li>
+                            <li><strong>colspan</strong>: Attribute used to span a cell across multiple columns.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <strong>CSS Properties</strong>:
+                        <ul>
+                            <li><strong>border-collapse</strong>: Ensures that table borders are merged into a single border.</li>
+                            <li><strong>width and min-width</strong>: Controls the width of the table and ensures it does not become too narrow.</li>
+                            <li><strong>border-radius and overflow</strong>: Creates rounded corners for the table and handles overflow content.</li>
+                            <li><strong>background-color</strong>: Sets the background color of table rows and cells for visual distinction.</li>
+                            <li><strong>text-align</strong>: Aligns the text within table cells for better readability.</li>
+                            <li><strong>height</strong>: Sets the height of table rows for consistent spacing.</li>
+                        </ul>
+                    </li>
+                </ul>
+                <p>
+                    These tags and properties ensure that the table is both functional and visually appealing, while also considering accessibility for all users.
+                </p>
+            
+                <h3>Accessibility</h3>
+                <p>
+                    Accessibility was addressed through several techniques:
+                    <ul>
+                        <li><strong>Semantic HTML</strong>: Using &lt;table&gt;, &lt;tr&gt;, &lt;th&gt;, and &lt;td&gt; tags ensures that the table structure is clear and understandable to screen readers.</li>
+                        <li><strong>Header Cells</strong>: Using &lt;th&gt; for header cells helps screen readers identify the column headers, making it easier for users to understand the data.</li>
+                        <li><strong>Text Alternatives</strong>: Images within table cells have alt attributes, providing descriptions for screen readers.</li>
+                        <li><strong>Color Contrast</strong>: Sufficient color contrast between text and background ensures readability for users with visual impairments.</li>
+                    </ul>
+                </p>
+            
+                <h3>Link to the validation page</h3>
+                <p><a href="validation_ST0.html#volunteerVal">Include a link to the validation page</a>, use the marker to jump to the corresponding section of the validation page.</p>
+            
+                <h3>Link to the page</h3>
+                <p><a href="table.html">Include a link to the actual page you describe.</a></p>
+            </section>
 
-        <div class="back-to-top-button">
-            <button class="to-top-btn"><a href="#top">Back To Top</a></button>
-        </div>
+            <section>
+                <h2 id="content">Content Page</h2>
+                    <h3>Technical Description</h3>
+                        <p>Explain the HTML and CSS techniques used to implement this page. Justify the logic and purpose of the key tags and styling choices focusing on functionality and design without copying large code sections. Explain the purpose of key HTML tags and CSS properties. Specify key HTML tags and CSS properties used to create structure and styling.</p> 
+
+                    <h3>Accessibility</h3>
+                        <p>Explain how you used to addressed accessibility in this particular page you implemented.</p>
+
+                    <h3>Link to the validation page</h3> <!-- Update the path to link the Page Editor with the splash page -->
+                        <p><a href="validation_ST0.html#contentVal">Include a link to the validation page</a>, use the marker to jump to the corresponding section of the validation page.</p> <!-- Update the path to link the Page Editor with the validation page and make it jump to the marker that contains a snapshot for the splash page -->
+
+                        
+                    <h3>Link to the page</h3>
+                        <p><a href="content.html">Include a link to the actual page you describe.</a></p>
+            </section>
+
+            <section>
+                <h2 id="challenge"> Challenges and Lessons Learned</h2>
+                    <p>Detail any challenges encountered during the implementation process and explain how they were resolved. Reflect on the lessons learned from overcoming these challenges.</p> 
+            </section>
+
+            <section>
+                <h2 id="compliance"> Compliance</h2>
+                    <p>Discuss how the pages you have created are compliant with Janet regulations governing web page publication. This includes demonstrating your understanding and application of these regulations. Be realistic and truthful.</p> 
+
+                    
+            </section>
+
+            <section>
+                <h2 id="ref">References</h2>
+                <p>Provide links to resources you used following a consistent format (e.g., APA, MLA, or a simplified style). For example:<br><br>
+                    <ul class="ref">
+                        <li>iStock (2025) <i>iStock.</i> Available at: <a href="#">https://www.istockphoto.com/</a> (Last accessed: 11 Feb 2025).</li>
+                        <li>Duckett, J., 2011. HTML and CSS: Design and Build Websites,<i>John Willey&Sons. Inc. Indianappolis.</i></li>
+                    </ul>
+            </section>
+
+            <p class="top"><a href="#top">Go top</a></p>
+        </main>
+
+        <!-- Sidebar area -->
+        <aside>
+            <h3>Core pages developed:</h3>
+
+        <!-- Customize this to the role you undertook. Keep only the list items you were responsible to develop, delete the rest -->
+            <ul class="top-level-ul">
+                <!-- Keep only the list items you were responsible to develop, delete the rest and update the links to the corresponding markers -->
+                <li>Student 1</li>
+                    <ul> 
+                        <li><a href="#splash">Splash page</a></li>
+                        <li><a href="#volunteer">Volunteer page</a></li>
+                        <li><a href="#content">Content page</a></li>
+                    </ul>
+                <li>Student 2</li>
+                    <ul>
+                        <li><a href="#">Home page </a></li>
+                        <li><a href="#">Table page</a></li>
+                        <li><a href="#">Content page</a></li>
+                    </ul>
+                <li>Student 3</li>
+                    <ul>
+                        <li><a href="#">Feedback page</a> </li>
+                        <li><a href="#">Team page</a></li>
+                        <li><a href="#">Content page</a></li>
+                    </ul>
+                <li>Student 4</li>
+                    <ul>
+                        <li><a href="#">Profile page </a></li>
+                        <li><a href="#">Sitemap page</a></li>
+                        <li><a href="#">Content page</a></li>
+                    </ul>
+                <li><a href="#challenge">Challenges and Lessons Learned</a></li>
+                <li><a href="#compliance">Compliance</a></li>
+                <li><a href="#ref">References</a></li>
+            </ul>
+        </aside>
     </div>
 
     <!-- Footer Section -->
-    <div id="footer-container" data-editor-link="../../pages/pageEditors/pageEditor_ST2.html"></div>
+    <div id="footer-container" data-editor-link="../../pages/pageeditors/pageEditor_ST2.html"></div>
 </body>
 </html>
-
